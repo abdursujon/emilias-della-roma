@@ -12,11 +12,28 @@ body {
 
 /* Heading styles */
 h1 {
-    font: 4.8rem 'Montserrat', sans-serif;
-    font-weight: 900;
-    font-style: normal;
+    font-family: "Cormorant Garamond", serif;
+    font-style: bold;
+    font-size: 6rem;
+    color:#FB4141;
 }
-
+/* Sub heading */
+h2{
+    font-family: "Cormorant Garamond", serif;
+    font-style: bold;
+    font-size: 3rem;
+    color:#FB4141;
+}
+/* Body text */
+p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.8rem;
+    font-style: normal;
+    color:black;
+}
+.custom-heading, .custom-subheading{
+    color:#0ABAB5;
+}
 /* Navigation style */
 .navbar {
     height: 60px;
@@ -29,6 +46,7 @@ h1 {
 .logo-left,
 .logo-right {
     font-family: "Cormorant Garamond", serif;
+    color:#FB4141;
 }
 .logo-left{
     font-size: 2.5rem;
@@ -117,14 +135,9 @@ h1 {
     z-index: 999;
     font-size: 6rem;
 }
-
 /* section 2 */
-
 #section-2{
     background-color: #FFE8CD;
-}
-.slide-1 div h1, .slide-1 div p{
-    color:#FB4141;
 }
 .slide-1 div{
     margin-top: 50px;
@@ -136,11 +149,14 @@ h1 {
     border-radius: 25px;
     padding: 5px 10px;
     background:transparent;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 700;
 }
 .btn-2{
     border:none;
     text-decoration: underline;
     margin-top: 10px;
+    font-family: "Cormorant Garamond", serif;
 }
 .btn-1:hover{
     color:white;
@@ -155,11 +171,7 @@ h1 {
   object-fit: cover; /* ensures image doesn't distort, crops if needed */
   display: block;    /* removes extra spacing */
 }
-.slide-text h1{
-    font-family: "Cormorant Garamond", serif;
-    font-style: bold;
-    font-size: 6rem;
-}
+
 .slide-text{
     margin-left:20%;
     padding-top: 20%;
