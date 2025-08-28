@@ -25,29 +25,7 @@
 
 <body>
     <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary custom-navbar">
-        <div class="container-fluid">
-            <a class="navbar-brand custom-brand" href="index.html">
-                <h1><span class="logo-left">EMILIA'S </span><span class="logo-right">della roma</span></h1>
-                <p class="subtitle">La Tavola & Enoteca</p>
-            </a>
-            <button class="navbar-toggler custom-navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <img class="custom-navbar-toggler" src="./assets/icons8-hamburger-menu-80.png" alt="menu-bar">
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav ms-auto">
-                    <a class="nav-link" href="index.html">HOME</a>
-                    <a class="nav-link" href="locations.html">LOCATIONS</a>
-                    <a class="nav-link" href="menu.html">MENU</a>
-                    <a class="nav-link" href="gallery.html">GALLERY</a>
-                    <a class="nav-link" href="https://www.linkedin.com/in/abdur-rahim-sujon/">CONTACT</a>
-                    <a class="nav-link" href="https://github.com/abdursujon"><span>BOOK A TABLE</span></a>
-                </div>
-            </div>
-        </div>
-    </nav>
+    <div id="navbar"></div>
     <main>
         <!-- Section 1 -->
         <section id="section-1">
@@ -279,11 +257,11 @@
 
     </main>
     <!-- Footer -->
-    <div class="footer-div" style="background-color:#071023;">
-        <div class="container footer">
-            <footer class="row">
-
-                <div class="col-md-4 mb-3">
+    <div style="background-color:#071023;">
+        <div class="container custom-footer">
+            <footer>
+                <div class="row">
+                      <div class="col-md-4 mb-3">
                     <a class="navbar-brand footer-brand" href="index.html">
                         <h1><span>EMILIA'S </span><span class="logo-right">della roma</span></h1>
                         <p class="subtitle2">La Tavola & Enoteca</p>
@@ -311,12 +289,12 @@
                     </div>
                     <h2 class="mt-5" style="color:white;">FOLLOW US</h2>
                     <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                        <button type="button" class="btn-4"> <a href="" class="contact-icon"><img
-                                    src="assets/instagram.png" alt="Instagram icon"></a></button>
-                        <button type="button" class="btn-5"> <a href="" class="contact-icon"><img src="assets/fb.png"
-                                    alt="Instagram icon"></a></button>
-                        <button type="button" class="btn-6"> <a href="" class="contact-icon"><img
-                                    src="assets/tiktok.png" alt="Instagram icon"></a></button>
+                      <a href="" class="contact-icon btn-4  d-flex align-items-center justify-content-center"><img
+                                    src="assets/instagram.png" alt="Instagram icon"></a>
+                        <a href="" class="contact-icon btn-5  d-flex align-items-center justify-content-center"><img src="assets/fb.png"
+                                    alt="Instagram icon"></a>
+                       <a href="" class="contact-icon btn-6  d-flex align-items-center justify-content-center"><img
+                                    src="assets/tiktok.png" alt="Instagram icon"></a>
                     </div>
                 </div>
                 <div class="col-md-4 mb-3">
@@ -330,17 +308,16 @@
                         <span><a href="book-a-table.html">BOOK A TABLE</a></span>
                     </div>
                 </div>
+                </div>
             </footer>
         </div>
-
     </div>
-
     <!-- Bootstrap JS link -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <!-- JS custom link-->
-    <script src="js/main.js"></script>
+    <script src="index.js"></script>
 </body>
 
 </html>
