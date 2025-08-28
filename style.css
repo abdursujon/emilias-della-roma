@@ -265,16 +265,18 @@ p{
     color:white;
     border: 1px solid white;
     text-decoration: none;
+    padding:8px;
     margin: 10px 25px 0 0; 
 }
 .restaurant-img img{
     height: 500px;
     border-top-left-radius: 360px;
     border-top-right-radius: 360px;
-    width: 500px;
+    width: 350px;
 }
 .restaurant > h1{
     color:white;
+    font-size: 3rem;
 }
 .custom-hr, .custom-hr2{
     color:white;
@@ -282,7 +284,7 @@ p{
     opacity: 1;
     background:linear-gradient(90deg, #FB4141 50%, #6e3838 );
     z-index: 9999;
-    width: 80%;
+    width: 350px;
     border:none;
 }
 /* Section 5 */
