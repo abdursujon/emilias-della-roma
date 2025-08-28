@@ -3,13 +3,6 @@ html {
     /*   1rem = 10px  */
     font-size: 62.5%;
 }
-body {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.8rem;
-    font-weight: 400;
-    font-style: normal;
-}
-
 /* Heading styles */
 h1 {
     font-family: "Cormorant Garamond", serif;
@@ -26,14 +19,12 @@ h2{
 }
 /* Body text */
 p{
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family:"Montserrat", sans-serif;
     font-size: 1.8rem;
     font-style: normal;
     color:black;
 }
-.custom-heading, .custom-subheading{
-    color:#0ABAB5;
-}
+
 /* Navigation style */
 .navbar {
     height: 60px;
@@ -50,6 +41,7 @@ p{
 }
 .logo-left{
     font-size: 2.5rem;
+    font-weight: bold;
 }
 .logo-right {
     font-style: italic;
@@ -88,7 +80,7 @@ p{
     transition: background-position 0.5s ease-in-out;
 }
 
-.navbar-nav .nav-link:last-child {
+.navbar-nav .nav-link:last-child{
     color: #fff;
     border: none;
     padding: 7px 7px;
@@ -96,6 +88,7 @@ p{
     -webkit-background-clip: background;
     background-clip: background;
     transition: .4s;
+    font-size: 1.6rem;
 }
 .navbar-nav .nav-link:last-child:hover {
     transform: none;
@@ -138,34 +131,33 @@ p{
 /* section 2 */
 #section-2{
     background-color: #FFE8CD;
+    padding:80px 0px;
+    margin-top: -5px;
 }
-.slide-1 div{
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
+
 .btn-1, .btn-2 {
     color:#FB4141;
     border: 1px solid #FB4141;
     border-radius: 25px;
-    padding: 5px 10px;
+    padding: 10px 15px;
     background:transparent;
     font-family: "Cormorant Garamond", serif;
     font-weight: 700;
+    font-size: 2.5rem;
 }
 .btn-2{
     border:none;
     text-decoration: underline;
     margin-top: 10px;
     font-family: "Cormorant Garamond", serif;
+     font-size: 2.5rem;
 }
-.btn-1:hover{
+.btn-1:hover, .btn-2:hover{
     color:white;
     background-color: #FB4141;
 }
-.btn-2:hover{
-    color:black;
-}
-.slide-image img {
+
+.custom-img img {
   width: 100%;
   height: 700px;
   object-fit: cover; /* ensures image doesn't distort, crops if needed */
@@ -187,7 +179,228 @@ p{
     margin-top: 30%;
     opacity: 1;
 }
+/* Section 3 */
+#section-3 {
+    padding: 80px 0px;
+    background-color: #ECEEDF;
+}
+.custom-heading, .custom-subheading{
+    color:#0ABAB5;
+}
+.dining{
+    margin-top: 10%;
+    margin-left: 20%;
+}
+.custom-dining-img img{
+  border-top-left-radius: 360px;
+  border-top-right-radius:  360px;
+}
+.dining-btn , .section-5-btn{
+    background:linear-gradient(90deg, #1095c1 50%, #FB4141 0) var(--_p, 100%)/200% no-repeat;
+    -webkit-background-clip: background;
+    background-clip: background;
+    transition: .4s;
+    color:white;
+    border:none;
+}
+.dining-btn:hover, .section-5-btn:hover {
+    transform: none;
+    text-decoration: none;
+    --_p: 0%;
+    border:none;
+}
+/* Section 4 */
+#section-4{
+    padding: 80px 0px;
+    background-color: #0ABAB5;
+}
+.search {
+    position: relative;
+    width: 600px;
+}
+.search input{
+    width: 100%;
+    /* top : right: bottom : left */
+    padding: 10px 0px 10px 10px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.5rem;
+    border: 2px solid white;
+    border-radius: 10px;
+    height: 80px;
+}
+.search button{
+    position:absolute;
+    top:50%;
+    right: 2px;
+    transform: translateY(-50%);
+    width: 78px;
+    height: 78px;
+    border: none;
+    background-color: #FB4141;
+    cursor: pointer;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.fnd{
+    color:white;
+}
+.location-btn{
+    color:white;
+    font-size: 2.5rem;
+}
+#suggestions{
+    max-height: 150px;
+    overflow-y: auto;
+    position: absolute;
+    width: 600px;
+    background-color:white!important;
+    z-index: 9999;
+    margin-top: 0;
+    display:none;
+}
+.restaurant{
+    margin-top: 15%;
+}
+.rest-btn{
+    color:white;
+    border: 1px solid white;
+    text-decoration: none;
+    margin: 10px 25px 0 0; 
+}
+.restaurant-img img{
+    height: 500px;
+    border-top-left-radius: 360px;
+    border-top-right-radius: 360px;
+    width: 500px;
+}
+.restaurant > h1{
+    color:white;
+}
+.custom-hr, .custom-hr2{
+    color:white;
+    height: 5px;
+    opacity: 1;
+    background:linear-gradient(90deg, #FB4141 50%, #6e3838 );
+    z-index: 9999;
+    width: 80%;
+    border:none;
+}
+/* Section 5 */
+#section-5{
+    background-color: #F2EDD1;
+}
 
+.custom-col{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.custom-col .section-5-btn{
+    margin-left: auto;
+}
+
+/* Section 6 */
+#section-6{
+    padding: 80px 0px;
+    background-color: #0ABAB5;
+    margin-bottom: 0px;
+}
+#location-input{
+    font-size: 1.8rem;
+}
+.card{
+    background-color: #F2EDD1;
+    border:none;
+}
+.card img{
+  width: 80%;
+  height: 400px;
+  object-fit: cover; /* ensures image doesn't distort, crops if needed */
+  display: block;    /* removes extra spacing */
+  border-top-left-radius:360px;
+  border-top-right-radius:360px ;
+}
+h2{
+    color:#0ABAB5;
+    font-style: bold;
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+.custom-hr2{
+    background:#0ABAB5;
+}
+/* Footer */
+.footer{
+    background-color:#071023; ;
+    padding:50px 0;
+}
+.footer-txt{
+    font-size: 1.2rem;
+    color:white;
+}
+.footer-brand{
+    margin-left:0px;
+}
+.footer-brand{
+    margin-left: 0px;
+    margin-top:0px;
+    display: block;
+}
+.subtitle2{
+    color:white !important;
+    font-size: 1rem;
+    margin-top:-15px;
+}
+.btn-3{
+    background-color: #FB4141;
+    border:none;
+    padding: 10px 10px;
+    border-radius: 10px;
+    width: 120px;
+}
+.btn-4, .btn-5, .btn-6{
+    background-color: transparent;
+    border:2px solid #FB4141;
+    border-radius: 50px;
+    height: 50px;
+    width: 50px;
+}
+.btn-4:hover{
+    background-color: #FB4141;;
+}
+.btn-5{
+     border:2px solid #1877F2;
+}
+.btn-5:hover{
+    background-color:  #1877F2;
+}
+.btn-6{
+    border: 2px solid #69C9D0;
+}
+.btn-6:hover{
+    background-color: #69C9D0;
+}
+.contact-icon img{
+    height: 30px;
+    width: 30px;
+}
+.quick-link span a{
+    color:white;
+    font-size: 1.2rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    margin-right: 10px;
+}
+.quick-link {
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap:10px;
+}
+.quick-link span a:hover{
+    text-decoration: underline;
+}
 /* Media query for extra small devices */
 @media (max-width: 575px) {}
 
