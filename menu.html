@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>locations</title>
+    <title>menu</title>
     <!-- Font Cormorant Garamond for headings -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,75 +21,624 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- Custom css link-->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="menu.css">
 </head>
 
 <body>
     <main>
         <!-- Navigation div-->
         <div id="navbar"></div>
+        <!-- Section 1 -->
+        <div class="container-fluid section-1-container">
+            <img src="/assets/img18.jpg" alt="Image 16th" style="width:100%;">
+            <div class="section-1-centered-text">MENUS</div>
+        </div>
+        <!-- Section -2 -->
+        <section class="section-2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <p>SELECT A RESTAURANT</p>
+                        <div class="dropdown">
+                            <button id="dropdownMenuButton" class="btn btn-secondary dropdown-toggle" type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                MANCHESTER
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <li><a class="dropdown-item" href="#">LONDON</a></li>
+                                <li><a class="dropdown-item" href="#">LEEDS</a></li>
+                                <li><a class="dropdown-item" href="#">BIRMINGHAM</a></li>
+                                <li><a class="dropdown-item" href="#">BRISTOL</a></li>
+                                <li><a class="dropdown-item" href="#">LIVERPOOL</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="dropdown">
+                            <p>FILTER BY:</p>
+                            <button class="" type="button">VEGAN</button>
+                            <button class="" type="button">VEGETARIAN</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <h2>MENU FILTER</h2>
+                        <div class="flex-shrink-0 p-3" style="width: 280px;">
+                            <ul class="list-unstyled ps-0">
+                                <li class="mb-1">
+                                    <h2>FOOD</h2>
+                                    <button
+                                        class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+                                        data-bs-toggle="collapse" data-bs-target="#main-menu-collapse"
+                                        aria-expanded="false">
+                                        MAIN MENU
+                                    </button>
+                                    <div class="collapse" id="main-menu-collapse" style="">
+                                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                            <li><a href="#"
+                                                    class="link-body-emphasis d-inline-flex text-decoration-none rounded">DA
+                                                    DIVIDERE</a></li>
+                                            <li><a href="#"
+                                                    class="link-body-emphasis d-inline-flex text-decoration-none rounded">ANTIPASTI</a>
+                                            </li>
+                                            <li><a href="#"
+                                                    class="link-body-emphasis d-inline-flex text-decoration-none rounded">PASTA
+                                                    & RISOTTO</a></li>
+                                            <li><a href="#"
+                                                    class="link-body-emphasis d-inline-flex text-decoration-none rounded">PIZZA
+                                                    NAPOLETANA</a></li>
+                                            <li><a href="#"
+                                                    class="link-body-emphasis d-inline-flex text-decoration-none rounded">SECONDI</a>
+                                            </li>
+                                            <li><a href="#"
+                                                    class="link-body-emphasis d-inline-flex text-decoration-none rounded">INSALATE</a>
+                                            </li>
+                                            <li><a href="#"
+                                                    class="link-body-emphasis d-inline-flex text-decoration-none rounded">CONTORNI</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="mb-1"> <button
+                                        class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+                                        data-bs-toggle="collapse" data-bs-target="#dessert-collapse"
+                                        aria-expanded="false">
+                                        DESSERT
+                                    </button>
+                                    <div class="collapse" id="dessert-collapse" style="">
+                                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                            <li><a href="#"
+                                                    class="link-body-emphasis d-inline-flex text-decoration-none rounded">DOLCI</a>
+                                            </li>
+                                            <li><a href="#"
+                                                    class="link-body-emphasis d-inline-flex text-decoration-none rounded">AMORE
+                                                    AMALFI</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="mb-1"> <button
+                                        class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+                                        data-bs-toggle="collapse" data-bs-target="#orders-collapse"
+                                        aria-expanded="false">
+                                        LUNCH MENU
+                                    </button>
+                                </li>
+                                <li class="mb-1">
+                                    <h2>DRINKS</h2>
+                                    <button
+                                        class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+                                        data-bs-toggle="collapse" data-bs-target="#wine-collapse" aria-expanded="false">
+                                        WINE LIST
+                                    </button>
+                                    <div class="collapse" id="wine-collapse" style="">
+                                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                            <li><a href="#"
+                                                    class="link-body-emphasis d-inline-flex text-decoration-none rounded">SPARKLING</a>
+                                            </li>
+                                            <li><a href="#"
+                                                    class="link-body-emphasis d-inline-flex text-decoration-none rounded">CHAMPAGNE</a>
+                                            </li>
+                                            <li><a href="#"
+                                                    class="link-body-emphasis d-inline-flex text-decoration-none rounded">WHITE
+                                                    WINE</a></li>
+                                            <li><a href="#"
+                                                    class="link-body-emphasis d-inline-flex text-decoration-none rounded">CLASSIC
+                                                    ITALIAN WHITE</a></li>
+                                            <li><a href="#"
+                                                    class="link-body-emphasis d-inline-flex text-decoration-none rounded">RED
+                                                    WINE</a></li>
+                                            <li><a href="#"
+                                                    class="link-body-emphasis d-inline-flex text-decoration-none rounded">CLASSIC
+                                                    ITALIAN RED</a></li>
+                                            <li><a href="#"
+                                                    class="link-body-emphasis d-inline-flex text-decoration-none rounded">ROSE</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="mb-1"> <button
+                                        class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+                                        data-bs-toggle="collapse" data-bs-target="#cocktails-collapse"
+                                        aria-expanded="false">
+                                        COCKTAILS
+                                    </button>
+                                    <div class="collapse" id="cocktails-collapse" style="">
+                                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                            <li><a href="#"
+                                                    class="link-body-emphasis d-inline-flex text-decoration-none rounded">APERTITIVO</a>
+                                            </li>
+                                            <li><a href="#"
+                                                    class="link-body-emphasis d-inline-flex text-decoration-none rounded">LOW
+                                                    ALCOHOL</a></li>
+                                            <li><a href="#"
+                                                    class="link-body-emphasis d-inline-flex text-decoration-none rounded">ZERO
+                                                    ALCOHOL</a></li>
+                                            <li><a href="#"
+                                                    class="link-body-emphasis d-inline-flex text-decoration-none rounded">SIGNATURE
+                                                    & CLASSICS</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="mb-1"> <button
+                                        class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+                                        data-bs-toggle="collapse" data-bs-target="#beer&cider-collapse"
+                                        aria-expanded="false">
+                                        BEER & CIDER
+                                    </button>
+                                    <div class="collapse" id="beer&cider-collapse" style="">
+                                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                            <li><a href="#"
+                                                    class="link-body-emphasis d-inline-flex text-decoration-none rounded">DRAUGHT</a>
+                                            </li>
+                                            <li><a href="#"
+                                                    class="link-body-emphasis d-inline-flex text-decoration-none rounded">BOTTLES
+                                                    & CANS</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="mb-1"> <button
+                                        class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+                                        data-bs-toggle="collapse" data-bs-target="#spirits-collapse"
+                                        aria-expanded="false">
+                                        SPIRITS
+                                    </button>
+                                    <div class="collapse" id="spirits-collapse" style="">
+                                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                            <li><a href="#"
+                                                    class="link-body-emphasis d-inline-flex text-decoration-none rounded">GIN</a>
+                                            </li>
+                                            <li><a href="#"
+                                                    class="link-body-emphasis d-inline-flex text-decoration-none rounded">VODKA</a>
+                                            </li>
+                                            <li><a href="#"
+                                                    class="link-body-emphasis d-inline-flex text-decoration-none rounded">TEQUILA
+                                                    & MEZCAL</a></li>
+                                            <li><a href="#"
+                                                    class="link-body-emphasis d-inline-flex text-decoration-none rounded">RUM</a>
+                                            </li>
+                                            <li><a href="#"
+                                                    class="link-body-emphasis d-inline-flex text-decoration-none rounded">WHISKEY</a>
+                                            </li>
+                                            <li><a href="#"
+                                                    class="link-body-emphasis d-inline-flex text-decoration-none rounded">COGNAC</a>
+                                            </li>
+                                            <li><a href="#"
+                                                    class="link-body-emphasis d-inline-flex text-decoration-none rounded">AMARI</a>
+                                            </li>
+                                            <li><a href="#"
+                                                    class="link-body-emphasis d-inline-flex text-decoration-none rounded">LIQUEURS</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="mb-1"> <button
+                                        class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+                                        data-bs-toggle="collapse" data-bs-target="#minerals-collapse"
+                                        aria-expanded="false">
+                                        MINERALS AND JUICES
+                                    </button>
+                                    <div class="collapse" id="minerals-collapse" style="">
+                                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                            <li><a href="#"
+                                                    class="link-body-emphasis d-inline-flex text-decoration-none rounded">FRUIT
+                                                    SODAS BY SAN</a></li>
+                                            <li><a href="#"
+                                                    class="link-body-emphasis d-inline-flex text-decoration-none rounded">PELLEGRINO</a>
+                                            </li>
+                                            <li><a href="#"
+                                                    class="link-body-emphasis d-inline-flex text-decoration-none rounded">JUICES</a>
+                                            </li>
+                                            <li><a href="#"
+                                                    class="link-body-emphasis d-inline-flex text-decoration-none rounded">FIVER
+                                                    TREE RANGE</a></li>
+                                            <li><a href="#"
+                                                    class="link-body-emphasis d-inline-flex text-decoration-none rounded">WATER</a>
+                                            </li>
+                                            <li><a href="#"
+                                                    class="link-body-emphasis d-inline-flex text-decoration-none rounded">SOFT
+                                                    DRINKS</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="mb-1"> <button
+                                        class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+                                        data-bs-toggle="collapse" data-bs-target="#coffee-collapse"
+                                        aria-expanded="false">
+                                        COFFEE & TEA
+                                    </button>
+                                    <div class="collapse" id="coffee-collapse" style="">
+                                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                            <li><a href="#"
+                                                    class="link-body-emphasis d-inline-flex text-decoration-none rounded">COFFEE</a>
+                                            </li>
+                                            <li><a href="#"
+                                                    class="link-body-emphasis d-inline-flex text-decoration-none rounded">TEA</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="mb-1">
+                                    <h2>KIDS</h2>
+                                    <button
+                                        class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+                                        data-bs-toggle="collapse" data-bs-target="#kids-main-collapse"
+                                        aria-expanded="false">
+                                        MAIN
+                                    </button>
+                                    <div class="collapse" id="kids-main-collapse" style="">
+                                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                            <li><a href="#"
+                                                    class="link-body-emphasis d-inline-flex text-decoration-none rounded">BAMBINI</a>
+                                            </li>
+                                            <li><a href="#"
+                                                    class="link-body-emphasis d-inline-flex text-decoration-none rounded">PASTA</a>
+                                            </li>
+                                            <li><a href="#"
+                                                    class="link-body-emphasis d-inline-flex text-decoration-none rounded">PIZZA</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="mb-1">
+                                    <button
+                                        class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+                                        data-bs-toggle="collapse" data-bs-target="#kids-drinks-collapse"
+                                        aria-expanded="false">
+                                        DRINKS
+                                    </button>
+                                    <div class="collapse" id="kids-drinks-collapse" style="">
+                                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                            <li><a href="#"
+                                                    class="link-body-emphasis d-inline-flex text-decoration-none rounded">CAPSUM</a>
+                                            </li>
+                                            <li><a href="#"
+                                                    class="link-body-emphasis d-inline-flex text-decoration-none rounded">ORANGE
+                                                    JUICE</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <h2 class="pb-2 border-bottom">DA DIVIDERE</h2>
+                        <div class="row g-4 py-5 row-cols-1 row-cols-lg-2">
+                            <div class="feature col">
+                                <h2 class="fs-2">Olive (6.00)</h2>
+                                <p>vg</p>
+                                <p>Gaeta & Nocellara olives, chilli, garlic & oregano</p> <br>
+
+                                <h2 class="fs-2">Pane</h2>
+                                <p>v</p>
+                                <p>Hand stretched garlic bread</p>
+                                <h2 class="fs-2">Focaccia - Style With Rosemary(7.00)</h2>
+                                <h2 class="fs-2">Tomato & Basil (8.00)</h2>
+                                <h2 class="fs-2">Mozzarella & Smoked Provola (9.00)</h2> <br>
+
+                                <h2 class="fs-2">Tagliere Misto</h2>
+                                <p>All the good things in life... served with a selection of freshly
+                                    baked bread: Prosciutto di Parma,
+                                    bresaola, mortadella, salame Napoli, mozzarella di bufala, ricotta di bufala,
+                                    Pecorino Romano</p>
+                                <h2 class="fs-2">Small (14.50)</h2>
+                                <h2 class="fs-2">Large (27.00)</h2>
+
+                            </div>
+                            <div class="feature col">
+                                <h2 class="fs-2">Focaccia (6.00)</h2>
+                                <p>vg</p>
+                                <p>Freshly baked focaccia, extra virgin olive oil & Maldon sea salt</p> <br>
+
+                                <h2 class="fs-2">Scarpetta (11.00)</h2>
+                                <p>vg</p>
+                                <p>Sweet tomato & garlic sauce, served with freshly baked bread. Using the finest
+                                    tomatoes grown
+                                    in the rich volcanic soil of San Marzano, the art of 'scarpetta' is to mop up the
+                                    sauce until the plate is clean</p> <br>
+
+
+                                <h2 class="fs-2">Fritto Misto (29.00)</h2>
+                                <p>Classic Seafood Appetiser, Lightly Fried & Served To Share. Calamari, wild red
+                                    prawns, red mullet, king prawns & whitebait with confit garlic mayonnaise, chilli &
+                                    lemon mayonnaise</p>
+
+                            </div>
+                        </div>
+
+                        <!-- ANTIPASTI  -->
+                        <h2 class="pb-2 border-bottom">ANTIPASTI</h2>
+                        <div class="row g-4 py-5 row-cols-1 row-cols-lg-2">
+                            <div class="feature col">
+                                <h2 class="fs-2">Bruschetta Pomodoro (9.00)</h2>
+                                <p>vg</p>
+                                <p>Toasted sourdough, vine-ripened tomatoes, garlic, oregano & fresh basil</p> <br>
+
+                                <h2 class="fs-2">Bruschetta Gamberoni (10.20)</h2>
+                                <p>Toasted sourdough, pan-fried king prawns & chilli mayonnaise</p> <br>
+
+                                
+                                <h2 class="fs-2">Arancini (10.00)</h2>
+                                <p>v</p>
+                                 <p>Crispy truffle risotto balls, smoked provola & Italian cheese sauce</p> <br>
+
+                                <h2 class="fs-2">Caprese Burrata (12.00)</h2>
+                                <p>v</p>
+                                 <p>Crispy truffle risotto balls, smoked provola & Italian cheese sauce</p> <br>
+                              
+
+                            </div>
+                            <div class="feature col">
+                                <h2 class="fs-2">Calamari (11.00)</h2>
+                                <p>Courgette, red pepper & confit garlic aioli</p><br>
+
+                                <h2 class="fs-2">Carpaccio (15.00)</h2>
+                                <p>Thinly sliced raw beef, classic Italian dressing, rocket, crispy capers & Pecorino Romano</p><br>
+
+                                <h2 class="fs-2">Capesante (16.00)</h2>
+                                <p>Pan-seared king scallops, confit garlic, red chilli & parsley butter</p><br>
+
+                                <h2 class="fs-2">Frittatina Cacio E Pepe (11.00)</h2>
+                                <p>Deep fried Neapolitan mac & cheese, smoked provola, Pecorino Romano, black pepper</p><br>
+                                
+
+                            </div>
+                        </div>
+                        <!-- Pasta & Risotto -->
+                        <h2 class="pb-2 border-bottom">Pasta & Risotto</h2>
+                        <div class="row g-4 py-5 row-cols-1 row-cols-lg-2">
+                            <div class="feature col">
+                                <h2 class="fs-2">Scialatielli Frutti Di Mare (22.00)</h2>
+                                <p>Fresh pasta ribbons with mussels, clams, calamari, tomato, garlic & chilli</p> <br>
+
+                                <h2 class="fs-2">Spaghetti Carbonara (17.00)</h2>
+                                <p>Free range eggs, guanciale, Pecorino Romano, cream & flat leaf parsley</p> <br>
+
+                                <h2 class="fs-2">Fettuccine Bolognese (19.00)</h2>
+                                <p>Slow-cooked beef ragù, tomato, matured Italian cheese & basil</p> <br>
+
+                                <h2 class="fs-2">Lasagne (16.00)</h2>
+                                <p>Slow-cooked beef ragù, tomato, matured Italian cheese & basil</p> <br>
+
+                                <h2 class="fs-2">Risotto Gamberoni (21.00)</h2>
+                                <p>Creamy Arborio rice, wild red prawn, king prawns, lemon, samphire & flat leaf parsley</p> <br>
+
+                            </div>
+                            <div class="feature col">
+                                <h2 class="fs-2">Linguine Gamberoni (20.00)</h2>
+                                <p>Wild red prawn, king prawns, vine-ripened tomatoes, chilli & garlic</p><br>
+
+                                <h2 class="fs-2">Fettuccine Ortolana (15.00)</h2>
+                                <p>vg</p>
+                                <p>Mushroom & vegetable ragu, tomato & flat leaf parsley</p><br>
+
+                                <h2 class="fs-2">Rigatoni Arrabbiata (15.00)</h2>
+                                <p>vg</p>
+                                <p>Slow-cooked tomato & chilli sauce, garlic & flat leaf parsley</p><br>
+
+                                <h2 class="fs-2">Gnocchi Al Ragu (16.00)</h2>
+                                <p>Neapolitan sausage ragu, tomato, smoked provola & fresh basil</p><br>
+
+
+                            </div>
+                        </div>
+                        <!-- Pizza Napoletana -->
+                        <h2 class="pb-2 border-bottom">Pizza Napoletana</h2>
+                        <div class="row g-4 py-5 row-cols-1 row-cols-lg-2">
+                            <div class="feature col">
+                                <h2 class="fs-2">Diavola (22.00)</h2>
+                                <p>San Marzano tomato, spianata Calabrese spicy salami, 'nduja, mozzarella, pickled hot peppers, fresh chillies & flat leaf parsley</p> <br>
+
+                                <h2 class="fs-2">Capricciosa (17.00)</h2>
+                                <p>San Marzano tomato, chestnut mushrooms, Italian roast ham, mozzarella & crispy Leccino olives</p> <br>
+
+                                <h2 class="fs-2">Calzone (19.00)</h2>
+                                <p>Folded pizza stuffed with ricotta, San Marzano tomato, mozzarella & salami Napoli</p> <br>
+
+                            </div>
+                            <div class="feature col">
+                                <h2 class="fs-2">Prosciutto Di Parma (20.00)</h2>
+                                <p>White base, DOP Parma ham, Italian cheese & truffle cream, rocket & Pecorino Romano</p><br>
+
+                                <h2 class="fs-2">Margherita (15.00)</h2>
+                                <p>San Marzano tomato, mozzarella, tomato & fresh basil</p>
+                            </div>
+                        </div>
+                        <!-- Secondi -->
+                        <h2 class="pb-2 border-bottom">SECONDI </h2>
+                        <div class="row g-4 py-5 row-cols-1 row-cols-lg-2">
+                            <div class="feature col">
+                                <h2 class="fs-2">Tonno Grigliato (22.00)</h2>
+                                <p>Grilled yellow fin tuna, Neapolitan peperonata, olives, capers & pine nuts</p> <br>
+
+                                <h2 class="fs-2">Spiedini Di Pesce (17.00)</h2>
+                                <p>Grilled seafood skewers; line caught tuna, king scallops, king prawns, with courgette, basil, chilli & lemon</p> <br>
+
+                                <h2 class="fs-2">Polpette (16.00)</h2>
+                                <p>Folded pizza stuffed with ricotta, San Marzano tomato, mozzarella & salami Napoli</p> <br>
+
+                                <h2 class="fs-2">Pollo Parmigiana (18.00)</h2>
+                                <p>Crispy fried breaded chicken, mozzarella, fresh basil & tomato spaghetti</p> <br>
+
+                                 <h2 class="fs-2">Tagliata Di Manzo (13.00)</h2>
+                                <p>Grilled 225g Sirloin steak, semi dried tomato, rocket, aged balsamic, Parmigiano Reggiano</p> <br>
+
+                            </div>
+                            <div class="feature col">
+                                <h2 class="fs-2">Branzino (20.00)</h2>
+                                <p>Pan-fried sea bass, tomato, black olive, lemon & basil</p><br>
+                                
+                                <h2 class="fs-2">Merluzzo (15.00)</h2>
+                                <p>Atlantic cod fillet, spicy Calabrian sausage & tenderstem broccoli Can be served without pork</p>
+
+                                <h2 class="fs-2">Parmigiana Melanzane (15.00)</h2>
+                                <p>v</p>
+                                <p>Fried layers of aubergine, tomato, smoked provola, mature Italian cheese & basil pesto</p>
+
+                                <h2 class="fs-2">Pollo Alla Griglia (15.00)</h2>
+                                <p>Grilled chicken breast, Amalfi lemon, rosemary, garlic, rocket</p>
+
+                                <h2 class="fs-2">Fillet 225G (15.00)</h2>
+                                <p>British native breed, served with fries and peppercorn sauce</p>
+
+                            </div>
+                        </div>
+                        <!-- Secondi -->
+                        <h2 class="pb-2 border-bottom">INSALATE</h2>
+                        <div class="row g-4 py-5 row-cols-1 row-cols-lg-2">
+                            <div class="feature col">
+                                <h2 class="fs-2">Caesar (22.00)</h2>
+                                <p>Chargrilled chicken, gem lettuce, Parmesan, pancetta, anchovies & garlic sourdough croutons *A Lighter Caesar Dressing Is Available On Request</p> <br>
+
+                                <h2 class="fs-2">Burrata (17.00)</h2>
+                                <P>v</P>
+                                <p>Grilled seafood skewers; line caught tuna, king scallops, king prawns, with courgette, basil, chilli & lemon</p> <br>
+
+                                <h2 class="fs-2">Barbabietola (16.00)</h2>
+                                <P>v</P>
+                                <p>Salt baked heritage beetroot, ricotta, Italian leaves, chopped roasted hazelnut & Italian cheese dressing</p> <br>
+
+                            </div>
+                            <div class="feature col">
+                                <h2 class="fs-2">Tricolore (20.00)</h2>
+                                 <p>v</p>
+                                <p>Buffalo mozzarella, heritage mixed variety tomatoes, avocado, basil pesto & fresh basil</p><br>
+                                
+                                <h2 class="fs-2">Prosciutto (15.00)</h2>
+                                <p>Parma ham, buffalo mozzarella, Parmesan, Italian leaves, spinach, semi-dried tomatoes, honey mustard dressing & apple & balsamic glaze</p> <br>
+
+                                <h2 class="fs-2">Arancia (15.00)</h2>
+                                <p>vg</p>
+                                <p>Orange, fennel, Italian leaves, citrus dressing, black olive crumb</p>
+
+                            </div>
+                        </div>
+                        <!-- Contorni -->
+                        <h2 class="pb-2 border-bottom">CONTORNI</h2>
+                        <div class="row g-4 py-5 row-cols-1 row-cols-lg-2">
+                            <div class="feature col">
+                                <h2 class="fs-2">Patatine Fritte (5.00)</h2>
+                                <P>V</P>
+                                <p>Potato fries</p> <br>
+                                <h2>Add truffle & Pecorino (1.75)</h2>
+
+                                <h2 class="fs-2">Zucchine Fritte (5.00)</h2>
+                                <P>V</P>
+                                <p>Courgette fries</p> <br>
+
+                                <h2 class="fs-2">Insalata Mista (5.00)</h2>
+                                <P>vg</P>
+                                <p>Mixed leaves, tomatoes, cucumber & vinaigrette</p> <br>
+                            </div>
+                            <div class="feature col">
+                                <h2 class="fs-2">Patate Al Forno (5.00)</h2>
+                                 <p>Roast potatoes & onions, garlic, rosemary</p> <br>
+
+                                <h2 class="fs-2">Broccoli (5.00)</h2>
+                                <p>vg</p>
+                                <p>Tenderstem, chilli & garlic</p> <br>
+
+                                <h2 class="fs-2">Spinaci (5.00)</h2>
+                                <p>vg</p>
+                                <p>Garlic baby spinach</p>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
     </main>
     <!-- Footer -->
     <div style="background-color:#071023;">
         <div class="container custom-footer">
             <footer>
                 <div class="row">
-                      <div class="col-md-4 mb-3">
-                    <a class="navbar-brand footer-brand" href="index.html">
-                        <h1><span>EMILIA'S </span><span class="logo-right">della roma</span></h1>
-                        <p class="subtitle2">La Tavola & Enoteca</p>
-                    </a>
-                    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                        <p class="footer-txt">© ALL RIGHTS RESERVED BY EMILIA'S 2025</p>
+                    <div class="col-md-4 mb-3">
+                        <a class="navbar-brand footer-brand" href="index.html">
+                            <h1><span>EMILIA'S </span><span class="logo-right">della roma</span></h1>
+                            <p class="subtitle2">La Tavola & Enoteca</p>
+                        </a>
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                            <p class="footer-txt">© ALL RIGHTS RESERVED BY EMILIA'S 2025</p>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-4 mb-3">
-                    <h2 style="color:white;">DOWNLOAD OUR APP</h2>
-                    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                        <button type="button" class="btn-3 btn-lg px-4 me-md-2"><svg xmlns="http://www.w3.org/2000/svg"
-                                width="16" height="16" fill="currentColor" class="bi bi-apple mb-1" viewBox="0 0 16 16">
-                                <path
-                                    d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43Zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282Z" />
-                                <path
-                                    d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43Zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282Z" />
-                            </svg> Download</button>
-                        <button type="button" class="btn-3 btn-lg px-4"><svg xmlns="http://www.w3.org/2000/svg"
-                                width="16" height="16" fill="currentColor" class="bi bi-google-play mb-1"
-                                viewBox="0 0 16 16">
-                                <path
-                                    d="M14.222 9.374c1.037-.61 1.037-2.137 0-2.748L11.528 5.04 8.32 8l3.207 2.96 2.694-1.586Zm-3.595 2.116L7.583 8.68 1.03 14.73c.201 1.029 1.36 1.61 2.303 1.055l7.294-4.295ZM1 13.396V2.603L6.846 8 1 13.396ZM1.03 1.27l6.553 6.05 3.044-2.81L3.333.215C2.39-.341 1.231.24 1.03 1.27Z" />
-                            </svg> Download</button>
-                    </div>
-                    <h2 class="mt-5" style="color:white;">FOLLOW US</h2>
-                    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                      <a href="" class="contact-icon btn-4  d-flex align-items-center justify-content-center"><img
+                    <div class="col-md-4 mb-3">
+                        <h2 style="color:white;">DOWNLOAD OUR APP</h2>
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                            <button type="button" class="btn-3 btn-lg px-4 me-md-2"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-apple mb-1" viewBox="0 0 16 16">
+                                    <path
+                                        d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43Zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282Z" />
+                                    <path
+                                        d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43Zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282Z" />
+                                </svg> Download</button>
+                            <button type="button" class="btn-3 btn-lg px-4"><svg xmlns="http://www.w3.org/2000/svg"
+                                    width="16" height="16" fill="currentColor" class="bi bi-google-play mb-1"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M14.222 9.374c1.037-.61 1.037-2.137 0-2.748L11.528 5.04 8.32 8l3.207 2.96 2.694-1.586Zm-3.595 2.116L7.583 8.68 1.03 14.73c.201 1.029 1.36 1.61 2.303 1.055l7.294-4.295ZM1 13.396V2.603L6.846 8 1 13.396ZM1.03 1.27l6.553 6.05 3.044-2.81L3.333.215C2.39-.341 1.231.24 1.03 1.27Z" />
+                                </svg> Download</button>
+                        </div>
+                        <h2 class="mt-5" style="color:white;">FOLLOW US</h2>
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                            <a href="" class="contact-icon btn-4  d-flex align-items-center justify-content-center"><img
                                     src="assets/instagram.png" alt="Instagram icon"></a>
-                        <a href="" class="contact-icon btn-5  d-flex align-items-center justify-content-center"><img src="assets/fb.png"
-                                    alt="Instagram icon"></a>
-                       <a href="" class="contact-icon btn-6  d-flex align-items-center justify-content-center"><img
+                            <a href="" class="contact-icon btn-5  d-flex align-items-center justify-content-center"><img
+                                    src="assets/fb.png" alt="Instagram icon"></a>
+                            <a href="" class="contact-icon btn-6  d-flex align-items-center justify-content-center"><img
                                     src="assets/tiktok.png" alt="Instagram icon"></a>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-4 mb-3">
-                    <h2 style="color:white;">QUICK LINKS</h2> <br>
-                    <div class="quick-link">
-                        <span><a href="index.html">HOME</a></span>
-                        <span><a href="locations.html">LOCATIONS</a></span>
-                        <span><a href="menu.html">MENU</a></span>
-                        <span><a href="gallery.html">GALLERY</a></span>
-                        <span><a href="contact.html">CONTACT US</a></span>
-                        <span><a href="book-a-table.html">BOOK A TABLE</a></span>
+                    <div class="col-md-4 mb-3">
+                        <h2 style="color:white;">QUICK LINKS</h2> <br>
+                        <div class="quick-link">
+                            <span><a href="index.html">HOME</a></span>
+                            <span><a href="locations.html">LOCATIONS</a></span>
+                            <span><a href="menu.html">MENU</a></span>
+                            <span><a href="gallery.html">GALLERY</a></span>
+                            <span><a href="contact.html">CONTACT US</a></span>
+                            <span><a href="book-a-table.html">BOOK A TABLE</a></span>
+                        </div>
                     </div>
-                </div>
                 </div>
             </footer>
         </div>
     </div>
     <!-- Bootstrap JS link -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+        integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+        crossorigin="anonymous"></script>
+
     <!-- JS custom link-->
-   <script src="index.js"></script>
+    <script src="index.js"></script>
+    <script src="menu.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,22 @@
+/* Section 1 */
+.section-1-container img{
+  height: 60vh;
+  object-fit:cover;/* ensures image doesn't distort, crops if needed */
+  display: block;    /* removes extra spacing */
+}
+.section-1-container{
+   position: relative;
+   text-align: left;
+   color: rgb(252, 252, 252);
+   margin:0;
+   padding:0;
+}
+.section-1-centered-text {
+  position: absolute;
+  top: 70%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  font-size: 10rem;
+  font-weight: 900;
+  font-family: "Cormorant Garamond", serif;
+}

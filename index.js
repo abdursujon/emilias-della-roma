@@ -209,7 +209,8 @@ soundBtn.addEventListener("click", () => {
         const input = document.getElementById('location-input');
         const suggestions = document.getElementById('suggestions');
         const resultDiv = document.getElementById('result');
-        input.addEventListener('input', async function () {
+        if (input && suggestions && resultDiv) {
+            input.addEventListener('input', async function () {
             const query = input.value.trim();
             suggestions.innerHTML = '';
 
@@ -283,4 +284,6 @@ soundBtn.addEventListener("click", () => {
                 resultDiv.innerHTML = `<p>No restaurants found for "${userInput}"</p>`;
             }
         });
+        }
+        
 

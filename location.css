@@ -1,0 +1,121 @@
+/* Common css */
+.section-3, .section-4{
+  background-color:#F2EDD1 ;
+  padding-top:80px;
+}
+/* Section 1 */
+.custom-container img{
+  height: 60vh;
+  object-fit:cover;/* ensures image doesn't distort, crops if needed */
+  display: block;    /* removes extra spacing */
+}
+.custom-container{
+    position: relative;
+   text-align: left;
+   color: rgb(252, 252, 252);
+   margin:0;
+   padding:0;
+}
+.centered-text {
+  position: absolute;
+  top: 70%;
+  left: 37%;
+  transform: translate(-50%, -50%);
+  font-size: 10rem;
+  font-weight: 900;
+  font-family: "Cormorant Garamond", serif;
+}
+/* Section 2 */
+#section-2{
+    background-color: #5A827E;
+}
+#suggestions-2{
+    max-height: 150px;
+    overflow-y: auto;
+    position: absolute;
+    width: 600px;
+    background-color:white!important;
+    z-index: 9999;
+    margin-top: 0;
+    display:none;
+    border: 1px solid grey;
+    margin-top: 10px;
+}
+.restaurant{
+  margin-right: 30px;
+}
+.custom-heading-one{
+  color:black !important;
+  font-family: "Cormorant Garamond", serif;;
+}
+.rest-btn{
+  background-color: #FB4141;
+}
+.rest-btn:hover{
+  background-color: #69C9D0;
+}
+.rest-btn , .section-4-btn{
+    margin-right: 50px;
+    background-color: #FB4141;
+    color: #fff;
+    border: none;
+    padding: 10px 10px;
+     border-radius: 25px;
+    position: relative;
+    display: inline-block;
+    background-size: 100% 100%;
+    background:linear-gradient(90deg, #1095c1 50%, #FB4141 0) var(--_p, 100%)/200% no-repeat;
+    -webkit-background-clip: background;
+    background-clip: background;
+    transition: .4s;
+    font-size: 1.6rem;
+    margin-bottom: 50px;
+}
+.rest-btn:hover, .loc-view-menu-btn:hover{
+    transform: none;
+    text-decoration: none;
+    --_p: 0%;
+}
+/* section 4 */
+.section-4{
+  padding-bottom: 80px;
+}
+.section-4-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* ensures image doesn't distort, crops if needed */
+  display: block;    /* removes extra spacing */
+}
+.section-4-col{
+  display: flex;
+    /* justify-content: space-between; */
+    align-items: left;
+    flex-direction: column;
+    padding-top:20%;
+}
+.section-4-div{
+  height:content !important;
+   background-color:#0ABAB5 ; 
+   padding:80px; margin-top: -20%; 
+   margin-left: -100px; 
+}
+.section-4-btn{
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid white;
+    padding: 15px 25px;
+    font-size: 2rem;
+    background:linear-gradient(90deg, transparent) var(--_p, 100%)/200% no-repeat;
+ 
+}
+.section-4-btn:hover{
+    transform: none;
+    text-decoration: none;
+    --_p: 0%;
+    background:linear-gradient(90deg, white 50%, #0ABAB5  0) var(--_p, 100%)/200% no-repeat;
+    color:#0ABAB5;
+}
+.section-4-heading , .section-4-txt{
+  color:white;
+  margin-bottom:20px;
+}
