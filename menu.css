@@ -20,3 +20,14 @@
   font-weight: 900;
   font-family: "Cormorant Garamond", serif;
 }
+/* section 2 */
+.sticky-sidebar {
+  position: sticky;
+  top: 20px; /* adjust for navbar/header height */
+  height: calc(100vh - 40px); /* full viewport height minus margins */
+  overflow-y: auto; /* make the sidebar scrollable if it's too tall */
+}
+#main-food-menu {
+  max-height: 100vh; 
+  overflow-y: auto;
+}
