@@ -11,6 +11,10 @@
    margin:0;
    padding:0;
 }
+h2[id] {
+  scroll-margin-top: 100px; /* adjust based on navbar height */
+}
+
 .section-1-centered-text {
   position: absolute;
   top: 70%;
