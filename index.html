@@ -24,10 +24,38 @@
 </head>
 
 <body>
+    
     <!-- Navigation Bar -->
-    <div id="navbar"></div>
+    <!-- <div id="navbar"></div> -->
+     <!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg bg-body-tertiary custom-navbar">
+    <div class="container-fluid">
+        <a class="navbar-brand custom-brand" href="index.html">
+            <h1><span class="logo-left">EMILIA'S </span><span class="logo-right">della roma</span></h1>
+            <p class="subtitle">La Tavola & Enoteca</p>
+        </a>
+         <button class="navbar-toggler custom-navbar-toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <img class="menu-icon" src="assets/hamburger-menu.png" alt="menu-icon">
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-auto">
+                <a class="nav-link" href="index.html">HOME</a>
+                <a class="nav-link" href="locations.html">LOCATIONS</a>
+                <a class="nav-link" href="menu.html">MENU</a>
+                <a class="nav-link" href="gallery.html">GALLERY</a>
+                <a class="nav-link" href="contact.html">CONTACT</a>
+                <!-- <button onclick="myFunction()">BOOK A TABLE</button>
+                 <div id="book-a-table-container" style="position: absolute; background-color: black;"></div>
+                <a href="" class="nav-link" id="book-a-table-link"><span>BOOK A TABLE</span></a> -->
+                
+                <button class="nav-link" id="book-a-table-btn" onclick="myFunction()">BOOK A TABLE</button>
+                
+</nav>
     <main>
         <!-- Section 1 -->
+        <div id="book-a-table"></div>
         <section id="section-1">
             <div class="container-fluid video-container">
                 <video id="bg-video" autoplay loop muted playsinline>
@@ -261,63 +289,68 @@
         <div class="container custom-footer">
             <footer>
                 <div class="row">
-                      <div class="col-md-4 mb-3">
-                    <a class="navbar-brand footer-brand" href="index.html">
-                        <h1><span>EMILIA'S </span><span class="logo-right">della roma</span></h1>
-                        <p class="subtitle2">La Tavola & Enoteca</p>
-                    </a>
-                    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                        <p class="footer-txt">© ALL RIGHTS RESERVED BY EMILIA'S 2025</p>
+                    <div class="col-md-4 mb-3">
+                        <a class="navbar-brand footer-brand" href="index.html">
+                            <h1><span>EMILIA'S </span><span class="logo-right">della roma</span></h1>
+                            <p class="subtitle2">La Tavola & Enoteca</p>
+                        </a>
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                            <p class="footer-txt">© ALL RIGHTS RESERVED BY EMILIA'S 2025</p>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-4 mb-3">
-                    <h2 style="color:white;">DOWNLOAD OUR APP</h2>
-                    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                        <button type="button" class="btn-3 btn-lg px-4 me-md-2"><svg xmlns="http://www.w3.org/2000/svg"
-                                width="16" height="16" fill="currentColor" class="bi bi-apple mb-1" viewBox="0 0 16 16">
-                                <path
-                                    d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43Zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282Z" />
-                                <path
-                                    d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43Zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282Z" />
-                            </svg> Download</button>
-                        <button type="button" class="btn-3 btn-lg px-4"><svg xmlns="http://www.w3.org/2000/svg"
-                                width="16" height="16" fill="currentColor" class="bi bi-google-play mb-1"
-                                viewBox="0 0 16 16">
-                                <path
-                                    d="M14.222 9.374c1.037-.61 1.037-2.137 0-2.748L11.528 5.04 8.32 8l3.207 2.96 2.694-1.586Zm-3.595 2.116L7.583 8.68 1.03 14.73c.201 1.029 1.36 1.61 2.303 1.055l7.294-4.295ZM1 13.396V2.603L6.846 8 1 13.396ZM1.03 1.27l6.553 6.05 3.044-2.81L3.333.215C2.39-.341 1.231.24 1.03 1.27Z" />
-                            </svg> Download</button>
-                    </div>
-                    <h2 class="mt-5" style="color:white;">FOLLOW US</h2>
-                    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                      <a href="" class="contact-icon btn-4  d-flex align-items-center justify-content-center"><img
+                    <div class="col-md-4 mb-3">
+                        <h2 style="color:white;">DOWNLOAD OUR APP</h2>
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                            <button type="button" class="btn-3 btn-lg px-4 me-md-2"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-apple mb-1" viewBox="0 0 16 16">
+                                    <path
+                                        d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43Zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282Z" />
+                                    <path
+                                        d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43Zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282Z" />
+                                </svg> Download</button>
+                            <button type="button" class="btn-3 btn-lg px-4"><svg xmlns="http://www.w3.org/2000/svg"
+                                    width="16" height="16" fill="currentColor" class="bi bi-google-play mb-1"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M14.222 9.374c1.037-.61 1.037-2.137 0-2.748L11.528 5.04 8.32 8l3.207 2.96 2.694-1.586Zm-3.595 2.116L7.583 8.68 1.03 14.73c.201 1.029 1.36 1.61 2.303 1.055l7.294-4.295ZM1 13.396V2.603L6.846 8 1 13.396ZM1.03 1.27l6.553 6.05 3.044-2.81L3.333.215C2.39-.341 1.231.24 1.03 1.27Z" />
+                                </svg> Download</button>
+                        </div>
+                        <h2 class="mt-5" style="color:white;">FOLLOW US</h2>
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                            <a href="" class="contact-icon btn-4  d-flex align-items-center justify-content-center"><img
                                     src="assets/instagram.png" alt="Instagram icon"></a>
-                        <a href="" class="contact-icon btn-5  d-flex align-items-center justify-content-center"><img src="assets/fb.png"
-                                    alt="Instagram icon"></a>
-                       <a href="" class="contact-icon btn-6  d-flex align-items-center justify-content-center"><img
+                            <a href="" class="contact-icon btn-5  d-flex align-items-center justify-content-center"><img
+                                    src="assets/fb.png" alt="Instagram icon"></a>
+                            <a href="" class="contact-icon btn-6  d-flex align-items-center justify-content-center"><img
                                     src="assets/tiktok.png" alt="Instagram icon"></a>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-4 mb-3">
-                    <h2 style="color:white;">QUICK LINKS</h2> <br>
-                    <div class="quick-link">
-                        <span><a href="index.html">HOME</a></span>
-                        <span><a href="locations.html">LOCATIONS</a></span>
-                        <span><a href="menu.html">MENU</a></span>
-                        <span><a href="gallery.html">GALLERY</a></span>
-                        <span><a href="contact.html">CONTACT US</a></span>
-                        <span><a href="book-a-table.html">BOOK A TABLE</a></span>
+                    <div class="col-md-4 mb-3">
+                        <h2 style="color:white;">QUICK LINKS</h2> <br>
+                        <div class="quick-link">
+                            <span><a href="index.html">HOME</a></span>
+                            <span><a href="locations.html">LOCATIONS</a></span>
+                            <span><a href="menu.html">MENU</a></span>
+                            <span><a href="gallery.html">GALLERY</a></span>
+                            <span><a href="contact.html">CONTACT US</a></span>
+                            <span><a href="book-a-table.html">BOOK A TABLE</a></span>
+                        </div>
                     </div>
-                </div>
                 </div>
             </footer>
         </div>
     </div>
     <!-- Bootstrap JS link -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+        integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+        crossorigin="anonymous"></script>
     <!-- JS custom link-->
     <script src="index.js"></script>
+    <script src="booking.js"></script>
 </body>
 
 </html>
