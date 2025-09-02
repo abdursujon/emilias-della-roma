@@ -298,6 +298,10 @@ function myFunction() {
  document.getElementById("book-a-table-btn").addEventListener("click", function(){
     document.getElementById("book-a-table").innerHTML=`
             <div class="container">
+            <a class="navbar-brand custom-brand" href="index.html">
+            <h1><span class="logo-left">EMILIA'S </span><span class="logo-right">della roma</span></h1>
+            <p class="subtitle">La Tavola & Enoteca</p>
+            </a>
             <button class="nav-link" id="book-a-table-btn" onclick="myFunction()"><img src="./assets/closing-btn.png" alt="close menu"></button>
                 <div class="row">
                     <div class="col-sm-12">
