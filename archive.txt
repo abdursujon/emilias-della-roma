@@ -1,0 +1,325 @@
+<!--  HMLT5 for later improvement 
+<div class="col-sm-12 col-md-6">
+                <h2>Book A Table For 1-12 Guests</h2>
+                <p>You need to enquire for bookings of 12+ people. Please fill out the form below…</p>
+                <p>VENUE</p>
+                <!-- Venue lists -->
+                <div class="dropdown" style="width: 100%;">
+                    <button id="choose-venue" class="btn btn-secondary dropdown-toggle" type="button"
+                        data-bs-toggle="dropdown" aria-expanded="false" style="width: 100%;">
+                        SELECT VENUE
+                    </button>
+                    <ul class="dropdown-menu" id="dropdown" aria-labelledby="dropdownMenuButton">
+                        <li><a class="venue" href="#">EMILIA'S - LONDON</a></li>
+                        <li><a class="venue" href="#">EMILIA'S - LEEDS</a></li>
+                        <li><a class="venue" href="#">EMILIA'S - BIRMINGHAM</a></li>
+                        <li><a class="venue" href="#">EMILIA'S - BRISTOL</a></li>
+                        <li><a class="venue" href="#">EMILIA'S - LIVERPOOL</a></li>
+                        <li><a class="venue" href="#">EMILIA'S - MANCHESTER</a></li>
+                    </ul>
+                </div>
+                <!-- Number of people -->
+                <p>NUMBER OF PEOPLE</p>
+                <div class="dropdown" style="width: 100%;">
+                    <button id="choose-guests-numbers" class="btn btn-secondary dropdown-toggle" type="button"
+                        data-bs-toggle="dropdown" aria-expanded="false" style="width: 100%;">
+                        SELECT GUESTS NUMBERS
+                    </button>
+                    <ul class="dropdown-menu" id="dropdown" aria-labelledby="dropdownMenuButton">
+                        <li><a class="guests" href="#">13 GUESTS</a></li>
+                        <li><a class="guests" href="#">14 GUESTS</a></li>
+                        <li><a class="guests" href="#">15 GUESTS</a></li>
+                        <li><a class="guests" href="#">16 GUESTS</a></li>
+                        <li><a class="guests" href="#">17 GUESTS</a></li>
+                        <li><a class="guests" href="#">18 GUESTS</a></li>
+                        <li><a class="guests" href="#">19 GUESTS</a></li>
+                        <li><a class="guests" href="#">20 GUESTS</a></li>
+                        <li><a class="guests" href="#">21 GUESTS</a></li>
+                        <li><a class="guests" href="#">22 GUESTS</a></li>
+                        <li><a class="guests" href="#">23 GUESTS</a></li>
+                        <li><a class="guests" href="#">24 GUESTS</a></li>
+                        <li><a class="guests" href="#">25 GUESTS</a></li>
+                        <li><a class="guests" href="#">26 GUESTS</a></li>
+                        <li><a class="guests" href="#">27 GUESTS</a></li>
+                        <li><a class="guests" href="#">28 GUESTS</a></li>
+                        <li><a class="guests" href="#">29 GUESTS</a></li>
+                        <li><a class="guests" href="#">30 GUESTS</a></li>
+                        <li><a class="guests" href="#">31 GUESTS</a></li>
+                        <li><a class="guests" href="#">32 GUESTS</a></li>
+                        <li><a class="guests" href="#">33 GUESTS</a></li>
+                        <li><a class="guests" href="#">34 GUESTS</a></li>
+                        <li><a class="guests" href="#">35 GUESTS</a></li>
+                        <li><a class="guests" href="#">36 GUESTS</a></li>
+                        <li><a class="guests" href="#">37 GUESTS</a></li>
+                        <li><a class="guests" href="#">38 GUESTS</a></li>
+                        <li><a class="guests" href="#">39 GUESTS</a></li>
+                        <li><a class="guests" href="#">40 GUESTS</a></li>
+                        <li><a class="guests" href="#">41 GUESTS</a></li>
+                        <li><a class="guests" href="#">42 GUESTS</a></li>
+                        <li><a class="guests" href="#">43 GUESTS</a></li>
+                        <li><a class="guests" href="#">44 GUESTS</a></li>
+                        <li><a class="guests" href="#">45 GUESTS</a></li>
+                        <li><a class="guests" href="#">46 GUESTS</a></li>
+                        <li><a class="guests" href="#">47 GUESTS</a></li>
+                        <li><a class="guests" href="#">48 GUESTS</a></li>
+                        <li><a class="guests" href="#">49 GUESTS</a></li>
+                        <li><a class="guests" href="#">50 GUESTS</a></li>
+                    </ul>
+                </div>
+                <!-- Select date  -->
+                <form>
+                    <div class="mb-3">
+                        <label for="customDateInput" class="form-label">DATE</label>
+                        <div class="input-group">
+                            <!-- The date input -->
+                            <input type="text" class="form-control" id="customDateInput2" placeholder="Please select">
+                            <!-- The button that will trigger calendar -->
+                            <button type="button" id="calendarBtn2" class="btn btn-outline-secondary">
+                                📅
+                            </button>
+                        </div>
+                    </div>
+                </form>
+                <!-- Select time -->
+                 <p>TIME</p>
+                 <div class="dropdown" style="width: 100%;">
+                    <button id="time-2" class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false" style="width: 100%;">
+                        11:00
+                    </button>
+                    <ul class="dropdown-menu" id="dropdown">
+                        <li><a class="time-slot-2" href="#">11:00</a></li>
+                        <li><a class="time-slot-2" href="#">11:15</a></li>
+                        <li><a class="time-slot-2" href="#">11:30</a></li>
+                        <li><a class="time-slot-2" href="#">11:45</a></li>
+                        <li><a class="time-slot-2" href="#">12:00</a></li>
+                        <li><a class="time-slot-2" href="#">12:15</a></li>
+                        <li><a class="time-slot-2" href="#">12:30</a></li>
+                        <li><a class="time-slot-2" href="#">12:45</a></li>
+                        <li><a class="time-slot-2" href="#">13:00</a></li>
+                        <li><a class="time-slot-2" href="#">13:15</a></li>
+                        <li><a class="time-slot-2" href="#">13:30</a></li>
+                        <li><a class="time-slot-2" href="#">13:45</a></li>
+                        <li><a class="time-slot-2" href="#">14:00</a></li>
+                        <li><a class="time-slot-2" href="#">14:15</a></li>
+                        <li><a class="time-slot-2" href="#">14:30</a></li>
+                        <li><a class="time-slot-2" href="#">14:45</a></li>
+                        <li><a class="time-slot-2" href="#">15:00</a></li>
+                        <li><a class="time-slot-2" href="#">15:15</a></li>
+                        <li><a class="time-slot-2" href="#">15:30</a></li>
+                        <li><a class="time-slot-2" href="#">15:45</a></li>
+                        <li><a class="time-slot-2" href="#">16:00</a></li>
+                        <li><a class="time-slot-2" href="#">16:15</a></li>
+                        <li><a class="time-slot-2" href="#">16:30</a></li>
+                        <li><a class="time-slot-2" href="#">16:45</a></li>
+                        <li><a class="time-slot-2" href="#">17:00</a></li>
+                        <li><a class="time-slot-2" href="#">17:15</a></li>
+                        <li><a class="time-slot-2" href="#">17:30</a></li>
+                        <li><a class="time-slot-2" href="#">17:45</a></li>
+                        <li><a class="time-slot-2" href="#">18:00</a></li>
+                        <li><a class="time-slot-2" href="#">18:15</a></li>
+                        <li><a class="time-slot-2" href="#">18:30</a></li>
+                        <li><a class="time-slot-2" href="#">18:45</a></li>
+                        <li><a class="time-slot-2" href="#">19:00</a></li>
+                        <li><a class="time-slot-2" href="#">19:15</a></li>
+                        <li><a class="time-slot-2" href="#">19:30</a></li>
+                        <li><a class="time-slot-2" href="#">19:45</a></li>
+                        <li><a class="time-slot-2" href="#">20:00</a></li>
+                        <li><a class="time-slot-2" href="#">20:15</a></li>
+                        <li><a class="time-slot-2" href="#">20:30</a></li>
+                        <li><a class="time-slot-2" href="#">20:45</a></li>
+                        <li><a class="time-slot-2" href="#">21:00</a></li>
+                        <li><a class="time-slot-2" href="#">21:15</a></li>
+                        <li><a class="time-slot-2" href="#">21:30</a></li>
+                        <li><a class="time-slot-2" href="#">21:45</a></li>
+                        <li><a class="time-slot-2" href="#">22:00</a></li>
+                        <li><a class="time-slot-2" href="#">22:15</a></li>
+                        <li><a class="time-slot-2" href="#">22:30</a></li>
+                        <li><a class="time-slot-2" href="#">22:45</a></li>
+                        <li><a class="time-slot-2" href="#">23:00</a></li>
+                        <li><a class="time-slot-2" href="#">23:15</a></li>
+                        <li><a class="time-slot-2" href="#">23:30</a></li>
+                    </ul>
+                </div>
+                <!-- Time guests want to stay -->
+                <p>UNTIL</p>
+                <div class="dropdown" style="width: 100%;">
+                    <button id="choose-time-of-stay" class="btn btn-secondary dropdown-toggle" type="button"
+                        data-bs-toggle="dropdown" aria-expanded="false" style="width: 100%;">
+                        SELECT DURATION OF STAY
+                    </button>
+                    <ul class="dropdown-menu" id="dropdown" aria-labelledby="dropdownMenuButton">
+                        <li><a class="stay-time" href="#">UNTIL CLOSE</a></li>
+                        <li><a class="stay-time" href="#">1 HOUR</a></li>
+                        <li><a class="stay-time" href="#">2 HOUR</a></li>
+                        <li><a class="stay-time" href="#">3 HOUR</a></li>
+                        <li><a class="stay-time" href="#">4 HOUR</a></li>
+                        <li><a class="stay-time" href="#">5 HOUR</a></li>
+                    </ul>
+                </div>
+                <button type="button">ENQUIRE NOW</button>
+                
+            </div> -->
+
+<!-- JS FOR FURTHER IMPROVEMENT
+
+//Select a venue 
+const dropdownButton5 = document.getElementById("choose-venue");
+const dropdownItems5 = document.querySelectorAll(".venue");
+
+// Add click event to each item
+dropdownItems5.forEach(item => {
+  item.addEventListener("click", function (e) {
+    e.preventDefault(); // prevent page jump
+    dropdownButton5.textContent = this.textContent; // update button text
+  });
+});
+
+//Select guest numbers
+const dropdownButton6 = document.getElementById("choose-guests-numbers");
+const dropdownItems6 = document.querySelectorAll(".guests");
+
+// Add click event to each item
+dropdownItems6.forEach(item => {
+  item.addEventListener("click", function (e) {
+    e.preventDefault(); // prevent page jump
+    dropdownButton6.textContent = this.textContent; // update button text
+  });
+});
+
+// calender date 
+const dateInput2 = flatpickr("#customDateInput2", {
+  dateFormat: "d-m-Y", // Example format: 2025-09-01
+  defaultDate: new Date(), // Preselect today
+  allowInput: false,
+  clickOpens: false
+});
+
+// Open calendar when button is clicked
+document.getElementById("calendarBtn2").addEventListener("click", () => {
+  dateInput2.open();
+});
+
+
+//Select a time slots 2
+const dropdownButton7 = document.getElementById("time-2");
+const dropdownItems7 = document.querySelectorAll(".time-slot-2");
+dropdownItems7.forEach(item => {
+  item.addEventListener("click", function (e) {
+    e.preventDefault();
+    dropdownButton7.textContent = this.textContent;
+  });
+});
+
+// Time of stay
+const dropdownButton8 = document.getElementById("choose-time-of-stay");
+const dropdownItems8 = document.querySelectorAll(".stay-time");
+dropdownItems8.forEach(item => {
+  item.addEventListener("click", function (e) {
+    e.preventDefault();
+    dropdownButton8.textContent = this.textContent;
+  });
+});
+
+// Data fetching from selected restaurants
+// const restaurantItems = document.querySelectorAll(".rst");
+// const restaurantButton = document.getElementById("choose-rst");
+// let selectedRestaurant ="";
+// restaurantItems.forEach(item =>) -->
+
+
+//Book a table additional features to be improved
+ document.getElementById("book-a-table-btn").addEventListener("click", function(){
+    document.getElementById("book-a-table").innerHTML=`
+            <div class="container">
+            <a class="navbar-brand custom-brand" href="index.html">
+            <h1><span class="logo-left">EMILIA'S </span><span class="logo-right">della roma</span></h1>
+            <p class="subtitle">La Tavola & Enoteca</p>
+            </a>
+            <button class="nav-link" id="book-a-table-btn" onclick="myFunction()"><img src="./assets/closing-btn.png" alt="close menu"></button>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <p>If you would like to make a booking directly click <span>here</span>, for any other enquiries
+                            fill in the form below</p>
+                    </div>
+                    <div class="col-sm-2">
+                        <form>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">FIRST NAME</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="First Name">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-sm-2">
+                        <form>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">LAST NAME</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="Last Name">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-2">
+                        <form>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">EMAIL ADDRESS</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="Email Address">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-sm-12 col-md-2">
+                        <form>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">CONTACT NUMBER</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="+447874083967">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <p>RESTAURANT</p>
+                        <div class="dropdown" style="width: 100%;">
+                            <button id="dropdownMenuButton" class="btn btn-secondary dropdown-toggle" type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false" style="width: 100%;">
+                                SELECT A RESTAURANT
+                            </button>
+                            <ul class="dropdown-menu" id="dropdown" aria-labelledby="dropdownMenuButton">
+                                <li><a class="dropdown-item" href="#">LONDON</a></li>
+                                <li><a class="dropdown-item" href="#">LEEDS</a></li>
+                                <li><a class="dropdown-item" href="#">BIRMINGHAM</a></li>
+                                <li><a class="dropdown-item" href="#">BRISTOL</a></li>
+                                <li><a class="dropdown-item" href="#">LIVERPOOL</a></li>
+                                <li><a class="dropdown-item" href="#">MANCHESTER</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-4">
+                        <form>
+                            <div class="form-group">
+                                <label for="exampleFormControlTextarea1">ENQUIRY</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="15" placeholder="Enter your enquiry"></textarea>
+                            </div>
+                            <button class="">SUBMIT</button><br>
+                        </form>
+                    </div>
+                </div>
+
+            </div>`;
+});
+
+
+//inside nav
+<!-- <button onclick="myFunction()">BOOK A TABLE</button>
+<div id="book-a-table-container" style="position: absolute; background-color: black;"></div>
+
+//inside container 
+<button class="nav-link" id="book-a-table-btn" onclick="myFunction()"><img src="./assets/closing-btn.png"
+                alt="close menu"></button>
