@@ -73,10 +73,19 @@ p {
 }
 
 .navbar-nav .nav-link:hover {
-    transform: scale(1.1);
     text-decoration: underline;
+    text-decoration-color: #ff6900;
 }
-
+ .navbar-collapse {
+        position: fixed;
+        top: 0px;
+        left: 0;
+        width: 100vw;
+        background-color: #0ABAB5;
+        z-index: 9999;
+        padding: 30px;
+        height: 100vh;
+    }
 #book-a-table-btn {
     color: black;
     font-family: "Cormorant Garamond", serif;
@@ -148,7 +157,7 @@ p {
     width: 20px;
 }
 
-/* Section 1 */
+/* Section 1: ########################## */
 .video-container {
     margin-top: 0px;
     padding: 0px;
@@ -185,7 +194,7 @@ p {
     font-size: 2rem;
 }
 
-/* section 2 */
+/* section 2: ####################### */
 #section-2 {
     background-color: #FFE8CD;
     margin-top: -5px;
@@ -215,9 +224,7 @@ p {
     width: 100%;
     margin-top: 20px;
     object-fit: cover;
-    /* ensures image doesn't distort, crops if needed */
     display: block;
-    /* removes extra spacing */
     height: 300px;
     width: 100%;
     margin: 20px 0px;
@@ -244,7 +251,7 @@ p {
     width: 15px;
 }
 
-/* Section 3 */
+/* Section 3: ######################## */
 #section-3 {
     padding: 20px 0px;
     background-color: #ECEEDF;
@@ -283,8 +290,7 @@ p {
     border: none;
 }
 
-/* ############################################################################################## */
-/* Section 4 */
+/* Section 4: ################################*/
 #section-4 {
     padding: 20px 0px;
     background-color: #0ABAB5;
@@ -297,7 +303,6 @@ p {
 
 .search input {
     width: 100%;
-    /* top : right: bottom : left */
     padding: 10px 0px 10px 10px;
     font-family: "Montserrat", sans-serif;
     font-size: 1.4rem;
@@ -353,7 +358,7 @@ p {
     border: 1px solid white;
 }
 
-/* Section 5 */
+/* Section 5: ############################# */
 #section-5 {
     padding: 20px 0px;
     background-color: #F2EDD1;
@@ -381,9 +386,7 @@ p {
 .section-5-custom-col img {
     width: 100%;
     object-fit: cover;
-    /* ensures image doesn't distort, crops if needed */
     display: block;
-    /* removes extra spacing */
     height: 300px;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
@@ -401,7 +404,7 @@ h2 {
     background: #0ABAB5;
 }
 
-/* Section 6 */
+/* Section 6: ################################ */
 #section-6 {
     padding: 50px 0px;
     background-color: #0ABAB5;
@@ -412,7 +415,7 @@ h2 {
     font-size: 1.8rem;
 }
 
-/* Footer */
+/* Footer: ###################################### */
 .footer-txt {
     font-size: 1.4rem;
     color: white;
@@ -493,27 +496,18 @@ h2 {
     text-decoration: underline;
 }
 
-/* extra small and medium devices */
-@media (max-width:768px) {
-    .navbar-collapse {
-        position: fixed;
-        top: 0px;
-        left: 0;
-        width: 100vw;
-        background-color: #0ABAB5;
-        z-index: 9999;
-        padding: 30px;
-        height: 100vh;
-    }
-}
 
-/* Normal behavior for devices 768px and above */
+/* Medium Devices */
 @media (min-width: 768px) {
     p {
         font-size: 1.8rem;
     }
 
-    /* Navigation bar style */
+    /* Navigation: ################ */
+    .navbar-nav .nav-link:hover {
+        text-decoration-color: black;
+    }
+
     .custom-brand {
         margin-left: 20px;
     }
@@ -534,17 +528,15 @@ h2 {
         font-size: 1.8rem;
         width: 150px;
     }
-
     .navbar-collapse {
         position: relative;
-        /* default bootstrap behavior */
         width: auto;
         height: auto;
         background-color: transparent;
         padding: 0;
     }
 
-    /* Section 1 */
+    /* Section 1: ############### */
     #sound-toggle {
         top: 90px;
         left: 100px;
@@ -555,7 +547,7 @@ h2 {
         top: 40%;
     }
 
-    /* section 2 */
+    /* section 2: ##################### */
 
     .custom-btn {
         font-size: 2rem;
@@ -587,7 +579,7 @@ h2 {
         opacity: 1;
     }
 
-    /* Section 3 */
+    /* Section 3: ####################### */
     #section-3 {
         padding: 50px 0px;
     }
@@ -602,7 +594,7 @@ h2 {
         font-size: 4rem;
     }
 
-    /* Section 4 */
+    /* Section 4: ######################## */
     #section-4 {
         padding: 50px 0px;
     }
@@ -611,7 +603,7 @@ h2 {
         width: 30vw;
     }
 
-    /* Section-6 */
+    /* Section-6: ####################### */
     #location-form {
         width: 400px;
     }
@@ -622,16 +614,16 @@ h2 {
     }
 }
 
-/* Large */
+/* Large Devices */
 @media (min-width:992px) {
 
-    /* Section 1 */
+    /* Section 1: ############# */
     .title-1 {
         font-size: 8rem;
         top: 50%;
     }
 
-    /* section 2 */
+    /* section 2: ############# */
     .custom-img img {
         height: 600px;
     }
@@ -651,7 +643,7 @@ h2 {
         margin: 30% -10%;
     }
 
-    /* section 3 */
+    /* section 3: ############ */
     .dining {
         margin-top: 30%;
         margin-left: 50px;
@@ -661,8 +653,7 @@ h2 {
         font-size: 6rem;
     }
 
-    /* Section-6 */
-    /* Section-6 */
+    /* Section-6: #################### */
     #location-form {
         width: 600px;
     }
@@ -679,7 +670,21 @@ h2 {
 }
 
 /* X-Large */
-@media (max-width: ≥1200px) {}
+@media (max-width: ≥1200px) {
+    h1{
+        font-size: 6rem;
+    }
+    p{
+        font-size: 2rem;
+    }
+}
 
 /* XX-Large */
-@media (max-width: ≥1400px) {}
+@media (max-width: ≥1400px) {
+     h1{
+        font-size: 8rem;
+    }
+    p{
+        font-size: 2rem;
+    }
+}
