@@ -37,9 +37,11 @@
                 <img class="menu-icon" src="assets/hamburger-menu.png" alt="menu-icon">
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="d-flex align-items-center justify-content-between w-100 d-md-none " style="margin-top: -15px;">
+                <div class="d-flex align-items-center justify-content-between w-100 d-md-none "
+                    style="margin-top: -15px;">
                     <a class="navbar-brand custom-brand" href="index.html">
-                        <h1><span class="logo-left" style="color:white">EMILIA'S </span><span class="logo-right" style="color:white">della roma</span></h1>
+                        <h1><span class="logo-left" style="color:white">EMILIA'S </span><span class="logo-right"
+                                style="color:white">della roma</span></h1>
                         <p class="subtitle" style="color:white">La Tavola & Enoteca</p>
                     </a>
                     <button class="navbar-toggler closing-toggler" type="button" data-bs-toggle="collapse"
@@ -62,7 +64,6 @@
     </nav>
     <main>
         <!-- Section 1 -->
-        <div id="book-a-table"></div>
         <section id="section-1">
             <div class="container-fluid video-container">
                 <video id="bg-video" autoplay loop muted playsinline>
@@ -75,7 +76,7 @@
         </section>
         <!-- Section 2 -->
         <section id="section-2">
-            <div class="container" style="margin-top:-8px;">
+            <div class="container">
                 <div id="carouselExample" class="carousel slide">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
@@ -85,8 +86,10 @@
                                         <h1>LUNCH SPECIALS</h1>
                                         <p>2 COURSES 20.00 | 3 COURSES 25.00</p>
                                         <p>Monday - Friday | 12-5pm</p>
-                                        <button class="btn-1">BOOK NOW</button><br>
-                                        <button class="btn-2">VIEW MENU</button>
+                                        <button class="btn-1 custom-btn" onclick="location.href='booking.html'">BOOK
+                                            NOW</button><br>
+                                        <button class="btn-2 custom-btn" onclick="location.href='menu.html'">VIEW
+                                            MENU</button>
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-sm-12 custom-img">
@@ -102,8 +105,9 @@
                                         <h1>PIZZA & DRINK FOR ONLY £9</h1>
                                         <p>365 days till evening!</p>
                                         <p>Exclusively on our mobile app.</p>
-                                        <button class="btn-1">BOOK NOW</button><br>
-                                        <button class="btn-2">VIEW MENU</button>
+                                        <button class="custom-btn">BOOK NOW</button><br>
+                                        <button class="custom-btn btn-2" onclick="location.href='menu.html'">VIEW
+                                            MENU</button>
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-sm-12 custom-img">
@@ -119,8 +123,8 @@
                                         <h1>DINNER SPECIAL DEAL ON FRIDAY!</h1>
                                         <p>1 MAIN + DRINK | ONLY £18</p>
                                         <p>Whole evening!</p>
-                                        <button class="btn-1">BOOK NOW</button><br>
-                                        <button class="btn-2">VIEW MENU</button>
+                                        <button class="custom-btn">BOOK NOW</button><br>
+                                        <button class="custom-btn  btn-2">VIEW MENU</button>
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-sm-12 custom-img">
@@ -136,8 +140,9 @@
                                         <h1>STUDENT DISCOUNT ON MONDAY</h1>
                                         <p>10% off on all items!</p>
                                         <p>T&C: Exclusively through our apps.</p>
-                                        <button class="btn-1">BOOK NOW</button><br>
-                                        <button class="btn-2">VIEW MENU</button>
+                                        <button class="custom-btn">BOOK NOW</button><br>
+                                        <button class="custom-btn  btn-2" onclick="location.href='menu.html'">VIEW
+                                            MENU</button>
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-sm-12 custom-img">
@@ -153,8 +158,9 @@
                                         <h1>SUMMER WINE DEAL</h1>
                                         <p>50% off whole summer on Tuesday.</p>
                                         <p>6pm - Close Time</p>
-                                        <button class="btn-1">BOOK NOW</button><br>
-                                        <button class="btn-2">VIEW MENU</button>
+                                        <button class="custom-btn">BOOK NOW</button><br>
+                                        <button class="custom-btn  btn-2" onclick="location.href='menu.html'">VIEW
+                                            MENU</button>
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-sm-12 custom-img">
@@ -190,7 +196,7 @@
                             <p>Ready to expericence a little Veneto warmth with your favourite italian cuisine with an
                                 authentic espresso? Great! You've come to the right place! </p> <br>
                             <p>Because it's Emilia's thing!</p> <br>
-                            <span><button class="btn-1 dining-btn">BOOK NOW</button></span>
+                            <span><button class="custom-btn section-3-btn">BOOK NOW</button></span>
                         </div>
                     </div>
                 </div>
@@ -209,66 +215,65 @@
                         </form>
                         <ul id="suggestions">
                         </ul>
-                        <div id="result" style="margin-top:80px;"></div>
                     </div>
+                </div>
+                <div class="row">
+                    <div id="result" class="col-sm-12 col-md-12"></div>
                 </div>
             </div>
         </section>
         <!-- Section 5 -->
         <section id="section-5">
             <div class="container">
-                <div class="row" style="padding-top: 80px; padding-bottom: 20px;">
+                <div class="row">
                     <div class="col">
                         <h3 style="color:#0ABAB5;">WE DELIVER</h3>
                     </div>
                 </div>
-                <div class="row" style="padding-bottom: 50px 0;">
-                    <div class="col custom-col">
-                        <h1 style="color:#0ABAB5;">A TASTE OF AUTHENTICITY</h1>
-                        <button class="btn-2 rest-btn section-5-btn">VIEW MENU</button>
+                <div class="row">
+                    <div class="col-sm-12 col-md-6">
+                        <h1 style="color:#0ABAB5;" class="section-5-h1">A TASTE OF AUTHENTICITY</h1>
+                    </div>
+                    <div class="col-sm-12 col-md-6 d-md-flex justify-content-md-end">
+                        <button class="custom-btn section-5-btn" onclick="location.href='menu.html'"> VIEW MENU</button>
                     </div>
                 </div>
-                <div class="row" style="padding: 50px 0;">
-                    <div class="col-md-4 col-sm-12">
-                        <div class="card">
-                            <img src="assets/img13.jpg" class="card-img-top" alt="image number 13">
-                            <div class="card-body">
-                                <h2>PENNE</h2>
-                                <hr class="custom-hr2">
-                                <p class="card-text">Penne all'Arrabbiata is one of Rome's most beloved pasta dishes,
-                                    known for its bold and fiery flavor.
-                                    The word “arrabbiata” means angry in Italian, a playful reference to the heat of the
-                                    chili peppers that give the sauce its kick.</p>
-                            </div>
+                <div class="row">
+                        <div class="col-md-12 col-lg-4 col-sm-12 section-5-custom-col">
+                          <img src="assets/img13.jpg" alt="image number 13">
+                          <div>
+                            <h2>PENNE</h2>
+                            <hr class="custom-hr2">
+                            <p>Penne all'Arrabbiata is one of Rome's most beloved pasta dishes,
+                                known for its bold and fiery flavor.
+                                The word “arrabbiata” means angry in Italian, a playful reference to the heat of the
+                                chili peppers that give the sauce its kick.</p>
+                          </div>
                         </div>
-                    </div>
-                    <div class="col-md-4 col-sm-12">
-                        <div class="card">
-                            <img src="assets/img14.jpg" class="card-img-top" alt="image 14">
-                            <div class="card-body">
-                                <h2>TARTUFO AL CIOCCOLATO</h2>
-                                <hr class="custom-hr2">
-                                <p>A decadent Roman-inspired dessert, Tartufo al Cioccolato is a rich
-                                    chocolate indulgence shaped like a truffle.
-                                    Traditionally, it's crafted with layers of velvety chocolate gelato or mousse, often
-                                    hiding a surprise heart of fruit or liqueur in the center.</p>
-                            </div>
+                        <div class="col-md-12 col-lg-4 col-sm-12 section-5-custom-col">
+                          <img src="assets/img14.jpg" alt="image number 13">
+                          <div>
+                            <h2>TARTUFO AL CIOCCOLATO</h2>
+                            <hr class="custom-hr2">
+                            <p>A decadent Roman-inspired dessert, Tartufo al Cioccolato is a rich
+                                        chocolate indulgence shaped like a truffle.
+                                        Traditionally, it's crafted with layers of velvety chocolate gelato or mousse,
+                                        often
+                                        hiding a surprise heart of fruit or liqueur in the center.</p>
+                          </div>
                         </div>
-                    </div>
-                    <div class="col-md-4 col-sm-12">
-                        <div class="card">
-                            <img src="assets/img15.jpg" class="card-img-top" alt="image 15">
-                            <div class="card-body">
-                                <h2>PUNTARELLE ALLA ROMANA</h2>
-                                <hr class="custom-hr2">
-                                <p class="card-text">A true taste of Roman tradition, Puntarelle alla Romana is a
-                                    refreshing salad made from the tender shoots of chicory,
-                                    finely cut into thin strips and curled in icy water to enhance their crispness.</p>
-                            </div>
+                        <div class="col-md-12 col-lg-4 col-sm-12 section-5-custom-col">
+                          <img src="assets/img15.jpg" alt="image number 13">
+                          <div>
+                            <h2>PUNTARELLE ALLA ROMANA</h2>
+                            <hr class="custom-hr2">
+                            <p>A true taste of Roman tradition, Puntarelle alla Romana is a
+                                        refreshing salad made from the tender shoots of chicory,
+                                        finely cut into thin strips and curled in icy water to enhance their crispness.</p>
+                          </div>
                         </div>
                     </div>
                 </div>
-            </div>
         </section>
         <!-- Section 6: Newsletter -->
         <section id="section-6">
@@ -293,7 +298,7 @@
     </main>
     <!-- Footer -->
     <div style="background-color:#071023;">
-        <div class="container custom-footer">
+        <div class="container" style="padding:50px 10px;">
             <footer>
                 <div class="row">
                     <div class="col-md-4 mb-3">
@@ -308,7 +313,7 @@
                     <div class="col-md-4 mb-3">
                         <h2 style="color:white;">DOWNLOAD OUR APP</h2>
                         <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                            <button type="button" class="btn-3 btn-lg px-4 me-md-2"><svg
+                            <button type="button" class="custom-btn footer-btn"><svg
                                     xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                     class="bi bi-apple mb-1" viewBox="0 0 16 16">
                                     <path
@@ -316,20 +321,23 @@
                                     <path
                                         d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43Zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282Z" />
                                 </svg> Download</button>
-                            <button type="button" class="btn-3 btn-lg px-4"><svg xmlns="http://www.w3.org/2000/svg"
-                                    width="16" height="16" fill="currentColor" class="bi bi-google-play mb-1"
-                                    viewBox="0 0 16 16">
+                            <button type="button" class="custom-btn footer-btn"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-google-play mb-1" viewBox="0 0 16 16">
                                     <path
                                         d="M14.222 9.374c1.037-.61 1.037-2.137 0-2.748L11.528 5.04 8.32 8l3.207 2.96 2.694-1.586Zm-3.595 2.116L7.583 8.68 1.03 14.73c.201 1.029 1.36 1.61 2.303 1.055l7.294-4.295ZM1 13.396V2.603L6.846 8 1 13.396ZM1.03 1.27l6.553 6.05 3.044-2.81L3.333.215C2.39-.341 1.231.24 1.03 1.27Z" />
                                 </svg> Download</button>
                         </div>
                         <h2 class="mt-5" style="color:white;">FOLLOW US</h2>
                         <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                            <a href="" class="contact-icon btn-4  d-flex align-items-center justify-content-center"><img
+                            <a href=""
+                                class="contact-icon btn-4  custom-btn  d-flex align-items-center justify-content-center"><img
                                     src="assets/instagram.png" alt="Instagram icon"></a>
-                            <a href="" class="contact-icon btn-5  d-flex align-items-center justify-content-center"><img
+                            <a href=""
+                                class="contact-icon btn-5  custom-btn  d-flex align-items-center justify-content-center"><img
                                     src="assets/fb.png" alt="Instagram icon"></a>
-                            <a href="" class="contact-icon btn-6  d-flex align-items-center justify-content-center"><img
+                            <a href=""
+                                class="contact-icon btn-6   custom-btn d-flex align-items-center justify-content-center"><img
                                     src="assets/tiktok.png" alt="Instagram icon"></a>
                         </div>
                     </div>

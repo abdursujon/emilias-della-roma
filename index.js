@@ -1,55 +1,45 @@
-// // Navigation close button 
-// const menuButton = document.querySelector(".navbar-toggler");
-// const menuIcon = document.querySelector(".menu-icon");
-// menuButton.addEventListener("click", function () {
-//   if (menuIcon.src.includes("hamburger-menu.png")) {
-//     menuIcon.src = "./assets/closing-btn.png";
-//   } else {
-//     menuIcon.src = "./assets/hamburger-menu.png";
-//   }
-// });
 // Section 4 JS
 const restaurants = {
     "london": `
         <div class="row"> 
-             <div class="col-md-4 col-sm-12 custom-img restaurant-img">
+             <div class="col-md-6 col-lg-4 col-sm-12 custom-img restaurant-img">
                 <img src="assets/rst1.jpg" alt="Restaurant one">
                 <div class="restaurant">
                     <h1>LONDON CITY CENTRE</h1>
                     <hr class="custom-hr">
                     <p>Oxford St, London W1B 3AG</p>
                     <p>T: 0343 222 1234</p>
-                    <button class="btn-1 rest-btn">BOOK NOW</button>
-                    <button class="btn-2 rest-btn">VIEW MENU</button>
+                    <button class="custom-btn section-4-btn"  onclick="location.href='booking.html'">BOOK NOW</button>
+                    <button class="custom-btn section-4-btn"  onclick="location.href='menu.html'">VIEW MENU</button>
                 </div>
               </div>
-              <div class="col-md-4 col-sm-12 custom-img restaurant-img">
+              <div class="col-md-6 col-lg-4 col-sm-12 custom-img restaurant-img">
                 <img src="assets/rst2.jpg" alt="Restaurant two">
                 <div class="restaurant">
                     <h1>LONDON SOHO</h1>
                     <hr class="custom-hr">
                     <p>88 Wardour St, London W1F 0TH</p>
                     <p>T: 0203 909 0427</p>
-                    <button class="btn-1 rest-btn">BOOK NOW</button>
-                    <button class="btn-2 rest-btn">VIEW MENU</button>
+                    <button class="custom-btn section-4-btn"  onclick="location.href='booking.html'">BOOK NOW</button>
+                    <button class="custom-btn section-4-btn"  onclick="location.href='menu.html'">VIEW MENU</button>
                 </div>
               </div>    
-              <div class="col-md-4 col-sm-12 custom-img restaurant-img">
+              <div class="col-md-6  col-lg-4 col-sm-12 custom-img restaurant-img">
                 <img src="assets/rst3.jpg" alt="Restaurant three">
                 <div class="restaurant">
                     <h1>LONDON BRIDGE</h1>
                     <hr class="custom-hr">
                     <p>90 Tooley St, London SE1 2TH</p>
                     <p>T: 0207 870 9224</p>
-                    <button class="btn-1 rest-btn">BOOK NOW</button>
-                    <button class="btn-2 rest-btn">VIEW MENU</button>
+                    <button class="custom-btn section-4-btn"  onclick="location.href='booking.html'">BOOK NOW</button>
+                    <button class="custom-btn section-4-btn"  onclick="location.href='menu.html'">VIEW MENU</button>
                 </div>
               </div>  
         </div>
         `,
     "manchester": `
         <div class="row"> 
-             <div class="col-md-4 col-sm-12 custom-img restaurant-img">
+             <div class="col-md-6 col-lg-4 col-sm-12 custom-img restaurant-img">
                 <img src="assets/rst4.jpg" alt="Restaurant four">
                 <div class="restaurant">
                     <h1>MANCHESTER</h1>
@@ -57,41 +47,41 @@ const restaurants = {
                     <p>Emilia's Manchester Stretford</p>
                     <p>30 Davyhulme Rd E, Stretford, Manchester M32 0DW</p>
                     <p>T: 0161 283 3375</p>
-                    <button class="btn-1 rest-btn">BOOK NOW</button>
-                    <button class="btn-2 rest-btn">VIEW MENU</button>
+                    <button class="custom-btn section-4-btn"  onclick="location.href='booking.html'">BOOK NOW</button>
+                    <button class="custom-btn section-4-btn"  onclick="location.href='menu.html'">VIEW MENU</button>
                 </div>
               </div>
-              <div class="col-md-4 col-sm-12 custom-img restaurant-img">
+              <div class="col-md-6  col-lg-4 col-sm-12 custom-img restaurant-img">
                 <img src="assets/rst5.jpg" alt="Restaurant five">
                 <div class="restaurant">
                     <h1>MANCHESTER ARNDALE</h1>
                     <hr class="custom-hr">
                     <p>Unit 19a, Manchester Arndale, Manchester M4 3AQ</p>
                     <p>T: 0161 669 1869</p>
-                    <button class="btn-1 rest-btn">BOOK NOW</button>
-                    <button class="btn-2 rest-btn">VIEW MENU</button>
+                    <button class="custom-btn section-4-btn"  onclick="location.href='booking.html'">BOOK NOW</button>
+                    <button class="custom-btn section-4-btn"  onclick="location.href='menu.html'">VIEW MENU</button>
                 </div>
               </div>
         </div>
         `,
     "leeds": `
         <div class="row"> 
-             <div class="col-md-4 col-sm-12 custom-img restaurant-img">
+             <div class="col-md-6  col-lg-4 col-sm-12 custom-img restaurant-img">
                 <img src="assets/rst6.jpg" alt="Restaurant six">
                 <div class="restaurant">
                     <h1>LEEDS</h1>
                     <hr class="custom-hr">
                     <p>27 Albion St, Leeds LS1 5ER</p>
                     <p>T: 0113 518 3749</p>
-                    <button class="btn-1 rest-btn">BOOK NOW</button>
-                    <button class="btn-2 rest-btn">VIEW MENU</button>
+                    <button class="custom-btn section-4-btn"  onclick="location.href='booking.html'">BOOK NOW</button>
+                    <button class="custom-btn section-4-btn"   onclick="location.href='menu.html'">VIEW MENU</button>
                 </div>
             </div>
         </div>
         `,
     "birmingham": `
         <div class="row"> 
-             <div class="col-md-4 col-sm-12 custom-img restaurant-img">
+             <div class="col-md-6 col-lg-4 col-sm-12 custom-img restaurant-img">
                 <img src="assets/rst7.jpg" alt="Restaurant seven">
                 <div class="restaurant">
                     <h1>BIRMINGHAM</h1>
@@ -99,26 +89,26 @@ const restaurants = {
                     <p>Stephenson Pl, Birmingham B2 4BQ</p>
                     <p>Floor 1, Grand Central Shopping Centre</p>
                     <p>T: 0121 803 6869</p>
-                    <button class="btn-1 rest-btn">BOOK NOW</button>
-                    <button class="btn-2 rest-btn">VIEW MENU</button>
+                    <button class="custom-btn section-4-btn"  onclick="location.href='booking.html'">BOOK NOW</button>
+                    <button class="custom-btn section-4-btn"  onclick="location.href='menu.html'">VIEW MENU</button>
                 </div>
               </div>
-              <div class="col-md-4 col-sm-12 custom-img restaurant-img">
+              <div class="col-md-6 col-lg-4 col-sm-12 custom-img restaurant-img">
                 <img src="assets/rst8.jpg" alt="Restaurant eight">
                 <div class="restaurant">
                     <h1>BIRMINGHAM VICTORIA SQUARE</h1>
                     <hr class="custom-hr">
                     <p>82 New St, Birmingham B2 4BA</p>
                     <p>T: 0121 387 4148</p>
-                    <button class="btn-1 rest-btn">BOOK NOW</button>
-                    <button class="btn-2 rest-btn">VIEW MENU</button>
+                    <button class="custom-btn section-4-btn"  onclick="location.href='booking.html'">BOOK NOW</button>
+                    <button class="custom-btn section-4-btn"  onclick="location.href='menu.html'">VIEW MENU</button>
                 </div>
               </div>
         </div>
         `,
     "liverpool": `
         <div class="row"> 
-             <div class="col-md-6 col-sm-12 custom-img restaurant-img">
+             <div class="col-md-6 col-lg-4 col-sm-12 custom-img restaurant-img">
                 <img src="assets/rst9.jpg" alt="Restaurant nine">
                 <div class="restaurant">
                     <h1>LIVERPOOL</h1>
@@ -126,15 +116,15 @@ const restaurants = {
                     <p>70 Lord St, Liverpool L2 1TL</p>
                     <p>Floor 0, Liverpool ONE</p>
                     <p>T: 0151 305 5014</p>
-                    <button class="btn-1 rest-btn">BOOK NOW</button>
-                    <button class="btn-2 rest-btn">VIEW MENU</button>
+                    <button class="custom-btn section-4-btn"  onclick="location.href='booking.html'">BOOK NOW</button>
+                    <button class="custom-btn section-4-btn"  onclick="location.href='menu.html'">VIEW MENU</button>
                 </div>
             </div>
         </div>
         `,
     "bristol": `
         <div class="row"> 
-             <div class="col-md-6 col-sm-12 custom-img restaurant-img">
+             <div class="col-md-6 col-lg-4 col-sm-12 custom-img restaurant-img">
                 <img src="assets/rst10.jpg" alt="Restaurant ten">
                 <div class="restaurant">
                     <h1>BRISTOL</h1>
@@ -142,8 +132,8 @@ const restaurants = {
                     <p>Bristol (Cabot Circus)</p>
                     <p>Shopping Centre, SU32B, Concorde St, Bristol BS1 3BF</p>
                     <p>T: 0117 374 3049</p>
-                    <button class="btn-1 rest-btn">BOOK NOW</button>
-                    <button class="btn-2 rest-btn">VIEW MENU</button>
+                    <button class="custom-btn section-4-btn"  onclick="location.href='booking.html'">BOOK NOW</button>
+                    <button class="custom-btn section-4-btn"  onclick="location.href='menu.html'">VIEW MENU</button>
                 </div>
               </div>
         </div>
