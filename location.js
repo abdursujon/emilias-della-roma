@@ -1,8 +1,14 @@
 // Section 4 JS
+// Navigation 
+fetch("/components/nav.html")
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById("common-navigation").innerHTML = data;
+});
 const restaurants = {
     "london": `
         <div class="row"> 
-             <div class="col-md-4 col-sm-12 custom-img restaurant-img">
+             <div class="col-md-6 col-lg-4 col-sm-12 custom-img restaurant-img">
                 <img src="assets/rst1.jpg" alt="Restaurant one">
                 <div class="restaurant">
                     <h1>LONDON CITY CENTRE</h1>
@@ -13,7 +19,7 @@ const restaurants = {
                     <button class="btn-2 rest-btn">VIEW MENU</button>
                 </div>
               </div>
-              <div class="col-md-4 col-sm-12 custom-img restaurant-img">
+              <div class="col-md-4  col-lg-4 col-sm-12 custom-img restaurant-img">
                 <img src="assets/rst2.jpg" alt="Restaurant two">
                 <div class="restaurant">
                     <h1>LONDON SOHO</h1>
@@ -24,7 +30,7 @@ const restaurants = {
                     <button class="btn-2 rest-btn">VIEW MENU</button>
                 </div>
               </div>    
-              <div class="col-md-4 col-sm-12 custom-img restaurant-img">
+              <div class="col-md-4  col-lg-4 col-sm-12 custom-img restaurant-img">
                 <img src="assets/rst3.jpg" alt="Restaurant three">
                 <div class="restaurant">
                     <h1>LONDON BRIDGE</h1>
@@ -39,7 +45,7 @@ const restaurants = {
         `,
     "manchester": `
         <div class="row"> 
-             <div class="col-md-4 col-sm-12 custom-img restaurant-img">
+             <div class="col-md-4  col-lg-4 col-sm-12 custom-img restaurant-img">
                 <img src="assets/rst4.jpg" alt="Restaurant four">
                 <div class="restaurant">
                     <h1>MANCHESTER</h1>
@@ -50,7 +56,7 @@ const restaurants = {
                     <button class="btn-2 rest-btn">VIEW MENU</button>
                 </div>
               </div>
-              <div class="col-md-4 col-sm-12 custom-img restaurant-img">
+              <div class="col-md-4  col-lg-4 col-sm-12 custom-img restaurant-img">
                 <img src="assets/rst5.jpg" alt="Restaurant five">
                 <div class="restaurant">
                     <h1>MANCHESTER ARNDALE</h1>
@@ -65,7 +71,7 @@ const restaurants = {
         `,
     "leeds": `
         <div class="row"> 
-             <div class="col-md-4 col-sm-12 custom-img restaurant-img">
+             <div class="col-md-4  col-lg-4 col-sm-12 custom-img restaurant-img">
                 <img src="assets/rst6.jpg" alt="Restaurant six">
                 <div class="restaurant">
                     <h1>LEEDS</h1>
@@ -80,7 +86,7 @@ const restaurants = {
         `,
     "birmingham": `
         <div class="row"> 
-             <div class="col-md-4 col-sm-12 custom-img restaurant-img">
+             <div class="col-md-4  col-lg-4 col-sm-12 custom-img restaurant-img">
                 <img src="assets/rst7.jpg" alt="Restaurant seven">
                 <div class="restaurant">
                     <h1>BIRMINGHAM</h1>
@@ -92,7 +98,7 @@ const restaurants = {
                     <button class="btn-2 rest-btn">VIEW MENU</button>
                 </div>
               </div>
-              <div class="col-md-4 col-sm-12 custom-img restaurant-img">
+              <div class="col-md-4  col-lg-4 col-sm-12 custom-img restaurant-img">
                 <img src="assets/rst8.jpg" alt="Restaurant eight">
                 <div class="restaurant">
                     <h1>BIRMINGHAM VICTORIA SQUARE</h1>
@@ -107,7 +113,7 @@ const restaurants = {
         `,
     "liverpool": `
         <div class="row"> 
-             <div class="col-md-6 col-sm-12 custom-img restaurant-img">
+             <div class="col-md-6  col-lg-4 col-sm-12 custom-img restaurant-img">
                 <img src="assets/rst9.jpg" alt="Restaurant nine">
                 <div class="restaurant">
                     <h1>LIVERPOOL</h1>
@@ -123,7 +129,7 @@ const restaurants = {
         `,
     "bristol": `
         <div class="row"> 
-             <div class="col-md-6 col-sm-12 custom-img restaurant-img">
+             <div class="col-md-6  col-lg-4 col-sm-12 custom-img restaurant-img">
                 <img src="assets/rst10.jpg" alt="Restaurant ten">
                 <div class="restaurant">
                     <h1>BRISTOL</h1>

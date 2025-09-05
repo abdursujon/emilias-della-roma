@@ -357,7 +357,18 @@ p {
     background: transparent;
     border: 1px solid white;
 }
-
+.restaurant-img img{
+    border-top-left-radius: 360px;
+    border-top-right-radius: 360px;
+}
+.restaurant h1 , .restaurant p{
+    color:white;
+}
+.restaurant hr{
+    color: #ff6900 ;
+    border-top: 5px solid white;
+    opacity: 1;
+}
 /* Section 5: ############################# */
 #section-5 {
     padding: 20px 0px;

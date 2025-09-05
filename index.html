@@ -25,43 +25,7 @@
 
 <body>
     <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-md bg-body-tertiary custom-navbar">
-        <div class="container-fluid">
-            <a class="navbar-brand custom-brand" href="index.html">
-                <h1><span class="logo-left">EMILIA'S </span><span class="logo-right">della roma</span></h1>
-                <p class="subtitle">La Tavola & Enoteca</p>
-            </a>
-            <button class="navbar-toggler custom-navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <img class="menu-icon" src="assets/hamburger-menu.png" alt="menu-icon">
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="d-flex align-items-center justify-content-between w-100 d-md-none "
-                    style="margin-top: -15px;">
-                    <a class="navbar-brand custom-brand" href="index.html">
-                        <h1><span class="logo-left" style="color:white">EMILIA'S </span><span class="logo-right"
-                                style="color:white">della roma</span></h1>
-                        <p class="subtitle" style="color:white">La Tavola & Enoteca</p>
-                    </a>
-                    <button class="navbar-toggler closing-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <img class="closing-icon" src="assets/closing-btn.png" alt="menu-icon">
-                    </button>
-                </div>
-
-                <div class="navbar-nav ms-auto">
-
-                    <a class="nav-link" href="index.html">HOME</a>
-                    <a class="nav-link" href="locations.html">LOCATIONS</a>
-                    <a class="nav-link" href="menu.html">MENU</a>
-                    <a class="nav-link" href="gallery.html">GALLERY</a>
-                    <a class="nav-link" href="contact.html">CONTACT</a>
-                    <a class="nav-link" href="booking.html" id="book-a-table-btn">BOOK A TABLE</a>
-                </div>
-            </div>
-    </nav>
+    <div id="common-navigation"></div>
     <main>
         <!-- Section 1 -->
         <section id="section-1">
@@ -196,7 +160,7 @@
                             <p>Ready to expericence a little Veneto warmth with your favourite italian cuisine with an
                                 authentic espresso? Great! You've come to the right place! </p> <br>
                             <p>Because it's Emilia's thing!</p> <br>
-                            <span><button class="custom-btn section-3-btn">BOOK NOW</button></span>
+                            <span><button class="custom-btn section-3-btn" onclick="location.href='booking.html'">BOOK NOW</button></span>
                         </div>
                     </div>
                 </div>
@@ -294,9 +258,9 @@
                 </div>
             </div>
         </section>
-
+<a href="/components/footer.html"></a>
     </main>
-    <!-- Footer -->
+     <!-- Footer -->
     <div style="background-color:#071023;">
         <div class="container" style="padding:50px 10px;">
             <footer>

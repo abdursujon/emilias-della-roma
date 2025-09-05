@@ -1,4 +1,23 @@
-// Section 4 JS
+// Navigation 
+fetch("/components/nav.html")
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById("common-navigation").innerHTML = data;
+});
+
+// Section 1: Play video sound 
+const video = document.getElementById("bg-video");
+const soundBtn = document.getElementById("sound-toggle");
+soundBtn.addEventListener("click", () => {
+    if (video.muted) {
+        video.muted = false;
+        soundBtn.textContent = "🔊 PLAYING: SOUND OF EMILIA'S";
+    } else {
+        video.muted = true;
+        soundBtn.textContent = "🔇PLAY: SOUND OF EMILIA'S";
+    }
+});
+// Section 4
 const restaurants = {
     "london": `
         <div class="row"> 
@@ -183,38 +202,32 @@ const postcodePrefixes = {
     ]
 };
 
-const input = document.getElementById('location-input');
-const suggestions = document.getElementById('suggestions');
-const resultDiv = document.getElementById('result');
-if (input && suggestions && resultDiv) {
-    input.addEventListener('input', async function () {
+// --- Select Elements Dynamically ---
+const input = document.querySelector('#location-input, #location-input-2');
+const form = document.querySelector('#location-form, #location-form-2');
+const suggestions = document.querySelector('#suggestions, #suggestions-2');
+const resultDiv = document.querySelector('#result, #result-2');
+if (input && form && suggestions && resultDiv) {
+
+    // --- Show suggestions while typing ---
+    input.addEventListener('input', async () => {
         const query = input.value.trim();
         suggestions.innerHTML = '';
 
         if (!query) {
-            suggestions.style.display = "none"; // hide if empty
+            suggestions.style.display = "none";
             return;
         }
 
-        suggestions.style.display = "block"; // show list when typing
+        suggestions.style.display = "block";
 
-        // Fetch or generate suggestions here
-    });
-    // Autocomplete for postcodes using Postcodes.io
-    input.addEventListener('input', async function () {
-        const query = input.value.trim();
-        suggestions.innerHTML = '';
-
-        if (!query) return;
-
-        // Only fetch suggestions if input contains numbers (likely postcode)
         if (/\d/.test(query)) {
             try {
                 const res = await fetch(`https://api.postcodes.io/postcodes?q=${encodeURIComponent(query)}`);
                 const data = await res.json();
 
                 if (data.status === 200 && data.result) {
-                    data.result.slice(0, 5).forEach(item => {
+                    data.result.slice(0,5).forEach(item => {
                         const li = document.createElement('li');
                         li.textContent = `${item.postcode} (${item.admin_district})`;
                         li.style.cursor = 'pointer';
@@ -231,8 +244,8 @@ if (input && suggestions && resultDiv) {
         }
     });
 
-    // Form submission
-    document.getElementById('location-form').addEventListener('submit', async function (e) {
+    // --- Handle form submission ---
+    form.addEventListener('submit', e => {
         e.preventDefault();
         suggestions.innerHTML = '';
         const userInput = input.value.trim().toUpperCase();
@@ -240,12 +253,10 @@ if (input && suggestions && resultDiv) {
 
         let cityKey = null;
 
-        // Check if input is a city
         const cityInput = userInput.toLowerCase();
         if (restaurants[cityInput]) {
             cityKey = cityInput;
         } else if (/\d/.test(userInput)) {
-            // Check postcode prefixes
             for (const [city, prefixes] of Object.entries(postcodePrefixes)) {
                 if (prefixes.some(prefix => userInput.startsWith(prefix))) {
                     cityKey = city;
@@ -254,125 +265,97 @@ if (input && suggestions && resultDiv) {
             }
         }
 
-        // Show results
         if (restaurants[cityKey]) {
-            resultDiv.innerHTML = restaurants[cityKey]; // inject full HTML block
+            resultDiv.innerHTML = restaurants[cityKey];
         } else {
             resultDiv.innerHTML = `<p>No restaurants found for "${userInput}"</p>`;
         }
     });
-};
-// Book a table 
-function myFunction() {
-    var x = document.getElementById("book-a-table");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
-};
+}
 
- document.getElementById("book-a-table-btn").addEventListener("click", function(){
-    document.getElementById("book-a-table").innerHTML=`
-            <div class="container">
-            <a class="navbar-brand custom-brand" href="index.html">
-            <h1><span class="logo-left">EMILIA'S </span><span class="logo-right">della roma</span></h1>
-            <p class="subtitle">La Tavola & Enoteca</p>
-            </a>
-            <button class="nav-link" id="book-a-table-btn" onclick="myFunction()"><img src="./assets/closing-btn.png" alt="close menu"></button>
-                <div class="row">
-                    <div class="col-sm-12">
-                        <p>If you would like to make a booking directly click <span>here</span>, for any other enquiries
-                            fill in the form below</p>
-                    </div>
-                    <div class="col-sm-2">
-                        <form>
-                            <div class="mb-3">
-                                <label for="exampleInputEmail1" class="form-label">FIRST NAME</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1"
-                                    aria-describedby="emailHelp" placeholder="First Name">
-                            </div>
-                        </form>
-                    </div>
-                    <div class="col-sm-2">
-                        <form>
-                            <div class="mb-3">
-                                <label for="exampleInputEmail1" class="form-label">LAST NAME</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1"
-                                    aria-describedby="emailHelp" placeholder="Last Name">
-                            </div>
-                        </form>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-12 col-md-2">
-                        <form>
-                            <div class="mb-3">
-                                <label for="exampleInputEmail1" class="form-label">EMAIL ADDRESS</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1"
-                                    aria-describedby="emailHelp" placeholder="Email Address">
-                            </div>
-                        </form>
-                    </div>
-                    <div class="col-sm-12 col-md-2">
-                        <form>
-                            <div class="mb-3">
-                                <label for="exampleInputEmail1" class="form-label">CONTACT NUMBER</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1"
-                                    aria-describedby="emailHelp" placeholder="+447874083967">
-                            </div>
-                        </form>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-4">
-                        <p>RESTAURANT</p>
-                        <div class="dropdown" style="width: 100%;">
-                            <button id="dropdownMenuButton" class="btn btn-secondary dropdown-toggle" type="button"
-                                data-bs-toggle="dropdown" aria-expanded="false" style="width: 100%;">
-                                SELECT A RESTAURANT
-                            </button>
-                            <ul class="dropdown-menu" id="dropdown" aria-labelledby="dropdownMenuButton">
-                                <li><a class="dropdown-item" href="#">LONDON</a></li>
-                                <li><a class="dropdown-item" href="#">LEEDS</a></li>
-                                <li><a class="dropdown-item" href="#">BIRMINGHAM</a></li>
-                                <li><a class="dropdown-item" href="#">BRISTOL</a></li>
-                                <li><a class="dropdown-item" href="#">LIVERPOOL</a></li>
-                                <li><a class="dropdown-item" href="#">MANCHESTER</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-12 col-md-4">
-                        <form>
-                            <div class="form-group">
-                                <label for="exampleFormControlTextarea1">ENQUIRY</label>
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="15" placeholder="Enter your enquiry"></textarea>
-                            </div>
-                            <button class="">SUBMIT</button><br>
-                        </form>
-                    </div>
-                </div>
-
-            </div>`;
-});
+//  document.getElementById("book-a-table-btn").addEventListener("click", function(){
+//     document.getElementById("book-a-table").innerHTML=`
+//             <div class="container">
+//             <a class="navbar-brand custom-brand" href="index.html">
+//             <h1><span class="logo-left">EMILIA'S </span><span class="logo-right">della roma</span></h1>
+//             <p class="subtitle">La Tavola & Enoteca</p>
+//             </a>
+//             <button class="nav-link" id="book-a-table-btn" onclick="myFunction()"><img src="./assets/closing-btn.png" alt="close menu"></button>
+//                 <div class="row">
+//                     <div class="col-sm-12">
+//                         <p>If you would like to make a booking directly click <span>here</span>, for any other enquiries
+//                             fill in the form below</p>
+//                     </div>
+//                     <div class="col-sm-2">
+//                         <form>
+//                             <div class="mb-3">
+//                                 <label for="exampleInputEmail1" class="form-label">FIRST NAME</label>
+//                                 <input type="email" class="form-control" id="exampleInputEmail1"
+//                                     aria-describedby="emailHelp" placeholder="First Name">
+//                             </div>
+//                         </form>
+//                     </div>
+//                     <div class="col-sm-2">
+//                         <form>
+//                             <div class="mb-3">
+//                                 <label for="exampleInputEmail1" class="form-label">LAST NAME</label>
+//                                 <input type="email" class="form-control" id="exampleInputEmail1"
+//                                     aria-describedby="emailHelp" placeholder="Last Name">
+//                             </div>
+//                         </form>
+//                     </div>
+//                 </div>
+//                 <div class="row">
+//                     <div class="col-sm-12 col-md-2">
+//                         <form>
+//                             <div class="mb-3">
+//                                 <label for="exampleInputEmail1" class="form-label">EMAIL ADDRESS</label>
+//                                 <input type="email" class="form-control" id="exampleInputEmail1"
+//                                     aria-describedby="emailHelp" placeholder="Email Address">
+//                             </div>
+//                         </form>
+//                     </div>
+//                     <div class="col-sm-12 col-md-2">
+//                         <form>
+//                             <div class="mb-3">
+//                                 <label for="exampleInputEmail1" class="form-label">CONTACT NUMBER</label>
+//                                 <input type="email" class="form-control" id="exampleInputEmail1"
+//                                     aria-describedby="emailHelp" placeholder="+447874083967">
+//                             </div>
+//                         </form>
+//                     </div>
+//                 </div>
+//                 <div class="row">
+//                     <div class="col-md-4">
+//                         <p>RESTAURANT</p>
+//                         <div class="dropdown" style="width: 100%;">
+//                             <button id="dropdownMenuButton" class="btn btn-secondary dropdown-toggle" type="button"
+//                                 data-bs-toggle="dropdown" aria-expanded="false" style="width: 100%;">
+//                                 SELECT A RESTAURANT
+//                             </button>
+//                             <ul class="dropdown-menu" id="dropdown" aria-labelledby="dropdownMenuButton">
+//                                 <li><a class="dropdown-item" href="#">LONDON</a></li>
+//                                 <li><a class="dropdown-item" href="#">LEEDS</a></li>
+//                                 <li><a class="dropdown-item" href="#">BIRMINGHAM</a></li>
+//                                 <li><a class="dropdown-item" href="#">BRISTOL</a></li>
+//                                 <li><a class="dropdown-item" href="#">LIVERPOOL</a></li>
+//                                 <li><a class="dropdown-item" href="#">MANCHESTER</a></li>
+//                             </ul>
+//                         </div>
+//                     </div>
+//                 </div>
+//                 <div class="row">
+//                     <div class="col-sm-12 col-md-4">
+//                         <form>
+//                             <div class="form-group">
+//                                 <label for="exampleFormControlTextarea1">ENQUIRY</label>
+//                                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="15" placeholder="Enter your enquiry"></textarea>
+//                             </div>
+//                             <button class="">SUBMIT</button><br>
+//                         </form>
+//                     </div>
+//                 </div>
+//             </div>`;
+// });
 
 
-//Load common footer html code across different pages 
-fetch("components/footer.html")
-    .then(response => response.text())
-    .then(data => {
-        document.getElementById("footer").innerHTML = data;
-    });
-const video = document.getElementById("bg-video");
-const soundBtn = document.getElementById("sound-toggle");
-soundBtn.addEventListener("click", () => {
-    if (video.muted) {
-        video.muted = false;
-        soundBtn.textContent = "🔊 PLAYING: SOUND OF EMILIA'S";
-    } else {
-        video.muted = true;
-        soundBtn.textContent = "🔇PLAY: SOUND OF EMILIA'S";
-    }
-});

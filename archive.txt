@@ -331,3 +331,22 @@ dropdownItems8.forEach(item => {
 //inside container 
 <button class="nav-link" id="book-a-table-btn" onclick="myFunction()"><img src="./assets/closing-btn.png"
                 alt="close menu"></button>
+
+
+
+
+
+//Git commands 
+To see all previous version 
+git log -- index.js
+
+To open a specific folder 
+git show 98f3b72505c4083270b55ffc3c58a9bdfe433a2f:index.js
+
+
+Restore 
+git restore --source 98f3b72505c4083270b55ffc3c58a9bdfe433a2f index.js
+
+
+Undo last commit
+git checkout HEAD~1 -- index.js
