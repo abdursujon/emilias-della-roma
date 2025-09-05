@@ -25,7 +25,7 @@
 
 <body>
     <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary custom-navbar">
+    <nav class="navbar navbar-expand-md bg-body-tertiary custom-navbar">
         <div class="container-fluid">
             <a class="navbar-brand custom-brand" href="index.html">
                 <h1><span class="logo-left">EMILIA'S </span><span class="logo-right">della roma</span></h1>
@@ -37,16 +37,28 @@
                 <img class="menu-icon" src="assets/hamburger-menu.png" alt="menu-icon">
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="d-flex align-items-center justify-content-between w-100 d-md-none " style="margin-top: -15px;">
+                    <a class="navbar-brand custom-brand" href="index.html">
+                        <h1><span class="logo-left" style="color:white">EMILIA'S </span><span class="logo-right" style="color:white">della roma</span></h1>
+                        <p class="subtitle" style="color:white">La Tavola & Enoteca</p>
+                    </a>
+                    <button class="navbar-toggler closing-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <img class="closing-icon" src="assets/closing-btn.png" alt="menu-icon">
+                    </button>
+                </div>
+
                 <div class="navbar-nav ms-auto">
+
                     <a class="nav-link" href="index.html">HOME</a>
                     <a class="nav-link" href="locations.html">LOCATIONS</a>
                     <a class="nav-link" href="menu.html">MENU</a>
                     <a class="nav-link" href="gallery.html">GALLERY</a>
                     <a class="nav-link" href="contact.html">CONTACT</a>
-                    <!-- <button onclick="myFunction()">BOOK A TABLE</button>
-                 <div id="book-a-table-container" style="position: absolute; background-color: black;"></div>
-                <a href="" class="nav-link" id="book-a-table-link"><span>BOOK A TABLE</span></a> -->
                     <a class="nav-link" href="booking.html" id="book-a-table-btn">BOOK A TABLE</a>
+                </div>
+            </div>
     </nav>
     <main>
         <!-- Section 1 -->

@@ -1,51 +1,48 @@
 /* Properties for the whole page */
 html {
-    /*   1rem = 10px  */
-    font-size: 62.5%;
+    font-size: 10px;
 }
 /* Heading styles */
 h1 {
     font-family: "Cormorant Garamond", serif;
     font-style: bold;
-    font-size: 6rem;
-    color:#FB4141;
+    font-size: 3rem;
+    color:#B12C00;
 }
 /* Sub heading */
 h2{
     font-family: "Cormorant Garamond", serif;
     font-style: bold;
-    font-size: 3rem;
-    color:#FB4141;
+    font-size: 2rem;
+    color:#B12C00;
 }
 /* Body text */
 p{
     font-family:"Montserrat", sans-serif;
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     font-style: normal;
     color:black;
 }
 
 /* Navigation style */
 .navbar {
-    height: 60px;
+    height: 70px;
 }
 .custom-brand {
-    margin-left: 50px;
-    margin-top:-15px;
-    display: block;
+    margin-left: 5px;
 }
 .logo-left,
 .logo-right {
     font-family: "Cormorant Garamond", serif;
-    color:#FB4141;
+    color:#ff6900;
 }
 .logo-left{
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: bold;
 }
 .logo-right {
     font-style: italic;
-    font-size: 2rem;
+    font-size: 1rem;
     font-weight: 400;
 }
 .subtitle{
@@ -53,23 +50,30 @@ p{
     margin-left: 3px;
     font-size: 1rem;
 }
+.navbar-nav .nav-link {
+    font-size: 1.4rem;
+    color:white;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: bold;
+}
 .navbar-nav .nav-link:hover {
     transform: scale(1.1);
     text-decoration: underline;
 }
 
-.navbar-nav .nav-link:not(:last-child) {
+#book-a-table-btn{
     color: black;
     font-family: "Cormorant Garamond", serif;
     font-weight: 700;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     margin-right: 5px;
     margin-top: 5px;
+    width: 120px;
 }
 
-.navbar-nav .nav-link:last-child{
+#book-a-table-btn{
     margin-right: 50px;
-    background-color: #FB4141;
+    background-color: #ff6900;
     color: #fff;
     border: none;
     padding: 7px 7px;
@@ -77,13 +81,13 @@ p{
     position: relative;
     display: inline-block;
     background-size: 100% 100%;
-    background:linear-gradient(90deg, #1095c1 50%, #FB4141 0) var(--_p, 100%)/200% no-repeat;
+    background:linear-gradient(90deg, #1095c1 50%, #ff6900 0) var(--_p, 100%)/200% no-repeat;
     -webkit-background-clip: background;
     background-clip: background;
     transition: .4s;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
 }
-.navbar-nav .nav-link:last-child:hover {
+#book-a-table-btn:hover {
     transform: none;
     text-decoration: none;
     --_p: 0%;
@@ -92,28 +96,48 @@ p{
 .custom-navbar {
     background-color: #F2EDD1 !important;
 }
-#book-a-table{
-  width: 100%;
-  height: 100%;
-  padding:0;
-  margin: 0;
-  background-color: #0ABAB5;
-  margin-top:0;
-  z-index: 9999;
-  opacity: 1;
-  position: relative;
-  top:0;
-  left:0;
+
+.navbar-toggler:focus{
+    box-shadow: none;
+    outline: none;
+  }
+  .navbar-toggler{
+    border: none;
+  }
+  .navbar-toggler img{
+    width: 30px;
+    height: 30px;
+  }
+.navbar-collapse{
+    position: fixed;
+    top:0px;
+    left: 0;
+    width: 100vw;
+    background-color: #0ABAB5;
+    z-index: 9999;
+    padding:30px;
+    height: 100vh;
+}
+.navbar-collapse a{
+     color:white;
+}
+.closing-toggler img{
+   height: 20px;
+   width: 20px;
 }
 /* Section 1 */
 .video-container{
     margin-top: 0px;
-    padding:0px
+    padding:0px;
+    width: 100vw;
+}
+#bg-video{
+    width: 100%;
 }
 #sound-toggle{
     position:absolute;
-    top: 10%;
-    left:7%;
+    top: 90px;
+    left:23%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     background-color: white;
@@ -125,14 +149,14 @@ p{
 }
 .title-1{
      position:absolute;
-    top: 60%;
+    top: 25%;
     left:55%;
     color:white;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
      font-family: "Cormorant Garamond", serif;
     z-index: 999;
-    font-size: 6rem;
+    font-size: 2rem;
 }
 /* section 2 */
 #section-2{
@@ -142,8 +166,8 @@ p{
 }
 
 .btn-1, .btn-2 {
-    color:#FB4141;
-    border: 1px solid #FB4141;
+    color:#ff6900;
+    border: 1px solid #ff6900;
     border-radius: 25px;
     padding: 10px 15px;
     background:transparent;
@@ -160,7 +184,7 @@ p{
 }
 .btn-1:hover, .btn-2:hover{
     color:white;
-    background-color: #FB4141;
+    background-color: #ff6900;
 }
 
 .custom-img img {
@@ -202,7 +226,7 @@ p{
   border-top-right-radius:  360px;
 }
 .dining-btn , .section-5-btn{
-    background:linear-gradient(90deg, #1095c1 50%, #FB4141 0) var(--_p, 100%)/200% no-repeat;
+    background:linear-gradient(90deg, #1095c1 50%, #ff6900 0) var(--_p, 100%)/200% no-repeat;
     -webkit-background-clip: background;
     background-clip: background;
     transition: .4s;
@@ -242,7 +266,7 @@ p{
     width: 78px;
     height: 78px;
     border: none;
-    background-color: #FB4141;
+    background-color: #ff6900;
     cursor: pointer;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -288,7 +312,7 @@ p{
     color:white;
     height: 5px;
     opacity: 1;
-    background:linear-gradient(90deg, #FB4141 50%, #6e3838 );
+    background:linear-gradient(90deg, #ff6900 50%, #6e3838 );
     z-index: 9999;
     width: 350px;
     border:none;
@@ -360,7 +384,7 @@ h2{
     margin-top:-15px;
 }
 .btn-3{
-    background-color: #FB4141;
+    background-color: #ff6900;
     border:none;
     padding: 10px 10px;
     border-radius: 10px;
@@ -368,13 +392,13 @@ h2{
 }
 .btn-4, .btn-5, .btn-6{
     background-color: transparent;
-    border:2px solid #FB4141;
+    border:2px solid #ff6900;
     border-radius: 50px;
     height: 40px;
     width: 40px;
 }
 .btn-4:hover{
-    background-color: #FB4141;;
+    background-color: #ff6900;
 }
 .btn-5{
      border:2px solid #1877F2;
@@ -409,36 +433,72 @@ h2{
 .quick-link span a:hover{
     text-decoration: underline;
 }
-/* Media query for extra small devices */
-@media (max-width: 575px) {}
 
-/* Media query for small devices */
-@media (max-width: 767px) {}
-
-/* Media query for medium devices */
-@media (max-width: 991px) {
-
-    /* Navigation Style */
-    .custom-brand {
-        margin-left: 20px;
-    }
-
-    .custom-navbar-toggler {
-        margin-right: 20px;
-    }
-
-    .navbar-nav .nav-link:hover {
-        color: rgb(62, 218, 230) !important;
-        transform: 0;
-        text-decoration: none;
-    }
+/* extra small and medium devices */
+@media (max-width:768px) {
+    .navbar-collapse{
+    position: fixed;
+    top:0px;
+    left: 0;
+    width: 100vw;
+    background-color: #0ABAB5;
+    z-index: 9999;
+    padding:30px;
+    height: 100vh;
+}
+}
+/* Normal behavior for devices 768px and above */
+@media (min-width: 768px) {
+  .custom-brand{
+    margin-left:20px;
+  }
+.logo-left{
+    font-size: 3rem;
+}
+.navbar-nav .nav-link{
+    color:black;
+    font-size: 1.4rem;
+    margin-top: 10px;
+    margin-right: 10px;
 }
 
-/* Media query for large devices */
-@media (max-width: 1199px) {}
+#book-a-table-btn{
+    margin-right: 20px;
+    font-size: 1.8rem;
+    width: 150px;
+}
+  .navbar-collapse {
+    position: relative; /* default bootstrap behavior */
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    padding: 0;
+  }
 
-/* Media query for X-large devices */
-@media (max-width: 1399px) {}
+/* Section 1 */
+#sound-toggle{
+    top: 90px;
+    left:100px;
+}
+.title-1{
+    font-size: 5rem;
+    top:40%;
+}
+}
+/* Large */
+@media (min-width:992px) {
+/* Section 1 */
+.title-1{
+    font-size: 8rem;
+    top:50%;
+}
+}
+/* X-Large */
+@media (max-width: ≥1200px) {
 
-/* Media query for XX-large devices */
-@media (min-width: 1400px) {}
+}
+/* XX-Large */
+@media (max-width: ≥1400px) {
+
+}
+

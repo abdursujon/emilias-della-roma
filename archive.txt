@@ -1,3 +1,11 @@
+//Check if some application is using a port 
+netstat -ano | findstr :8080
+// To stop the host take not of the first tcip number then run (21436 example) on widow command prompt
+taskkill /PID 21436 /F
+//To start a local php host by command 
+php -S localhost:8000
+pATH FOR XAMPP DOC
+C:\ProgramData\Microsoft\Windows\Start Menu\Programs\XAMPP
 <!--  HMLT5 for later improvement 
 <div class="col-sm-12 col-md-6">
                 <h2>Book A Table For 1-12 Guests</h2>

@@ -1,26 +1,13 @@
-//Load common navigation html file across different pages 
-fetch("components/nav.html")
-    .then(response => response.text())
-    .then(data => {
-        document.getElementById("navbar").innerHTML = data;
-    });
-//Load common footer html code across different pages 
-fetch("components/footer.html")
-    .then(response => response.text())
-    .then(data => {
-        document.getElementById("footer").innerHTML = data;
-    });
-const video = document.getElementById("bg-video");
-const soundBtn = document.getElementById("sound-toggle");
-soundBtn.addEventListener("click", () => {
-    if (video.muted) {
-        video.muted = false;
-        soundBtn.textContent = "🔊 PLAYING: SOUND OF EMILIA'S";
-    } else {
-        video.muted = true;
-        soundBtn.textContent = "🔇PLAY: SOUND OF EMILIA'S";
-    }
-});
+// // Navigation close button 
+// const menuButton = document.querySelector(".navbar-toggler");
+// const menuIcon = document.querySelector(".menu-icon");
+// menuButton.addEventListener("click", function () {
+//   if (menuIcon.src.includes("hamburger-menu.png")) {
+//     menuIcon.src = "./assets/closing-btn.png";
+//   } else {
+//     menuIcon.src = "./assets/hamburger-menu.png";
+//   }
+// });
 // Section 4 JS
 const restaurants = {
     "london": `
@@ -381,18 +368,21 @@ function myFunction() {
             </div>`;
 });
 
-// navigation
-const menuButton = document.querySelector(".custom-navbar-toggler");
-const menuIcon = document.querySelector(".menu-icon");
 
-// Add a click event listener to the button
-menuButton.addEventListener("click", function () {
-  // Check the current source of the menu icon
-  if (menuIcon.src.includes("hamburger-menu.png")) {
-    // If current source is hamburger, change to closing menu image
-    menuIcon.src = "./assets/closing-btn.png";
-  } else {
-    // Otherwise change it back to hamburger
-    menuIcon.src = "./assets/hamburger-menu.png";
-  }
+//Load common footer html code across different pages 
+fetch("components/footer.html")
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById("footer").innerHTML = data;
+    });
+const video = document.getElementById("bg-video");
+const soundBtn = document.getElementById("sound-toggle");
+soundBtn.addEventListener("click", () => {
+    if (video.muted) {
+        video.muted = false;
+        soundBtn.textContent = "🔊 PLAYING: SOUND OF EMILIA'S";
+    } else {
+        video.muted = true;
+        soundBtn.textContent = "🔇PLAY: SOUND OF EMILIA'S";
+    }
 });
