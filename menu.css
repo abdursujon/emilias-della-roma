@@ -1,25 +1,30 @@
+
 /* Section 1 */
-.section-1-container img{
-  height: 60vh;
-  object-fit:cover;/* ensures image doesn't distort, crops if needed */
-  display: block;    /* removes extra spacing */
-}
-.section-1-container{
-   position: relative;
-   text-align: left;
-   color: rgb(252, 252, 252);
-   margin:0;
+.menu-custom-container{
    padding:0;
 }
-
-.section-1-centered-text {
-  position: absolute;
-  top: 70%;
-  left: 30%;
-  transform: translate(-50%, -50%);
-  font-size: 10rem;
-  font-weight: 900;
-  font-family: "Cormorant Garamond", serif;
+.our-menu{
+  position: relative;
+}
+.centered-text{
+  position:absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  font-size: 3rem;
+  font-style: bold;
+  font-family: "Cormorant Garamond", serif; 
+}
+.our-menu img {
+  height: 30vh;
+  object-fit: cover;
+  display: block;
 }
 /* section 2 */
 .sticky-sidebar {
@@ -41,3 +46,63 @@
 .menu-custom-col-h1{
   font-size: 4rem;
 }
+/* Medium Devices */
+@media (min-width: 768px) {
+  p {
+    font-size: 1.8rem;
+  }
+
+  /* Navigation: ################ */
+
+
+  /* Section 1: ############### */
+  .centered-text {
+    font-size: 6rem;
+  }
+
+  /* section 2: ##################### */
+
+
+  /* Section 3: ####################### */
+
+  /* Section 4: ######################## */
+  #location-section-4 {
+  padding: 50px 0px;
+  background-color: #137571;
+}
+
+.loc-custom-col>img {
+  border-radius: 25px;
+  width: 400px;
+  object-fit: cover;
+  display: block;
+  height: 50vh;
+  width: 100%;
+  margin: 20px 0px;
+}
+  /* Footer */
+
+}
+
+/* Large Devices */
+@media (min-width:992px) {
+    /* Section 1: ############### */
+  .centered-text {
+    font-size: 8rem;
+  }
+  .our-menu img{
+    height: 40vh;
+  }
+  /* section-4 */
+  .loc-custom-col>h1,
+.loc-custom-col>p {
+  color: white;
+  margin-top: 50px;
+}
+}
+
+/* X-Large */
+@media (min-width: 1200px) {}
+
+/* XX-Large */
+@media (min-width: 1400px) {}
