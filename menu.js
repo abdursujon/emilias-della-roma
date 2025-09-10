@@ -10,7 +10,101 @@
     });
   });
 
-  // section 3
+//Show vegan items
+document.getElementById("vegan").addEventListener("click", function(){
+document.getElementById("all-menu-items").innerHTML=`
+
+                                <h2 class="fs-2">Olive (6.00)</h2>
+                                <p>vg</p>
+                                <p>Gaeta & Nocellara olives, chilli, garlic & oregano</p> <br>
+
+                                <h2 class="fs-2">Focaccia (6.00)</h2>
+                                <p>vg</p>
+                                <p>Freshly baked focaccia, extra virgin olive oil & Maldon sea salt</p> <br>
+
+                                <h2 class="fs-2">Scarpetta (11.00)</h2>
+                                <p>vg</p>
+                                <p>Sweet tomato & garlic sauce, served with freshly baked bread. Using the finest
+                                    tomatoes grown
+                                    in the rich volcanic soil of San Marzano, the art of 'scarpetta' is to mop up
+                                    the
+                                    sauce until the plate is clean</p> <br>
+                                
+                                <h2 class="fs-2">Bruschetta Pomodoro (9.00)</h2>
+                                <p>vg</p>
+                                <p>Toasted sourdough, vine-ripened tomatoes, garlic, oregano & fresh basil</p> <br>
+                                
+                                <h2 class="fs-2">Fettuccine Ortolana (15.00)</h2>
+                                <p>vg</p>
+                                <p>Mushroom & vegetable ragu, tomato & flat leaf parsley</p><br>
+
+                                <h2 class="fs-2">Rigatoni Arrabbiata (15.00)</h2>
+                                <p>vg</p>
+                                <p>Slow-cooked tomato & chilli sauce, garlic & flat leaf parsley</p><br>
+
+                                
+                                <h2 class="fs-2">Arancia (15.00)</h2>
+                                <p>vg</p>
+                                <p>Orange, fennel, Italian leaves, citrus dressing, black olive crumb</p>
+
+                                
+                                <h2 class="fs-2">Insalata Mista (5.00)</h2>
+                                <P>vg</P>
+                                <p>Mixed leaves, tomatoes, cucumber & vinaigrette</p> <br>
+
+                                
+                                <h2 class="fs-2">Broccoli (5.00)</h2>
+                                <p>vg</p>
+                                <p>Tenderstem, chilli & garlic</p> <br>
+
+                                <h2 class="fs-2">Spinaci (5.00)</h2>
+                                <p>vg</p>
+                                <p>Garlic baby spinach</p>
+       
+`;});
+
+//Show vegetarian items
+document.getElementById("vegetarian").addEventListener("click", function(){
+document.getElementById("all-menu-items").innerHTML=`
+                                <h2 class="fs-2">Zucchine Fritte (5.00)</h2>
+                                <P>v</P>
+                                <p>Courgette fries</p> <br>
+
+                                <h2 class="fs-2">Pane</h2>
+                                <p>v</p>
+                                <p>Hand stretched garlic bread</p>
+                                <h2 class="fs-2">Focaccia - Style With Rosemary(7.00)</h2>
+                                <h2 class="fs-2">Tomato & Basil (8.00)</h2>
+                                <h2 class="fs-2">Mozzarella & Smoked Provola (9.00)</h2> <br>
+
+                                <h2 class="fs-2">Arancini (10.00)</h2>
+                                <p>v</p>
+                                <p>Crispy truffle risotto balls, smoked provola & Italian cheese sauce</p> <br>
+
+                                <h2 class="fs-2">Caprese Burrata (12.00)</h2>
+                                <p>v</p>
+                                <p>Crispy truffle risotto balls, smoked provola & Italian cheese sauce</p> <br>
+
+                                <h2 class="fs-2">Parmigiana Melanzane (15.00)</h2>
+                                <p>v</p>
+                                <p>Fried layers of aubergine, tomato, smoked provola, mature Italian cheese & basil
+                                    pesto</p>
+                                
+                                    <h2 class="fs-2">Tricolore (20.00)</h2>
+                                <p>v</p>
+                                <p>Buffalo mozzarella, heritage mixed variety tomatoes, avocado, basil pesto & fresh
+                                    basil</p><br>
+
+                                <h2 class="fs-2">Patatine Fritte (5.00)</h2>
+                                <P>v</P>
+                                <p>Potato fries</p> <br>
+                                <h2>Add truffle & Pecorino (1.75)</h2>
+
+                                <h2 class="fs-2">Zucchine Fritte (5.00)</h2>
+                                <P>v</P>
+                                <p>Courgette fries</p> <br>
+       
+`;});
   // show main menu items
   document.getElementById("show-main-menu").addEventListener("click", function(){
     document.getElementById("all-menu-items").innerHTML=`

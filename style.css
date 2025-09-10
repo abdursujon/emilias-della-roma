@@ -73,8 +73,7 @@ p {
 }
 
 .navbar-nav .nav-link:hover {
-    text-decoration: underline;
-    text-decoration-color: #ff6900;
+    color: black;
 }
  .navbar-collapse {
         position: fixed;

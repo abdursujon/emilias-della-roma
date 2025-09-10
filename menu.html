@@ -38,7 +38,7 @@
             </div>
         </div>
         <!-- Section -2 -->
-        <section class="section-2">
+        <section id="menu-section-2">
             <div class="container">
                 <div class="row">
                     <div class="col-md-4">
@@ -58,266 +58,285 @@
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <div class="dropdown">
+                        <div class="dropdown filter-vg">
                             <p>FILTER BY:</p>
-                            <button class="" type="button">VEGAN</button>
-                            <button class="" type="button">VEGETARIAN</button>
+                            <button class="" type="button" id="vegan">VEGAN</button>
+                            <button class="" type="button" id="vegetarian">VEGETARIAN</button>
                         </div>
                     </div>
-                </div>
-                <div class="row">
+                
+                    <!-- Toggle button (only visible on small devices) -->
+                    <button type="button" class="d-md-none mb-3" id="view-menu" data-bs-toggle="collapse"
+                        data-bs-target="#stickySidebarWrapper" aria-expanded="false"
+                        aria-controls="stickySidebarWrapper">
+                        VIEW MENU
+                    </button>
                     <div class="col-md-4">
-                        <div class="sticky-sidebar">
-                            <h2>MENU FILTER</h2>
-                            <div class="flex-shrink-0 p-3" style="width: 280px;">
-                                <ul class="list-unstyled ps-0">
-                                    <li class="mb-1">
-                                        <h2>FOOD</h2>
-                                        <button
-                                            class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
-                                            data-bs-toggle="collapse" data-bs-target="#main-menu-collapse"
-                                            aria-expanded="false" id="show-main-menu">
-                                            MAIN MENU
-                                        </button>
-                                        <div class="collapse" id="main-menu-collapse" style="">
-                                            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                                                <li><a href="#dividere"
-                                                        class="link-body-emphasis d-inline-flex text-decoration-none rounded">DA
-                                                        DIVIDERE</a></li>
-                                                <li><a href="#antipasti"
-                                                        class="link-body-emphasis d-inline-flex text-decoration-none rounded">ANTIPASTI</a>
-                                                </li>
-                                                <li><a href="#pasta"
-                                                        class="link-body-emphasis d-inline-flex text-decoration-none rounded">PASTA
-                                                        & RISOTTO</a></li>
-                                                <li><a href="#pizza"
-                                                        class="link-body-emphasis d-inline-flex text-decoration-none rounded">PIZZA
-                                                        NAPOLETANA</a></li>
-                                                <li><a href="#secondi"
-                                                        class="link-body-emphasis d-inline-flex text-decoration-none rounded">SECONDI</a>
-                                                </li>
-                                                <li><a href="#insalate"
-                                                        class="link-body-emphasis d-inline-flex text-decoration-none rounded">INSALATE</a>
-                                                </li>
-                                                <li><a href="#contorni"
-                                                        class="link-body-emphasis d-inline-flex text-decoration-none rounded">CONTORNI</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li class="mb-1"> <button
-                                            class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
-                                            data-bs-toggle="collapse" data-bs-target="#dessert-collapse"
-                                            aria-expanded="false" id="show-desserts">
-                                            DESSERTS
-                                        </button>
-                                        <div class="collapse" id="dessert-collapse" style="">
-                                            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                                                <li><a href="#dolci"
-                                                        class="link-body-emphasis d-inline-flex text-decoration-none rounded">DOLCI</a>
-                                                </li>
-                                                <li><a href="#amore"
-                                                        class="link-body-emphasis d-inline-flex text-decoration-none rounded">AMORE
-                                                        AMALFI</a></li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li class="mb-1">
-                                        <a href="assets/lunch-menu.pdf" class="btn">
-                                            LUNCH MENU
-                                        </a>
-                                    </li>
-                                    <li class="mb-1">
-                                        <h2>DRINKS</h2>
-                                        <button
-                                            class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
-                                            data-bs-toggle="collapse" data-bs-target="#wine-collapse"
-                                            aria-expanded="false" id="show-wine">
-                                            WINE LIST
-                                        </button>
-                                        <div class="collapse" id="wine-collapse" style="">
-                                            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                                                <li><a href="#sparkling"
-                                                        class="link-body-emphasis d-inline-flex text-decoration-none rounded">SPARKLING</a>
-                                                </li>
-                                                <li><a href="#champagne"
-                                                        class="link-body-emphasis d-inline-flex text-decoration-none rounded">CHAMPAGNE</a>
-                                                </li>
-                                                <li><a href="#white-wine"
-                                                        class="link-body-emphasis d-inline-flex text-decoration-none rounded">WHITE
-                                                        WINE</a></li>
-                                                <li><a href="#italian-wine"
-                                                        class="link-body-emphasis d-inline-flex text-decoration-none rounded">CLASSIC
-                                                        ITALIAN WHITE</a></li>
-                                                <li><a href="#red-wine"
-                                                        class="link-body-emphasis d-inline-flex text-decoration-none rounded">RED
-                                                        WINE</a></li>
-                                                <li><a href="#italian-rose"
-                                                        class="link-body-emphasis d-inline-flex text-decoration-none rounded">CLASSIC
-                                                        ITALIAN ROSE</a></li>
-                                                <li><a href="#rose"
-                                                        class="link-body-emphasis d-inline-flex text-decoration-none rounded">ROSE</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li class="mb-1"> <button
-                                            class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
-                                            data-bs-toggle="collapse" data-bs-target="#cocktails-collapse"
-                                            aria-expanded="false" id="show-cocktails">
-                                            COCKTAILS
-                                        </button>
-                                        <div class="collapse" id="cocktails-collapse" style="">
-                                            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                                                <li><a href="#aperitivo"
-                                                        class="link-body-emphasis d-inline-flex text-decoration-none rounded">APERTITIVO</a>
-                                                </li>
-                                                <li><a href="#low-alcohol"
-                                                        class="link-body-emphasis d-inline-flex text-decoration-none rounded">LOW
-                                                        ALCOHOL</a></li>
-                                                <li><a href="#zero-alcohol"
-                                                        class="link-body-emphasis d-inline-flex text-decoration-none rounded">ZERO
-                                                        ALCOHOL</a></li>
-                                                <li><a href="#signature-classics"
-                                                        class="link-body-emphasis d-inline-flex text-decoration-none rounded">SIGNATURE
-                                                        & CLASSICS</a></li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li class="mb-1"> <button
-                                            class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
-                                            data-bs-toggle="collapse" data-bs-target="#beer&cider-collapse"
-                                            aria-expanded="false" id="show-beer&ciders">
-                                            BEER & CIDER
-                                        </button>
-                                        <div class="collapse" id="beer&cider-collapse" style="">
-                                            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                                                <li><a href="#draught"
-                                                        class="link-body-emphasis d-inline-flex text-decoration-none rounded">DRAUGHT</a>
-                                                </li>
-                                                <li><a href="#bottles&cans"
-                                                        class="link-body-emphasis d-inline-flex text-decoration-none rounded">BOTTLES
-                                                        & CANS</a></li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li class="mb-1"> <button
-                                            class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
-                                            data-bs-toggle="collapse" data-bs-target="#spirits-collapse"
-                                            aria-expanded="false" id="show-spirits">
-                                            SPIRITS
-                                        </button>
-                                        <div class="collapse" id="spirits-collapse" style="">
-                                            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                                                <li><a href="#gin"
-                                                        class="link-body-emphasis d-inline-flex text-decoration-none rounded">GIN</a>
-                                                </li>
-                                                <li><a href="#vodka"
-                                                        class="link-body-emphasis d-inline-flex text-decoration-none rounded">VODKA</a>
-                                                </li>
-                                                <li><a href="#tequila"
-                                                        class="link-body-emphasis d-inline-flex text-decoration-none rounded">TEQUILA&
-                                                        MEZCAL</a></li>
-                                                <li><a href="#rum"
-                                                        class="link-body-emphasis d-inline-flex text-decoration-none rounded">RUM</a>
-                                                </li>
-                                                <li><a href="#whiskey"
-                                                        class="link-body-emphasis d-inline-flex text-decoration-none rounded">WHISKEY</a>
-                                                </li>
-                                                <li><a href="#cognac"
-                                                        class="link-body-emphasis d-inline-flex text-decoration-none rounded">COGNAC</a>
-                                                </li>
-                                                <li><a href="#amari"
-                                                        class="link-body-emphasis d-inline-flex text-decoration-none rounded">AMARI</a>
-                                                </li>
-                                                <li><a href="#liqueurs"
-                                                        class="link-body-emphasis d-inline-flex text-decoration-none rounded">LIQUEURS</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li class="mb-1"> <button
-                                            class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
-                                            data-bs-toggle="collapse" data-bs-target="#minerals-collapse"
-                                            aria-expanded="false" id="show-mineral&juices">
-                                            MINERALS AND JUICES
-                                        </button>
-                                        <div class="collapse" id="minerals-collapse" style="">
-                                            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                                                <li><a href="#sodas"
-                                                        class="link-body-emphasis d-inline-flex text-decoration-none rounded">FRUIT
-                                                        SODAS BY SAN</a></li>
-                                                <li><a href="#juices"
-                                                        class="link-body-emphasis d-inline-flex text-decoration-none rounded">JUICES</a>
-                                                </li>
-                                                <li><a href="#tree-range"
-                                                        class="link-body-emphasis d-inline-flex text-decoration-none rounded">FIVER
-                                                        TREE RANGE</a></li>
-                                                <li><a href="#water"
-                                                        class="link-body-emphasis d-inline-flex text-decoration-none rounded">WATER</a>
-                                                </li>
-                                                <li><a href="#soft-drinks"
-                                                        class="link-body-emphasis d-inline-flex text-decoration-none rounded">SOFT
-                                                        DRINKS</a></li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li class="mb-1"> <button
-                                            class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
-                                            data-bs-toggle="collapse" data-bs-target="#coffee-collapse"
-                                            aria-expanded="false" id="show-coffee&tea">
-                                            COFFEE & TEA
-                                        </button>
-                                        <div class="collapse" id="coffee-collapse" style="">
-                                            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                                                <li><a href="#coffee"
-                                                        class="link-body-emphasis d-inline-flex text-decoration-none rounded">COFFEE</a>
-                                                </li>
-                                                <li><a href="#tea"
-                                                        class="link-body-emphasis d-inline-flex text-decoration-none rounded">TEA</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li class="mb-1">
-                                        <h2>KIDS</h2>
-                                        <button
-                                            class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
-                                            data-bs-toggle="collapse" data-bs-target="#kids-main-collapse"
-                                            aria-expanded="false" id="show-kids-main">
-                                            MAIN MENU
-                                        </button>
-                                        <div class="collapse" id="kids-main-collapse" style="">
-                                            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                                                <li><a href="#kids-pasta-menu"
-                                                        class="link-body-emphasis d-inline-flex text-decoration-none rounded">PASTA</a>
-                                                </li>
-                                                <li><a href="#kids-pizza-menu"
-                                                        class="link-body-emphasis d-inline-flex text-decoration-none rounded">PIZZA</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li class="mb-1">
-                                        <button
-                                            class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
-                                            data-bs-toggle="collapse" data-bs-target="#kids-drinks-collapse"
-                                            aria-expanded="false" id="show-kids-drinks">
-                                            DRINKS
-                                        </button>
-                                        <div class="collapse" id="kids-drinks-collapse" style="">
-                                            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                                                <li><a href="#kids-cold-drinks"
-                                                        class="link-body-emphasis d-inline-flex text-decoration-none rounded">COLD
-                                                        DRINKS</a>
-                                                </li>
-                                                <li><a href="#kids-warm-drinks"
-                                                        class="link-body-emphasis d-inline-flex text-decoration-none rounded">WARM
-                                                        DRINKS</a></li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                </ul>
+                        <!-- Sidebar (wrapped inside a collapse) -->
+                        <div class="collapse d-md-block sticky-sidebar" id="stickySidebarWrapper">
+                            <div>
+                                <h2 style="margin-top: 20px;" class="stickySidebarWrapper-h2">MENU FILTER</h2>
+                                <div class="flex-shrink-0 p-3">
+                                    <ul class="list-unstyled ps-0">
+                                        <li class="mb-1">
+                                            <h2 class="stickySidebarWrapper-h2">FOOD</h2>
+                                            <button
+                                                class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+                                                data-bs-toggle="collapse" data-bs-target="#main-menu-collapse"
+                                                aria-expanded="false" id="show-main-menu">
+                                                MAIN MENU
+                                            </button>
+                                            <div class="collapse" id="main-menu-collapse">
+                                                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                                    <li><a href="#dividere"
+                                                            class="link-body-emphasis d-inline-flex text-decoration-none rounded">DA
+                                                            DIVIDERE</a></li>
+                                                    <li><a href="#antipasti"
+                                                            class="link-body-emphasis d-inline-flex text-decoration-none rounded">ANTIPASTI</a>
+                                                    </li>
+                                                    <li><a href="#pasta"
+                                                            class="link-body-emphasis d-inline-flex text-decoration-none rounded">PASTA
+                                                            & RISOTTO</a></li>
+                                                    <li><a href="#pizza"
+                                                            class="link-body-emphasis d-inline-flex text-decoration-none rounded">PIZZA
+                                                            NAPOLETANA</a></li>
+                                                    <li><a href="#secondi"
+                                                            class="link-body-emphasis d-inline-flex text-decoration-none rounded">SECONDI</a>
+                                                    </li>
+                                                    <li><a href="#insalate"
+                                                            class="link-body-emphasis d-inline-flex text-decoration-none rounded">INSALATE</a>
+                                                    </li>
+                                                    <li><a href="#contorni"
+                                                            class="link-body-emphasis d-inline-flex text-decoration-none rounded">CONTORNI</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="mb-1"> <button
+                                                class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+                                                data-bs-toggle="collapse" data-bs-target="#dessert-collapse"
+                                                aria-expanded="false" id="show-desserts">
+                                                DESSERTS
+                                            </button>
+                                            <div class="collapse" id="dessert-collapse">
+                                                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                                    <li><a href="#dolci"
+                                                            class="link-body-emphasis d-inline-flex text-decoration-none rounded">DOLCI</a>
+                                                    </li>
+                                                    <li><a href="#amore"
+                                                            class="link-body-emphasis d-inline-flex text-decoration-none rounded">AMORE
+                                                            AMALFI</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="mb-1">
+                                            <button
+                                                class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+                                                data-bs-toggle="collapse" data-bs-target="#lunch-menu"
+                                                aria-expanded="false" id="show-lunch-menu">
+                                                LUNCH MENU
+                                            </button>
+                                            <div class="collapse" id="lunch-menu">
+                                                <ul class="btn-toggle-nav list-unstyled fw-normal">
+                                                    <li> <a href="assets/lunch-menu.pdf" class="link-body-emphasis d-inline-flex text-decoration-none rounded">
+                                                            VIEW PDF
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="mb-1">
+                                            <h2 class="stickySidebarWrapper-h2">DRINKS</h2>
+                                            <button
+                                                class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+                                                data-bs-toggle="collapse" data-bs-target="#wine-collapse"
+                                                aria-expanded="false" id="show-wine">
+                                                WINE LIST
+                                            </button>
+                                            <div class="collapse" id="wine-collapse" style="">
+                                                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                                    <li><a href="#sparkling"
+                                                            class="link-body-emphasis d-inline-flex text-decoration-none rounded">SPARKLING</a>
+                                                    </li>
+                                                    <li><a href="#champagne"
+                                                            class="link-body-emphasis d-inline-flex text-decoration-none rounded">CHAMPAGNE</a>
+                                                    </li>
+                                                    <li><a href="#white-wine"
+                                                            class="link-body-emphasis d-inline-flex text-decoration-none rounded">WHITE
+                                                            WINE</a></li>
+                                                    <li><a href="#italian-wine"
+                                                            class="link-body-emphasis d-inline-flex text-decoration-none rounded">CLASSIC
+                                                            ITALIAN WHITE</a></li>
+                                                    <li><a href="#red-wine"
+                                                            class="link-body-emphasis d-inline-flex text-decoration-none rounded">RED
+                                                            WINE</a></li>
+                                                    <li><a href="#italian-rose"
+                                                            class="link-body-emphasis d-inline-flex text-decoration-none rounded">CLASSIC
+                                                            ITALIAN ROSE</a></li>
+                                                    <li><a href="#rose"
+                                                            class="link-body-emphasis d-inline-flex text-decoration-none rounded">ROSE</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="mb-1"> <button
+                                                class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+                                                data-bs-toggle="collapse" data-bs-target="#cocktails-collapse"
+                                                aria-expanded="false" id="show-cocktails">
+                                                COCKTAILS
+                                            </button>
+                                            <div class="collapse" id="cocktails-collapse" style="">
+                                                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                                    <li><a href="#aperitivo"
+                                                            class="link-body-emphasis d-inline-flex text-decoration-none rounded">APERTITIVO</a>
+                                                    </li>
+                                                    <li><a href="#low-alcohol"
+                                                            class="link-body-emphasis d-inline-flex text-decoration-none rounded">LOW
+                                                            ALCOHOL</a></li>
+                                                    <li><a href="#zero-alcohol"
+                                                            class="link-body-emphasis d-inline-flex text-decoration-none rounded">ZERO
+                                                            ALCOHOL</a></li>
+                                                    <li><a href="#signature-classics"
+                                                            class="link-body-emphasis d-inline-flex text-decoration-none rounded">SIGNATURE
+                                                            & CLASSICS</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="mb-1"> <button
+                                                class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+                                                data-bs-toggle="collapse" data-bs-target="#beer&cider-collapse"
+                                                aria-expanded="false" id="show-beer&ciders">
+                                                BEER & CIDER
+                                            </button>
+                                            <div class="collapse" id="beer&cider-collapse" style="">
+                                                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                                    <li><a href="#draught"
+                                                            class="link-body-emphasis d-inline-flex text-decoration-none rounded">DRAUGHT</a>
+                                                    </li>
+                                                    <li><a href="#bottles&cans"
+                                                            class="link-body-emphasis d-inline-flex text-decoration-none rounded">BOTTLES
+                                                            & CANS</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="mb-1"> <button
+                                                class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+                                                data-bs-toggle="collapse" data-bs-target="#spirits-collapse"
+                                                aria-expanded="false" id="show-spirits">
+                                                SPIRITS
+                                            </button>
+                                            <div class="collapse" id="spirits-collapse" style="">
+                                                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                                    <li><a href="#gin"
+                                                            class="link-body-emphasis d-inline-flex text-decoration-none rounded">GIN</a>
+                                                    </li>
+                                                    <li><a href="#vodka"
+                                                            class="link-body-emphasis d-inline-flex text-decoration-none rounded">VODKA</a>
+                                                    </li>
+                                                    <li><a href="#tequila"
+                                                            class="link-body-emphasis d-inline-flex text-decoration-none rounded">TEQUILA&
+                                                            MEZCAL</a></li>
+                                                    <li><a href="#rum"
+                                                            class="link-body-emphasis d-inline-flex text-decoration-none rounded">RUM</a>
+                                                    </li>
+                                                    <li><a href="#whiskey"
+                                                            class="link-body-emphasis d-inline-flex text-decoration-none rounded">WHISKEY</a>
+                                                    </li>
+                                                    <li><a href="#cognac"
+                                                            class="link-body-emphasis d-inline-flex text-decoration-none rounded">COGNAC</a>
+                                                    </li>
+                                                    <li><a href="#amari"
+                                                            class="link-body-emphasis d-inline-flex text-decoration-none rounded">AMARI</a>
+                                                    </li>
+                                                    <li><a href="#liqueurs"
+                                                            class="link-body-emphasis d-inline-flex text-decoration-none rounded">LIQUEURS</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="mb-1"> <button
+                                                class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+                                                data-bs-toggle="collapse" data-bs-target="#minerals-collapse"
+                                                aria-expanded="false" id="show-mineral&juices">
+                                                MINERALS AND JUICES
+                                            </button>
+                                            <div class="collapse" id="minerals-collapse" style="">
+                                                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                                    <li><a href="#sodas"
+                                                            class="link-body-emphasis d-inline-flex text-decoration-none rounded">FRUIT
+                                                            SODAS BY SAN</a></li>
+                                                    <li><a href="#juices"
+                                                            class="link-body-emphasis d-inline-flex text-decoration-none rounded">JUICES</a>
+                                                    </li>
+                                                    <li><a href="#tree-range"
+                                                            class="link-body-emphasis d-inline-flex text-decoration-none rounded">FIVER
+                                                            TREE RANGE</a></li>
+                                                    <li><a href="#water"
+                                                            class="link-body-emphasis d-inline-flex text-decoration-none rounded">WATER</a>
+                                                    </li>
+                                                    <li><a href="#soft-drinks"
+                                                            class="link-body-emphasis d-inline-flex text-decoration-none rounded">SOFT
+                                                            DRINKS</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="mb-1"> <button
+                                                class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+                                                data-bs-toggle="collapse" data-bs-target="#coffee-collapse"
+                                                aria-expanded="false" id="show-coffee&tea">
+                                                COFFEE & TEA
+                                            </button>
+                                            <div class="collapse" id="coffee-collapse" style="">
+                                                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                                    <li><a href="#coffee"
+                                                            class="link-body-emphasis d-inline-flex text-decoration-none rounded">COFFEE</a>
+                                                    </li>
+                                                    <li><a href="#tea"
+                                                            class="link-body-emphasis d-inline-flex text-decoration-none rounded">TEA</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="mb-1">
+                                            <h2 class="stickySidebarWrapper-h2">KIDS</h2>
+                                            <button
+                                                class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+                                                data-bs-toggle="collapse" data-bs-target="#kids-main-collapse"
+                                                aria-expanded="false" id="show-kids-main">
+                                                MAIN MENU
+                                            </button>
+                                            <div class="collapse" id="kids-main-collapse" style="">
+                                                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                                    <li><a href="#kids-pasta-menu"
+                                                            class="link-body-emphasis d-inline-flex text-decoration-none rounded">PASTA</a>
+                                                    </li>
+                                                    <li><a href="#kids-pizza-menu"
+                                                            class="link-body-emphasis d-inline-flex text-decoration-none rounded">PIZZA</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="mb-1">
+                                            <button
+                                                class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+                                                data-bs-toggle="collapse" data-bs-target="#kids-drinks-collapse"
+                                                aria-expanded="false" id="show-kids-drinks">
+                                                DRINKS
+                                            </button>
+                                            <div class="collapse" id="kids-drinks-collapse" style="">
+                                                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                                    <li><a href="#kids-cold-drinks"
+                                                            class="link-body-emphasis d-inline-flex text-decoration-none rounded">COLD
+                                                            DRINKS</a>
+                                                    </li>
+                                                    <li><a href="#kids-warm-drinks"
+                                                            class="link-body-emphasis d-inline-flex text-decoration-none rounded">WARM
+                                                            DRINKS</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -354,13 +373,15 @@
                                 <p>vg</p>
                                 <p>Sweet tomato & garlic sauce, served with freshly baked bread. Using the finest
                                     tomatoes grown
-                                    in the rich volcanic soil of San Marzano, the art of 'scarpetta' is to mop up the
+                                    in the rich volcanic soil of San Marzano, the art of 'scarpetta' is to mop up
+                                    the
                                     sauce until the plate is clean</p> <br>
 
 
                                 <h2 class="fs-2">Fritto Misto (29.00)</h2>
                                 <p>Classic Seafood Appetiser, Lightly Fried & Served To Share. Calamari, wild red
-                                    prawns, red mullet, king prawns & whitebait with confit garlic mayonnaise, chilli &
+                                    prawns, red mullet, king prawns & whitebait with confit garlic mayonnaise,
+                                    chilli &
                                     lemon mayonnaise</p>
 
                             </div>
@@ -370,6 +391,7 @@
                         <h2 class="pb-2 border-bottom">ANTIPASTI</h2>
                         <div class="row g-4 py-5 row-cols-1 row-cols-lg-2">
                             <div class="feature col">
+
                                 <h2 class="fs-2">Bruschetta Pomodoro (9.00)</h2>
                                 <p>vg</p>
                                 <p>Toasted sourdough, vine-ripened tomatoes, garlic, oregano & fresh basil</p> <br>
@@ -393,14 +415,16 @@
                                 <p>Courgette, red pepper & confit garlic aioli</p><br>
 
                                 <h2 class="fs-2">Carpaccio (15.00)</h2>
-                                <p>Thinly sliced raw beef, classic Italian dressing, rocket, crispy capers & Pecorino
+                                <p>Thinly sliced raw beef, classic Italian dressing, rocket, crispy capers &
+                                    Pecorino
                                     Romano</p><br>
 
                                 <h2 class="fs-2">Capesante (16.00)</h2>
                                 <p>Pan-seared king scallops, confit garlic, red chilli & parsley butter</p><br>
 
                                 <h2 class="fs-2">Frittatina Cacio E Pepe (11.00)</h2>
-                                <p>Deep fried Neapolitan mac & cheese, smoked provola, Pecorino Romano, black pepper</p>
+                                <p>Deep fried Neapolitan mac & cheese, smoked provola, Pecorino Romano, black pepper
+                                </p>
                                 <br>
 
 
@@ -411,7 +435,8 @@
                         <div class="row g-4 py-5 row-cols-1 row-cols-lg-2">
                             <div class="feature col">
                                 <h2 class="fs-2">Scialatielli Frutti Di Mare (22.00)</h2>
-                                <p>Fresh pasta ribbons with mussels, clams, calamari, tomato, garlic & chilli</p> <br>
+                                <p>Fresh pasta ribbons with mussels, clams, calamari, tomato, garlic & chilli</p>
+                                <br>
 
                                 <h2 class="fs-2">Spaghetti Carbonara (17.00)</h2>
                                 <p>Free range eggs, guanciale, Pecorino Romano, cream & flat leaf parsley</p> <br>
@@ -423,7 +448,8 @@
                                 <p>Slow-cooked beef ragù, tomato, matured Italian cheese & basil</p> <br>
 
                                 <h2 class="fs-2">Risotto Gamberoni (21.00)</h2>
-                                <p>Creamy Arborio rice, wild red prawn, king prawns, lemon, samphire & flat leaf parsley
+                                <p>Creamy Arborio rice, wild red prawn, king prawns, lemon, samphire & flat leaf
+                                    parsley
                                 </p> <br>
 
                             </div>
@@ -450,7 +476,8 @@
                         <div class="row g-4 py-5 row-cols-1 row-cols-lg-2">
                             <div class="feature col">
                                 <h2 class="fs-2">Diavola (22.00)</h2>
-                                <p>San Marzano tomato, spianata Calabrese spicy salami, 'nduja, mozzarella, pickled hot
+                                <p>San Marzano tomato, spianata Calabrese spicy salami, 'nduja, mozzarella, pickled
+                                    hot
                                     peppers, fresh chillies & flat leaf parsley</p> <br>
 
                                 <h2 class="fs-2">Capricciosa (17.00)</h2>
@@ -458,13 +485,15 @@
                                     Leccino olives</p> <br>
 
                                 <h2 class="fs-2">Calzone (19.00)</h2>
-                                <p>Folded pizza stuffed with ricotta, San Marzano tomato, mozzarella & salami Napoli</p>
+                                <p>Folded pizza stuffed with ricotta, San Marzano tomato, mozzarella & salami Napoli
+                                </p>
                                 <br>
 
                             </div>
                             <div class="feature col">
                                 <h2 class="fs-2">Prosciutto Di Parma (20.00)</h2>
-                                <p>White base, DOP Parma ham, Italian cheese & truffle cream, rocket & Pecorino Romano
+                                <p>White base, DOP Parma ham, Italian cheese & truffle cream, rocket & Pecorino
+                                    Romano
                                 </p><br>
 
                                 <h2 class="fs-2">Margherita (15.00)</h2>
@@ -476,14 +505,16 @@
                         <div class="row g-4 py-5 row-cols-1 row-cols-lg-2">
                             <div class="feature col">
                                 <h2 class="fs-2">Tonno Grigliato (22.00)</h2>
-                                <p>Grilled yellow fin tuna, Neapolitan peperonata, olives, capers & pine nuts</p> <br>
+                                <p>Grilled yellow fin tuna, Neapolitan peperonata, olives, capers & pine nuts</p>
+                                <br>
 
                                 <h2 class="fs-2">Spiedini Di Pesce (17.00)</h2>
                                 <p>Grilled seafood skewers; line caught tuna, king scallops, king prawns, with
                                     courgette, basil, chilli & lemon</p> <br>
 
                                 <h2 class="fs-2">Polpette (16.00)</h2>
-                                <p>Folded pizza stuffed with ricotta, San Marzano tomato, mozzarella & salami Napoli</p>
+                                <p>Folded pizza stuffed with ricotta, San Marzano tomato, mozzarella & salami Napoli
+                                </p>
                                 <br>
 
                                 <h2 class="fs-2">Pollo Parmigiana (18.00)</h2>
@@ -516,11 +547,12 @@
                             </div>
                         </div>
                         <!-- Secondi -->
-                        <h2 class="pb-2 border-bottom">INSALATE</h2>
+                        <h2 class="pb-2 border-bottom" >INSALATE</h2>
                         <div class="row g-4 py-5 row-cols-1 row-cols-lg-2">
                             <div class="feature col">
                                 <h2 class="fs-2">Caesar (22.00)</h2>
-                                <p>Chargrilled chicken, gem lettuce, Parmesan, pancetta, anchovies & garlic sourdough
+                                <p>Chargrilled chicken, gem lettuce, Parmesan, pancetta, anchovies & garlic
+                                    sourdough
                                     croutons *A Lighter Caesar Dressing Is Available On Request</p> <br>
 
                                 <h2 class="fs-2">Burrata (17.00)</h2>
@@ -555,12 +587,12 @@
                         <div class="row g-4 py-5 row-cols-1 row-cols-lg-2">
                             <div class="feature col">
                                 <h2 class="fs-2">Patatine Fritte (5.00)</h2>
-                                <P>V</P>
+                                <P>v</P>
                                 <p>Potato fries</p> <br>
                                 <h2>Add truffle & Pecorino (1.75)</h2>
 
                                 <h2 class="fs-2">Zucchine Fritte (5.00)</h2>
-                                <P>V</P>
+                                <P>v</P>
                                 <p>Courgette fries</p> <br>
 
                                 <h2 class="fs-2">Insalata Mista (5.00)</h2>
@@ -587,20 +619,24 @@
             </div>
         </section>
         <!-- Section 3 -->
-        <section id="menu-section-3" style="background-color: black;">
+        <section id="menu-section-3">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12 menu-custom-col">
                         <h1 class="menu-custom-col-h1">SHARE EMILIA'S MENU</h1>
                     </div>
-                    <div class="col-sm-12 menu-custom-col">
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+
                         <a href="mailto:?subject=Check%20out%20this%20menu&body=Here%20is%20the%20menu%20of%20Emilia's%20Della%20Roma:%20"
-                            onclick="this.href += window.location.href;"><img src="assets/email.png" alt="email"> </a>
+                            onclick="this.href += window.location.href;" class="contact-icon btn-4  custom-btn  d-flex align-items-center justify-content-center"><img src="assets/email.png" alt="email"> </a>
+                            
                         <a href="https://wa.me/?text=Check%20out%20this%20menu:%20"
-                            onclick="this.href += window.location.href;" target="_blank"><img src="assets/whatsapp.png"
-                                alt="whatsapp"></a>
+                            onclick="this.href += window.location.href;" target="_blank" class="contact-icon btn-4  custom-btn  d-flex align-items-center justify-content-center"><img src="assets/whatsapp.png"
+                                alt="whatsapp">
+                        </a>
+
                         <a href="https://www.facebook.com/sharer/sharer.php?u="
-                            onclick="this.href += encodeURIComponent(window.location.href);" target="_blank"><img
+                            onclick="this.href += encodeURIComponent(window.location.href);" target="_blank" class="contact-icon btn-4  custom-btn  d-flex align-items-center justify-content-center"><img
                                 src="assets/fb.png" alt="facebook"></a>
                     </div>
                 </div>
