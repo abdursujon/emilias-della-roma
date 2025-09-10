@@ -53,28 +53,32 @@ function initializeBookingForm() {
     const selectedTime = bookingTimeButton.textContent;
 
     bookATableDiv.innerHTML = `
-      <h2>Book A Table For Up To 15 Guests</h2>
+     <h1>BOOK A TABLE UP TO 15 GUESTS</h1>
       <ol>
-          <li>Select a restaurant</li>
-          <li>Select number of guests</li>
-          <li>Select a date</li>
-          <li>Select a time</li>
-          <li>Click book a table</li>
-          <li>Select and confirm your details</li>
+          <li> Select a restaurant</li>
+          <li> Select number of guests</li>
+          <li> Choose a date</li>
+          <li> Select a time</li>
+          <li> Click book a table</li>
+          <li> Enter personal details</li>
+          <li> Confirm your booking</li>
       </ol>
       <h1>YOU HAVE SELECTED</h1>
-      <p>RESTAURANT: ${selectedRestaurant}</p>
-      <p>DATE: ${selectedDate}</p>
-      <p>TIME: ${selectedTime}</p>
-      <p>NUMBER OF GUESTS: ${selectedGuestNumber}</p>
-      <p>Standard</p>
-      <button type="button" id="select">ENTER PERSONAL DETAILS</button>
-      <button type="button" id="back">BACK</button>
+      <p> <span class="booking-info"> RESTAURANT: </span> ${selectedRestaurant}</p>
+      <p> <span class="booking-info"> DATE: </span> ${selectedDate}</p>
+      <p> <span class="booking-info"> TIME: </span>  ${selectedTime}</p>
+      <p> <span class="booking-info"> NUMBER OF GUESTS:  </span> ${selectedGuestNumber}</p>
+      <p> <span class="booking-info"> Standard </span></p>
+      <div class="row">
+      <button type="button" id="enter-personal-details">ENTER PERSONAL DETAILS</button>
       <div id="personal-details"></div>
+      <button type="button" id="back">BACK</button>
+      </div>
+      
     `;
 
     // Personal details form
-    document.getElementById("select").addEventListener("click", function () {
+    document.getElementById("enter-personal-details").addEventListener("click", function () {
       document.getElementById("personal-details").innerHTML = `
         <form action="send_email.php" method="POST" id="booking-form">
           <div class="mb-3">

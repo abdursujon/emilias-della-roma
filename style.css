@@ -85,7 +85,7 @@ p {
         padding: 30px;
         height: 100vh;
     }
-#book-a-table-btn {
+#book-a-table-btn , #book-a-table-btn-confirm{
     color: black;
     font-family: "Cormorant Garamond", serif;
     font-weight: 700;
@@ -95,7 +95,7 @@ p {
     width: 120px;
 }
 
-#book-a-table-btn {
+#book-a-table-btn , #book-a-table-btn-confirm {
     margin-right: 50px;
     background-color: #ff6900;
     color: #fff;
@@ -112,7 +112,7 @@ p {
     font-size: 1.4rem;
 }
 
-#book-a-table-btn:hover {
+#book-a-table-btn:hover , #book-a-table-btn-confirm:hover {
     transform: none;
     text-decoration: none;
     --_p: 0%;
