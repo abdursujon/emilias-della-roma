@@ -1,26 +1,41 @@
 /* Section 1 */
-.section-1-container img{
-  height: 60vh;
-  object-fit:cover;/* ensures image doesn't distort, crops if needed */
-  display: block;    /* removes extra spacing */
-}
-.section-1-container{
-   position: relative;
-   text-align: left;
-   color: rgb(252, 252, 252);
-   margin:0;
+.contact-section-1-container{
    padding:0;
 }
-.section-1-centered-text {  
-  position: absolute;
-  top: 70%;
-  left: 30%;
-  transform: translate(-50%, -50%);
-  font-size: 10rem;
-  font-weight: 900;
-  font-family: "Cormorant Garamond", serif;
+.contact-div{
+  position: relative;
+}
+.centered-text{
+  position:absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  font-size: 3rem;
+  font-style: bold;
+  font-family: "Cormorant Garamond", serif; 
+}
+.contact-div img {
+  height: 30vh;
+  object-fit: cover;
+  display: block;
 }
 /* Section 2 */
+#contact-section-2{
+  padding:50px 0px;
+  background-color: #F2EDD1;
+}
+#contact-section-2 p{
+  font-size: 1rem;
+}
+.menu-custom-col-h1{
+  font-size: 4rem;
+}
 .contact-custom-col{
     display: flex;
     justify-content: center;
@@ -28,4 +43,94 @@
 }
 .contact-custom-col-h1{
   font-size: 4rem;
+}
+/* Section-3 */
+#contact-section-3{
+  background-color: #F2EDD1;
+}
+label , .contact-rst{
+  margin-top: 20px;
+    font-size: 1.4rem;
+    width:100%;
+    font-weight: 600;
+}
+.enquiry label{
+  margin-bottom: 10px;
+}
+.form-control{
+  font-size: 1.4rem;
+  height: 60px;
+  border:1px solid #0ABAB5;
+}
+#dropdownMenuButton{
+  background-color: #0ABAB5;
+  font-size: 1.8rem;
+  height: 60px;
+}
+.dropdown-menu{
+    width: 100%;
+    background-color: #0ABAB5;
+    border:1px solid black;
+}
+.dropdown-item{
+  color:white;
+  font-size: 1.4rem;
+}
+.dropdown-item:hover{
+  color:black;
+  font-size: 1.6rem;
+}
+.text-area{
+  height: 300px;
+}
+#contact-submit{
+  margin: 50px 0px;
+  height: 60px;
+  width: 150px;
+}
+/* Section 4 */
+#contact-section-4{
+  padding:50px 0px;
+  background-color: #0ABAB5;
+}
+#contact-section-4 h1{
+  color:white;
+}
+
+
+/* Media query */
+@media (min-width: 768px) {
+  /* Section 1 */
+  .centered-text{
+    font-size: 4rem;
+  }
+  /* Section 3 */
+  #contact-section-3 .row{
+    width: 50%;
+  }
+}
+
+
+/* Large Devices: ############################## */
+@media (min-width:992px) {
+    /* Section 1:  */
+  .centered-text {
+    font-size: 8rem;
+  }
+  .contact-div img{
+    height: 40vh;
+  }
+
+  /* Section 2: */
+  
+#contact-section-2 p{
+  font-size: 1.4rem;
+}
+.menu-custom-col-h1{
+  font-size: 6rem;
+}
+/* Section 4 */
+#contact-section-4 h1{
+  font-size: 5rem;
+}
 }
