@@ -25,10 +25,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
         $mail->Username = 'oceanboy989@gmail.com';
-        $mail->Password = $smtpPassword; // app password
+        $mail->Password = $smtpPassword;
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port = 587;
- //setx SMTP_PASSWORD "wwli lqst okby wkqv"
 
         // Recipients
         $mail->setFrom('oceanboy989@gmail.com', "Emilia's Della Roma");
