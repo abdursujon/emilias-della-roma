@@ -19,14 +19,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $mail = new PHPMailer(true);
 
     try {
+        $smtpPassword = getenv('SMTP_PASSWORD');
         // SMTP configuration
         $mail->isSMTP();
         $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
         $mail->Username = 'oceanboy989@gmail.com';
-        $mail->Password = 'wwli lqst okby wkqv'; // app password
+        $mail->Password = $smtpPassword; // app password
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port = 587;
+ //setx SMTP_PASSWORD "wwli lqst okby wkqv"
 
         // Recipients
         $mail->setFrom('oceanboy989@gmail.com', "Emilia's Della Roma");
