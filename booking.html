@@ -29,7 +29,48 @@
 <body>
     <main>
         <!-- Navigation Bar -->
-        <div id="common-navigation"></div>
+        <nav class="navbar navbar-expand-md bg-body-tertiary custom-navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand custom-brand" href="index.html">
+                    <h1><span class="logo-left">EMILIA'S </span><span class="logo-right">della roma</span></h1>
+                    <p class="subtitle">La Tavola & Enoteca</p>
+                </a>
+                <button class="navbar-toggler custom-navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <img class="menu-icon" src="assets/hamburger-menu.png" alt="menu-icon">
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="d-flex align-items-center justify-content-between w-100 d-md-none "
+                        style="margin-top: -15px;">
+                        <a class="navbar-brand custom-brand" href="index.html">
+                            <h1><span class="logo-left" style="color:white">EMILIA'S </span><span class="logo-right"
+                                    style="color:white">della roma</span></h1>
+                            <p class="subtitle" style="color:white">La Tavola & Enoteca</p>
+                        </a>
+                        <button class="navbar-toggler closing-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-x">
+                                <line x1="18" y1="6" x2="6" y2="18"></line>
+                                <line x1="6" y1="6" x2="18" y2="18"></line>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="navbar-nav ms-auto">
+
+                        <a class="nav-link" href="index.html">HOME</a>
+                        <a class="nav-link" href="locations.html">LOCATIONS</a>
+                        <a class="nav-link" href="menu.html">MENU</a>
+                        <a class="nav-link" href="gallery.html">GALLERY</a>
+                        <a class="nav-link" href="contact.html">CONTACT</a>
+                        <a class="nav-link" href="booking.html" id="book-a-table-btn">BOOK A TABLE</a>
+                    </div>
+                </div>
+        </nav>
         <!-- Section 1 -->
         <div class="container" id="section-1-custom-container">
             <div class="row align-items-center">
@@ -105,7 +146,7 @@
                             data-bs-toggle="dropdown" aria-expanded="false" style="width: 100%;">
                             11:00
                         </button>
-                        <ul class="dropdown-menu" id="dropdown" aria-labelledby="dropdownMenuButton">
+                        <ul class="dropdown-menu" id="dropdown" aria-labelledby="dropdownMenuButton" style="scroll-behavior: smooth;">
                             <li><a class="time-slot" href="#">11:00</a></li>
                             <li><a class="time-slot" href="#">11:15</a></li>
                             <li><a class="time-slot" href="#">11:30</a></li>

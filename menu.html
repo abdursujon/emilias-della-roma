@@ -27,7 +27,48 @@
 <body>
     <main>
         <!-- Navigation Bar -->
-        <div id="common-navigation"></div>
+        <nav class="navbar navbar-expand-md bg-body-tertiary custom-navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand custom-brand" href="index.html">
+                    <h1><span class="logo-left">EMILIA'S </span><span class="logo-right">della roma</span></h1>
+                    <p class="subtitle">La Tavola & Enoteca</p>
+                </a>
+                <button class="navbar-toggler custom-navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <img class="menu-icon" src="assets/hamburger-menu.png" alt="menu-icon">
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="d-flex align-items-center justify-content-between w-100 d-md-none "
+                        style="margin-top: -15px;">
+                        <a class="navbar-brand custom-brand" href="index.html">
+                            <h1><span class="logo-left" style="color:white">EMILIA'S </span><span class="logo-right"
+                                    style="color:white">della roma</span></h1>
+                            <p class="subtitle" style="color:white">La Tavola & Enoteca</p>
+                        </a>
+                        <button class="navbar-toggler closing-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-x">
+                                <line x1="18" y1="6" x2="6" y2="18"></line>
+                                <line x1="6" y1="6" x2="18" y2="18"></line>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="navbar-nav ms-auto">
+
+                        <a class="nav-link" href="index.html">HOME</a>
+                        <a class="nav-link" href="locations.html">LOCATIONS</a>
+                        <a class="nav-link" href="menu.html">MENU</a>
+                        <a class="nav-link" href="gallery.html">GALLERY</a>
+                        <a class="nav-link" href="contact.html">CONTACT</a>
+                        <a class="nav-link" href="booking.html" id="book-a-table-btn">BOOK A TABLE</a>
+                    </div>
+                </div>
+        </nav>
         <!-- Section 1 -->
         <div class="container-fluid menu-custom-container">
             <div class="our-menu">
@@ -64,7 +105,7 @@
                             <button class="" type="button" id="vegetarian">VEGETARIAN</button>
                         </div>
                     </div>
-                
+
                     <!-- Toggle button (only visible on small devices) -->
                     <button type="button" class="d-md-none mb-3" id="view-menu" data-bs-toggle="collapse"
                         data-bs-target="#stickySidebarWrapper" aria-expanded="false"
@@ -138,7 +179,8 @@
                                             </button>
                                             <div class="collapse" id="lunch-menu">
                                                 <ul class="btn-toggle-nav list-unstyled fw-normal">
-                                                    <li> <a href="assets/lunch-menu.pdf" class="link-body-emphasis d-inline-flex text-decoration-none rounded">
+                                                    <li> <a href="assets/lunch-menu.pdf"
+                                                            class="link-body-emphasis d-inline-flex text-decoration-none rounded">
                                                             VIEW PDF
                                                         </a>
                                                     </li>
@@ -547,7 +589,7 @@
                             </div>
                         </div>
                         <!-- Secondi -->
-                        <h2 class="pb-2 border-bottom" >INSALATE</h2>
+                        <h2 class="pb-2 border-bottom">INSALATE</h2>
                         <div class="row g-4 py-5 row-cols-1 row-cols-lg-2">
                             <div class="feature col">
                                 <h2 class="fs-2">Caesar (22.00)</h2>
@@ -628,15 +670,19 @@
                     <div class="d-grid gap-2 d-md-flex justify-content-md-center">
 
                         <a href="mailto:?subject=Check%20out%20this%20menu&body=Here%20is%20the%20menu%20of%20Emilia's%20Della%20Roma:%20"
-                            onclick="this.href += window.location.href;" class="contact-icon btn-4  custom-btn  d-flex align-items-center justify-content-center"><img src="assets/email.png" alt="email"> </a>
-                            
+                            onclick="this.href += window.location.href;"
+                            class="contact-icon btn-4  custom-btn  d-flex align-items-center justify-content-center"><img
+                                src="assets/email.png" alt="email"> </a>
+
                         <a href="https://wa.me/?text=Check%20out%20this%20menu:%20"
-                            onclick="this.href += window.location.href;" target="_blank" class="contact-icon btn-4  custom-btn  d-flex align-items-center justify-content-center"><img src="assets/whatsapp.png"
-                                alt="whatsapp">
+                            onclick="this.href += window.location.href;" target="_blank"
+                            class="contact-icon btn-4  custom-btn  d-flex align-items-center justify-content-center"><img
+                                src="assets/whatsapp.png" alt="whatsapp">
                         </a>
 
                         <a href="https://www.facebook.com/sharer/sharer.php?u="
-                            onclick="this.href += encodeURIComponent(window.location.href);" target="_blank" class="contact-icon btn-4  custom-btn  d-flex align-items-center justify-content-center"><img
+                            onclick="this.href += encodeURIComponent(window.location.href);" target="_blank"
+                            class="contact-icon btn-4  custom-btn  d-flex align-items-center justify-content-center"><img
                                 src="assets/fb.png" alt="facebook"></a>
                     </div>
                 </div>

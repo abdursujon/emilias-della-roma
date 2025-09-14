@@ -117,7 +117,11 @@
 .dropdown-menu {
   margin-top: 10px !important;
 }
-
+.dropdown-menu{
+    width: 200px;
+    background-color:#c9c5ae;
+    font-size: 1.4rem;
+}
 .dropdown-item {
   color: black;
   background-color: transparent;
