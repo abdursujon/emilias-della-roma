@@ -20,12 +20,12 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- Custom css link-->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-md bg-body-tertiary custom-navbar">
+    <nav class="navbar navbar-expand-md bg-body-tertiary custom-nav">
         <div class="container-fluid">
             <a class="navbar-brand custom-brand" href="index.html">
                 <p><span class="logo-left">EMILIA'S </span><span class="logo-right">della roma</span></p>
@@ -34,36 +34,16 @@
             <button class="navbar-toggler custom-navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
                 aria-label="Toggle navigation">
-                <img class="menu-icon" src="assets/hamburger-menu.png" alt="menu-icon">
+                <img class="menu-icon" src="assets/icons/menu.svg" alt-="menu-icon">
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="d-flex align-items-center justify-content-between w-100 d-md-none "
-                    style="margin-top: -15px;">
-                    <a class="navbar-brand custom-brand" href="index.html">
-                        <h1><span class="logo-left" style="color:white">EMILIA'S </span><span class="logo-right"
-                                style="color:white">della roma</span></h1>
-                        <p class="subtitle" style="color:white">La Tavola & Enoteca</p>
-                    </a>
-                    <button class="navbar-toggler closing-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="feather feather-x">
-                            <line x1="18" y1="6" x2="6" y2="18"></line>
-                            <line x1="6" y1="6" x2="18" y2="18"></line>
-                        </svg>
-                    </button>
-                </div>
-
                 <div class="navbar-nav ms-auto">
-
                     <a class="nav-link" href="index.html">HOME</a>
                     <a class="nav-link" href="locations.html">LOCATIONS</a>
                     <a class="nav-link" href="menu.html">MENU</a>
                     <a class="nav-link" href="gallery.html">GALLERY</a>
                     <a class="nav-link" href="contact.html">CONTACT</a>
-                    <a class="nav-link" href="booking.html" id="book-a-table-btn">BOOK A TABLE</a>
+                    <a class="nav-link custom-btn" href="booking.html" id="book-a-table-btn">BOOK A TABLE</a>
                 </div>
             </div>
     </nav>
@@ -71,19 +51,21 @@
         <!-- Section 1 -->
         <section id="index-section-1">
             <div class="container-fluid custom-container">
-                <div>
-                    <img src="assets/index-img1.jpg" alt="image 1" class="img-fluid">
+                <div class="index-section-1-custom-img">
+                    <img src="assets/images/image 9.jpg" alt="image 1" loading="lazy">
                 </div>
                 <div class="melting-text-container">
                     <h1 class="melting-text">AUTHENTIC ITALIAN DINING EXPERIENCE</h1>
                 </div>
             </div>
         </section>
+
         <!-- Section 2 -->
         <section id="section-2">
             <div class="container">
-                <div id="carouselExample" class="carousel slide">
-                    <div class="carousel-inner">
+                <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+                    <div class="carousel-inner ">
+                        <!-- Slide 1 -->
                         <div class="carousel-item active">
                             <div class="row slide-1">
                                 <div class="col-md-6 col-sm-12">
@@ -91,18 +73,20 @@
                                         <h1>LUNCH SPECIALS</h1>
                                         <p>2 COURSES 20.00 | 3 COURSES 25.00</p>
                                         <p>Monday - Friday | 12-5pm</p>
-                                        <button class="btn-1 custom-btn" onclick="location.href='booking.html'">BOOK
-                                            NOW</button><br>
-                                        <button class="btn-2 custom-btn" onclick="location.href='menu.html'">VIEW
-                                            MENU</button>
+                                        <p><button class="custom-btn"
+                                                onclick="location.href='booking.html'">BOOK
+                                                NOW</button></p>
+                                        <p><button class="custom-btn"
+                                                onclick="location.href='menu.html'">VIEW
+                                                MENU</button></p>
                                     </div>
                                 </div>
-                                <div class="col-md-6 col-sm-12 custom-img">
-                                    <img src="assets/slide-1.jpg" loading="lazy" alt="Lunch is served">
+                                <div class="col-md-6 col-sm-12 slide-custom-img">
+                                    <img src="assets/images/slides/slide 1.jpg" loading="lazy" alt="Lunch is served">
                                 </div>
                             </div>
                         </div>
-                        <!-- Second slide -->
+                        <!-- Slide 2 -->
                         <div class="carousel-item">
                             <div class="row slide-1">
                                 <div class="col-md-6 col-sm-12">
@@ -110,17 +94,17 @@
                                         <h1>PIZZA & DRINK FOR ONLY £9</h1>
                                         <p>365 days till evening!</p>
                                         <p>Exclusively on our mobile app.</p>
-                                        <button class="custom-btn">BOOK NOW</button><br>
+                                        <p><button class="custom-btn">BOOK NOW</button></p>
                                         <button class="custom-btn btn-2" onclick="location.href='menu.html'">VIEW
                                             MENU</button>
                                     </div>
                                 </div>
-                                <div class="col-md-6 col-sm-12 custom-img">
-                                    <img src="assets/slide2.jpg" loading="lazy" alt="Lunch is served">
+                                <div class="col-md-6 col-sm-12 slide-custom-img">
+                                    <img src="assets/images/slides/slide 2.jpg" loading="lazy" alt="Lunch is served">
                                 </div>
                             </div>
                         </div>
-                        <!-- Third slide -->
+                        <!-- Slide 3-->
                         <div class="carousel-item">
                             <div class="row slide-1">
                                 <div class="col-md-6 col-sm-12">
@@ -128,16 +112,16 @@
                                         <h1>DINNER SPECIAL DEAL ON FRIDAY!</h1>
                                         <p>1 MAIN + DRINK | ONLY £18</p>
                                         <p>Whole evening!</p>
-                                        <button class="custom-btn">BOOK NOW</button><br>
+                                        <p> <button class="custom-btn">BOOK NOW</button></p>
                                         <button class="custom-btn  btn-2">VIEW MENU</button>
                                     </div>
                                 </div>
-                                <div class="col-md-6 col-sm-12 custom-img">
-                                    <img src="assets/slide-3.jpg" loading="lazy" alt="3rd Slide">
+                                <div class="col-md-6 col-sm-12 slide-custom-img">
+                                    <img src="assets/images/slides/slide 3.jpg" loading="lazy" alt="3rd Slide">
                                 </div>
                             </div>
                         </div>
-                        <!-- Fourth slide -->
+                        <!-- Slide 4 -->
                         <div class="carousel-item">
                             <div class="row slide-1">
                                 <div class="col-md-6 col-sm-12">
@@ -145,17 +129,17 @@
                                         <h1>STUDENT DISCOUNT ON MONDAY</h1>
                                         <p>10% off on all items!</p>
                                         <p>T&C: Exclusively through our apps.</p>
-                                        <button class="custom-btn">BOOK NOW</button><br>
+                                        <p><button class="custom-btn">BOOK NOW</button></p>
                                         <button class="custom-btn  btn-2" onclick="location.href='menu.html'">VIEW
                                             MENU</button>
                                     </div>
                                 </div>
-                                <div class="col-md-6 col-sm-12 custom-img">
-                                    <img src="assets/slide-4.jpg" loading="lazy" alt="Lunch is served">
+                                <div class="col-md-6 col-sm-12 slide-custom-img">
+                                    <img src="assets/images/slides/slide 5.jpg" loading="lazy" alt="Lunch is served">
                                 </div>
                             </div>
                         </div>
-                        <!-- Fifth slide -->
+                        <!-- Slide 5 -->
                         <div class="carousel-item">
                             <div class="row slide-1">
                                 <div class="col-md-6 col-sm-12">
@@ -163,46 +147,52 @@
                                         <h1>SUMMER WINE DEAL</h1>
                                         <p>50% off whole summer on Tuesday.</p>
                                         <p>6pm - Close Time</p>
-                                        <button class="custom-btn">BOOK NOW</button><br>
+                                        <p> <button class="custom-btn">BOOK NOW</button></p>
                                         <button class="custom-btn  btn-2" onclick="location.href='menu.html'">VIEW
                                             MENU</button>
                                     </div>
                                 </div>
-                                <div class="col-md-6 col-sm-12 custom-img">
-                                    <img src="assets/slide-5.jpg" loading="lazy" alt="Lunch is served">
+                                <div class="col-md-6 col-sm-12 slide-custom-img">
+                                    <img src="assets/images/slides/slide 4.jpg" loading="lazy" alt="Lunch is served">
                                 </div>
                             </div>
                         </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
                         data-bs-slide="prev">
-                        <span><img src="assets/previous.png" loading="lazy" alt="next"></span>
+                        <img src="assets/icons/previous.png" loading="lazy" alt="next">
                     </button>
                     <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
                         data-bs-slide="next">
-                        <span><img src="assets/next.png" loading="lazy" alt="next"></span>
+                        <img src="assets/icons/next.png" loading="lazy" alt="next">
                     </button>
+
                 </div>
             </div>
         </section>
+
         <!-- Section 3 -->
         <section id="section-3">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6 col-sm-12 custom-img custom-dining-img">
-                        <img src="assets/dining.jpg" loading="lazy" alt="Lunch is served">
+                    <div class="col-md-6 col-sm-12 custom-dining-img slide-custom-img">
+                        <img src="assets/images/dining.jpg" loading="lazy" alt="Lunch is served">
                     </div>
-                    <div class="col-md-6 col-sm-12">
-                        <div class="dining">
-                            <h2 class="custom-subheading">Ciao benvenuti da Emilia</h2> <br>
-                            <h1 class="custom-heading">EMILIA'S DELLA ROMA</h1> <br>
+                    <div class="col-md-6 col-sm-12 ">
+                        <div class="section-3-center-text">
+                            <p>
+                            <h2 class="custom-subheading">Ciao benvenuti da Emilia</h2>
+                            </p>
+                            <p>
+                            <h1 class="custom-heading">EMILIA'S DELLA ROMA</h1>
+                            </p>
                             <p>Simply walk in, and our amazing team will take care of all the delicious food you've been
                                 craving for. </p>
                             <p>Ready to expericence a little Veneto warmth with your favourite italian cuisine with an
                                 authentic espresso? Great! You've come to the right place! </p>
                             <p>Because it's Emilia's thing!</p>
-                            <span><button class="custom-btn section-3-btn" onclick="location.href='booking.html'">BOOK
-                                    NOW</button></span>
+                            <button class="custom-btn section-3-btn" onclick="location.href='booking.html'">BOOK
+                                NOW</button>
                         </div>
                     </div>
                 </div>
@@ -233,12 +223,12 @@
             <div class="container">
                 <div class="row">
                     <div class="col">
-                        <h3 style="color:#0ABAB5;">WE DELIVER</h3>
+                        <h2>WE DELIVER</h2>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-sm-12 col-md-6">
-                        <h1 style="color:#0ABAB5;" class="section-5-h1">A TASTE OF AUTHENTICITY</h1>
+                        <h1 class="section-5-h1">A TASTE OF AUTHENTICITY</h1>
                     </div>
                     <div class="col-sm-12 col-md-6 d-md-flex justify-content-md-end">
                         <button class="custom-btn section-5-btn" onclick="location.href='menu.html'"> VIEW MENU</button>
@@ -246,7 +236,7 @@
                 </div>
                 <div class="row">
                     <div class="col-md-12 col-lg-4 col-sm-12 section-5-custom-col">
-                        <img src="assets/img13.jpg" loading="lazy" alt="image number 13">
+                        <img src="assets/images/slides/slide 5.jpg" loading="lazy" alt="image number 13">
                         <div>
                             <h2>PENNE</h2>
                             <hr class="custom-hr2">
@@ -257,7 +247,7 @@
                         </div>
                     </div>
                     <div class="col-md-12 col-lg-4 col-sm-12 section-5-custom-col">
-                        <img src="assets/img14.jpg" loading="lazy" alt="image number 13">
+                        <img src="assets/images/image 5.jpg" loading="lazy" alt="image number 13">
                         <div>
                             <h2>TARTUFO AL CIOCCOLATO</h2>
                             <hr class="custom-hr2">
@@ -269,7 +259,7 @@
                         </div>
                     </div>
                     <div class="col-md-12 col-lg-4 col-sm-12 section-5-custom-col">
-                        <img src="assets/img15.jpg" loading="lazy" alt="image number 13">
+                        <img src="assets/images/image 6.jpg" loading="lazy" alt="image number 13">
                         <div>
                             <h2>PUNTARELLE ALLA ROMANA</h2>
                             <hr class="custom-hr2">
@@ -281,6 +271,7 @@
                 </div>
             </div>
         </section>
+
         <!-- Section 6: Newsletter -->
         <section id="section-6">
             <div class="container">
@@ -291,36 +282,36 @@
                     <div class="col-md-8 col-sm-12">
                         <p>Get in touch. Sign up to receive the latest offers, events and news on all things Emilia's
                             Della Roma has to offer</p>
-                        <form class="search" id="location-form" autocomplete="off">
-                            <input type="search" name="q" id="location-input" placeholder="Enter Email Address"
-                                required />
-                            <button type="submit" aria-label="Search" class="location-btn">></button>
+                        <form id="signup-form" class="search" method="post" action="user.php">
+                            <input type="text" name="emailAddress" maxlength="50" size="30" placeholder="Enter Email Address" />
+                            <button  aria-label="Search" value="Submit" class="location-btn">></button>
                         </form>
+                        <p id="form-response" style="display:none; font-weight:bold; margin-top:10px;"></p>
+                      
                     </div>
                 </div>
             </div>
         </section>
-        <a href="/components/footer.html"></a>
     </main>
     <!-- Footer -->
-    <div style="background-color:#071023;">
-        <div class="container" style="padding:50px 10px;">
+    <div id="footer-div">
+        <div class="container">
             <footer>
                 <div class="row">
                     <div class="col-md-4 mb-3">
-                        <a class="navbar-brand footer-brand" href="index.html">
-                            <h1><span>EMILIA'S </span><span class="logo-right">della roma</span></h1>
-                            <p class="subtitle2">La Tavola & Enoteca</p>
+                        <a class="navbar-brand custom-brand" href="index.html">
+                            <p><span class="logo-left">EMILIA'S </span><span class="logo-right">della roma</span></p>
+                            <p class="subtitle">La Tavola & Enoteca</p>
                         </a>
                         <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                            <p class="footer-txt">© ALL RIGHTS RESERVED BY EMILIA'S 2025</p>
+                            <p>© ALL RIGHTS RESERVED BY EMILIA'S 2025</p>
                         </div>
                     </div>
                     <div class="col-md-4 mb-3">
-                        <h2 style="color:white;">DOWNLOAD OUR APP</h2>
+                        <h2>DOWNLOAD OUR APP</h2>
                         <div class="d-grid gap-2 d-md-flex justify-content-md-start">
                             <button type="button" class="custom-btn footer-btn"><svg xmlns="http://www.w3.org/2000/svg"
-                                    width="16" height="16" fill="currentColor" class="bi bi-apple mb-1"
+                                    width="24" height="24" fill="currentColor" class="bi bi-apple mb-1"
                                     viewBox="0 0 16 16">
                                     <path
                                         d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43Zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282Z" />
@@ -328,27 +319,26 @@
                                         d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43Zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282Z" />
                                 </svg> Download</button>
                             <button type="button" class="custom-btn footer-btn"><svg xmlns="http://www.w3.org/2000/svg"
-                                    width="16" height="16" fill="currentColor" class="bi bi-google-play mb-1"
+                                    width="24" height="24" fill="currentColor" class="bi bi-google-play mb-1"
                                     viewBox="0 0 16 16">
                                     <path
                                         d="M14.222 9.374c1.037-.61 1.037-2.137 0-2.748L11.528 5.04 8.32 8l3.207 2.96 2.694-1.586Zm-3.595 2.116L7.583 8.68 1.03 14.73c.201 1.029 1.36 1.61 2.303 1.055l7.294-4.295ZM1 13.396V2.603L6.846 8 1 13.396ZM1.03 1.27l6.553 6.05 3.044-2.81L3.333.215C2.39-.341 1.231.24 1.03 1.27Z" />
                                 </svg> Download</button>
                         </div>
-                        <h2 class="mt-5" style="color:white;">FOLLOW US</h2>
+                        <h2 class="mt-5">FOLLOW US</h2>
                         <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                            <a href=""
-                                class="contact-icon btn-4  custom-btn  d-flex align-items-center justify-content-center"><img
-                                    src="assets/instagram.png" loading="lazy" alt="Instagram icon"></a>
-                            <a href=""
-                                class="contact-icon btn-5  custom-btn  d-flex align-items-center justify-content-center"><img
-                                    src="assets/fb.png" loading="lazy" alt="Instagram icon"></a>
-                            <a href=""
-                                class="contact-icon btn-6   custom-btn d-flex align-items-center justify-content-center"><img
-                                    src="assets/tiktok.png" loading="lazy" alt="Instagram icon"></a>
+                            <a href="" class="contact-icon btn-4  d-flex align-items-center justify-content-center"><img
+                                    src="assets/icons/instagram.png" loading="lazy" alt="Instagram icon"></a>
+                            <a href="" class="contact-icon btn-5 d-flex align-items-center justify-content-center"><img
+                                    src="assets/icons/fb.png" loading="lazy" alt="Instagram icon"></a>
+                            <a href="" class="contact-icon btn-6 d-flex align-items-center justify-content-center"><img
+                                    src="assets/icons/tiktok.png" loading="lazy" alt="Instagram icon"></a>
                         </div>
                     </div>
                     <div class="col-md-4 mb-3">
-                        <h2 style="color:white;">QUICK LINKS</h2> <br>
+                        <p>
+                        <h2>QUICK LINKS</h2>
+                        </p>
                         <div class="quick-link">
                             <span><a href="index.html">HOME</a></span>
                             <span><a href="locations.html">LOCATIONS</a></span>
@@ -370,7 +360,7 @@
         integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
         crossorigin="anonymous"></script>
     <!-- JS custom link-->
-    <script src="index.js"></script>
+    <script src="js/index.js"></script>
     <script src="booking.js"></script>
 </body>
 

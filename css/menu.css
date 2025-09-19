@@ -1,3 +1,6 @@
+p{
+  font-size: 1em;
+}
 /* Section 1 */
 .menu-custom-container {
   padding: 0;
@@ -36,7 +39,6 @@
 }
 
 .filter-vg {
-  font-size: 1.4rem;
   font-family: "Cormorant Garamond", serif;
   margin-top: 20px;
 }
@@ -85,7 +87,6 @@
   -webkit-background-clip: background;
   background-clip: background;
   transition: .4s;
-  font-size: 1.8rem;
   text-align: center;
 }
 
@@ -108,7 +109,6 @@
 #dropdownMenuButton {
   color: black;
   background-color: transparent;
-  font-size: 2rem;
   font-family: "Cormorant Garamond", serif;
   box-shadow: 2px 2px rgb(41, 40, 40);
   width: 200px;
@@ -120,12 +120,10 @@
 .dropdown-menu{
     width: 200px;
     background-color:#c9c5ae;
-    font-size: 1.4rem;
 }
 .dropdown-item {
   color: black;
   background-color: transparent;
-  font-size: 1.4rem;
   font-family: "Cormorant Garamond", serif;
   width: 200px;
 }
@@ -144,11 +142,9 @@
 
 #stickySidebarWrapper button {
   color: black;
-  font-size: 1.4rem;
 }
 
 #stickySidebarWrapper a {
-  font-size: 1rem;
   margin-left: 15px;
 }
 
@@ -199,7 +195,6 @@
 }
 
 .feature h2 {
-  font-size: 1.8rem;
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -207,7 +202,6 @@
 }
 
 .feature p {
-  font-size: 1.4rem;
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   color: black;
@@ -215,19 +209,12 @@
 
 /* Medium Devices */
 @media (min-width: 768px) {
-  p {
-    font-size: 1.8rem;
-  }
-
-  /* Navigation: ################ */
-
-
-  /* Section 1: ############### */
+  /* Section 1: */
   .centered-text {
     font-size: 6rem;
   }
 
-  /* section 2: ##################### */
+  /* section 2: */
   .sticky-sidebar {
     display: block;
   }
@@ -250,13 +237,11 @@
 
   #stickySidebarWrapper button {
     color: black;
-    font-size: 1.4rem;
     font-family: "Cormorant Garamond", serif;
     font-weight: 900;
   }
 
   #stickySidebarWrapper a {
-    font-size: 1.4rem;
     margin-left: 15px;
   }
 

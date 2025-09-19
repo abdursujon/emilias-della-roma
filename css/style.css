@@ -1,84 +1,101 @@
-html {
-    font-size: 10px;
+html,
+body {
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
 }
 
 h1 {
+    font-size: 2.5em;
     font-family: "Cormorant Garamond", serif;
-    font-style: bold;
-    font-size: 3rem;
     color: #ff6900;
 }
 
 h2 {
+    font-size: 1.5em;
     font-family: "Cormorant Garamond", serif;
-    font-style: bold;
-    font-size: 2rem;
-    color: #ff6900;
+    color: teal;
 }
 
-p {
-    font-family: "Montserrat", sans-serif;
-    font-size: 1.4rem;
-    font-style: normal;
-    color: black;
+#section-2,
+#section-3,
+#section-4,
+#section-5,
+#section-6 {
+    padding: 50px 0px;
 }
-
+.custom-img img , .index-section-1-custom-img img{
+    width: 100%;
+    object-fit: cover;
+    display: block;
+    height: 400px;
+    width: 100%;
+}
+.custom-img img{
+    margin: 20px 0px;
+    border-radius: 25px;
+}
 /* Navigation */
-.navbar {
-    height: 70px;
-}
-
-.custom-brand {
-    margin-left: 5px;
+.custom-nav {
+    height: 80px;
+    background-color: #F2EDD1 !important;
 }
 
 .logo-left,
 .logo-right {
-    font-family: "Cormorant Garamond", serif;
     color: #ff6900;
+    font-family: "Cormorant Garamond", serif;
 }
 
 .logo-left {
-    font-size: 2rem;
-    font-weight: bold;
-}
-
-.logo-right {
-    font-style: italic;
-    font-size: 1rem;
-    font-weight: 400;
+    font-size: 1.5em;
 }
 
 .subtitle {
-    margin-top: -10px;
-    margin-left: 3px;
-    font-size: 1rem;
+    font-size: .6em;
+    margin-top: -20px;
 }
 
-.navbar-nav .nav-link {
-    font-size: 1.4rem;
-    color: white;
-    font-family: "Cormorant Garamond", serif;
-    font-weight: bold;
+.navbar-toggler {
+    border: none;
 }
 
-.navbar-nav .nav-link:hover {
-    color: black;
+.navbar-toggler:focus {
+    box-shadow: none;
+    outline: none;
 }
 
 .navbar-collapse {
     position: fixed;
-    top: 0px;
+    top: 60px;
     left: 0;
     width: 100vw;
-    background-color: #0ABAB5;
+    background-color: #F2EDD1;
     z-index: 9999;
-    padding: 30px;
-    height: 100vh;
+    padding: 0px 10px;
+    padding-bottom: 20px;
+    height: fit-content;
 }
 
-#book-a-table-btn,
-#book-a-table-btn-confirm,
+.navbar-nav .nav-link {
+    color: black;
+    font-weight: 600;
+}
+
+.navbar-nav .nav-link:last-child {
+    color: white;
+}
+
+.navbar-nav .nav-link:last-child:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar-nav .nav-link:hover {
+    text-decoration: underline;
+    color: #ff6900;
+}
+
+.custom-btn,
 #contact-submit {
     margin-right: 50px;
     font-weight: 700;
@@ -99,7 +116,7 @@ p {
     padding: 5px 15px;
 }
 
-#book-a-table-btn:hover,
+.custom-btn:hover,
 #book-a-table-btn-confirm:hover,
 #contact-submit:hover {
     transform: none;
@@ -107,73 +124,38 @@ p {
     --_p: 0%;
 }
 
-.custom-navbar {
-    background-color: #F2EDD1 !important;
-}
-
-.navbar-toggler:focus {
-    box-shadow: none;
-    outline: none;
-}
-
-.navbar-toggler {
-    border: none;
-}
-
-.navbar-toggler img {
-    width: 30px;
-    height: 30px;
-}
-
-.navbar-collapse {
-    position: fixed;
-    top: 0px;
-    left: 0;
-    width: 100vw;
-    background-color: #0ABAB5;
-    z-index: 9999;
-    padding: 30px;
-    height: 100vh;
-}
-
-.navbar-collapse a {
-    color: white;
-}
-
-svg {
-    height: 30px;
-    width: 30px;
-    color: #ff6900;
-}
-
 
 /* Section 1 */
- .custom-container{
-    padding:0;
- }
-#custom-container img {
-  width: 100vw;
-  height: 100%;
-  object-fit: content;
-  display: block;
+.custom-container {
+    padding: 0;
 }
+
+#index-section-1 img {
+    object-fit: cover;
+    display: block;
+    height: 300px;
+    width: 100%;
+}
+
 .melting-text-container {
     position: absolute;
-    top: 25%;
+    top: 20%;
     left: 55%;
-     transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     font-family: "Cormorant Garamond", serif;
 }
 
 .melting-text {
+    top: 50px;
     font-size: 2.5rem;
     font-weight: bold;
     text-transform: uppercase;
     color: #fff;
     position: relative;
     animation: melt 3s infinite ease-in-out;
-    background: linear-gradient(90deg, #ff6f61, #ffbd44, #ff6f61);
+    background: linear-gradient(90deg, white, whitesmoke, #ff6900, #ff6900, #FF9A00, white, white);
+    background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
 }
@@ -186,7 +168,8 @@ svg {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, #ff6f61, #ffbd44, #ff6f61);
+    background: linear-gradient(90deg, white, whitesmoke,#ff6900, #ff6900, #FF9A00, white, white);
+    background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
     z-index: -1;
@@ -202,53 +185,33 @@ svg {
 
 /* Keyframes for melting effect */
 @keyframes melt {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: translateY(0);
     }
+
     50% {
         transform: translateY(20px);
     }
 }
 
 @keyframes drip {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: scaleY(1);
         opacity: 0.5;
     }
+
     50% {
         transform: scaleY(1.1);
         opacity: 0.7;
     }
 }
 
-
-/* section 2: */
-#section-2 {
-    background-color: #FFE8CD;
-    margin-top: -5px;
-}
-
-.custom-btn {
-    color: #ff6900;
-    border: 1px solid #ff6900;
-    border-radius: 25px;
-    padding: 5px 20px;
-    background: transparent;
-    font-family: "Cormorant Garamond", serif;
-    font-weight: 700;
-    font-size: 1.8rem;
-}
-
-.btn-2 {
-    margin-top: 20px;
-}
-
-.custom-btn:hover {
-    color: white;
-    background-color: #ff6900;
-}
-
-.custom-img img {
+/* section 2 */
+.slide-custom-img img {
     width: 100%;
     margin-top: 20px;
     object-fit: cover;
@@ -256,12 +219,9 @@ svg {
     height: 300px;
     width: 100%;
     margin: 20px 0px;
+    border-radius: 25px;
 }
 
-.slide-text {
-    text-align: center;
-    margin-top: 20px;
-}
 
 .carousel-control-next,
 .carousel-control-prev {
@@ -269,7 +229,7 @@ svg {
     width: 30px;
     height: 30px;
     border-radius: 50px;
-    margin-top: 40%;
+    margin-top: 400px;
     opacity: 1;
 }
 
@@ -279,50 +239,51 @@ svg {
     width: 15px;
 }
 
+.slide-text , .section-3-center-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* vertical center */
+    align-items: left;
+    /* horizontal center */
+    text-align: left;
+    /* center text inside */
+    height: 100%;
+    /* make sure it fills the column height */
+}
 
-/* Section 3 */
+/* section 3 */
 #section-3 {
-    padding: 20px 0px;
     background-color: #ECEEDF;
 }
 
 .custom-heading {
     color: #0ABAB5;
-    font-size: 3rem;
-}
-
-.dining {
-    margin-top: 20px;
-    margin-left: 0px;
 }
 
 .custom-dining-img img {
     border-top-left-radius: 360px;
     border-top-right-radius: 360px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    height: 350px;
+}
+.slide-text , .section-3-center-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* vertical center */
+    align-items: left;
+    /* horizontal center */
+    text-align: left;
+    /* center text inside */
+    height: 100%;
+    /* make sure it fills the column height */
 }
 
-.section-3-btn,
-.section-5-btn {
-    background: linear-gradient(90deg, #1095c1 50%, #ff6900 0) var(--_p, 100%)/200% no-repeat;
-    -webkit-background-clip: background;
-    background-clip: background;
-    transition: .4s;
-    color: white;
-    border: none;
-    padding: 5px 20px;
-}
 
-.section-3-btn:hover,
-.section-5-btn:hover {
-    transform: none;
-    text-decoration: none;
-    --_p: 0%;
-    border: none;
-}
-
-/* Section 4 */
+/* section 4 */
 #section-4 {
-    padding: 20px 0px;
     background-color: #0ABAB5;
 }
 
@@ -389,6 +350,13 @@ svg {
 }
 
 .restaurant-img img {
+    width: 100%;
+    object-fit: cover;
+    display: block;
+    height: 400px;
+    width: 100%;
+    margin: 20px 0px;
+    border-radius: 25px;
     border-top-left-radius: 360px;
     border-top-right-radius: 360px;
 }
@@ -404,18 +372,17 @@ svg {
     opacity: 1;
 }
 
+
 /* Section 5  */
 #section-5 {
-    padding: 20px 0px;
     background-color: #F2EDD1;
 }
 
 .section-5-h1 {
-    font-size: 3rem;
     margin: 20px 0px;
 }
 
-.section-5-btn {
+#section-5 h2 .section-5-btn {
     margin: 20px 0px;
 }
 
@@ -429,6 +396,10 @@ svg {
     margin-left: auto;
 }
 
+.section-5-custom-col {
+    margin-top: 50px;
+}
+
 .section-5-custom-col img {
     width: 100%;
     object-fit: cover;
@@ -439,32 +410,29 @@ svg {
     margin-bottom: 20px
 }
 
-h2 {
-    color: #0ABAB5;
-    font-style: bold;
-    font-size: 2.2rem;
-    font-weight: bold;
-}
-
 .custom-hr2 {
     background: #0ABAB5;
 }
 
 /* Section 6 */
 #section-6 {
-    padding: 50px 0px;
     background-color: #0ABAB5;
     margin-bottom: 0px;
 }
 
-#location-input {
-    font-size: 1.8rem;
+#section-6 h1 {
+    color: white;
 }
 
 /* Footer */
-.footer-txt {
-    font-size: 1.4rem;
+#footer-div {
+    background-color: #02202c;
+    padding-top: 50px;
+}
+
+#footer-div p {
     color: white;
+    font-size: .8em;
 }
 
 .footer-brand {
@@ -484,9 +452,10 @@ h2 {
 }
 
 .footer-btn {
-    width: 150px;
+    width: fit-content;
+    font-size: 1em !important;
 }
-
+svg{margin-right: 5px;}
 .footer-btn:hover {
     background-color: white;
     color: black;
@@ -529,9 +498,8 @@ h2 {
 
 .quick-link span a {
     color: white;
-    font-size: 1.2rem;
     font-family: "Montserrat", sans-serif;
-    font-weight: 400;
+    font-size: .8em;
     text-decoration: none;
     margin-right: 10px;
 }
@@ -547,112 +515,97 @@ h2 {
     text-decoration: underline;
 }
 
+#footer-div h2{
+    color:#0ABAB5;
+}
+
+/* Small Devices */
+@media (min-width: 567px) {}
 
 /* Medium Devices */
 @media (min-width: 768px) {
-    p {
-        font-size: 1.8rem;
-    }
 
     /* Navigation */
-    .navbar-nav .nav-link:hover {
-        text-decoration: underline;
-    }
-
     .custom-brand {
         margin-left: 20px;
     }
 
+    .custom-btn,
+    #book-a-table-btn-confirm,
+    #contact-submit {
+        margin-right: 50px;
+        text-align: center;
+        display: flex;
+    }
+
     .logo-left {
-        font-size: 3rem;
+        font-size: 1.8rem;
     }
 
     .navbar-nav .nav-link {
-        color: black;
-        font-size: 1.4rem;
-        margin-top: 10px;
-        margin-right: 10px;
+        margin-right: 5px;
     }
 
     #book-a-table-btn {
-        width: 150px;
+        width: fit-content;
+        font-size: 1em;
     }
 
     .navbar-collapse {
-        position: relative;
+        position: static;
         width: auto;
-        height: auto;
         background-color: transparent;
+        z-index: auto;
         padding: 0;
+        height: auto;
     }
 
     /* Section 1 */
-    .melting-text-container{
-        top: 30%;
+
+    #index-section-1 img {
+        height: 400px;
     }
-    .melting-text{
-        font-size: 4rem;
-    }
+
     /* section 2 */
-    .custom-btn {
-        font-size: 2rem;
+    .slide-custom-img img {
+        margin-top: 0px;
+        height: 400px;
     }
 
-    .custom-img img {
-        height: 500px;
-        width: 100%;
-        margin: 50px 0px;
-    }
-
-    .slide-text {
-        text-align: left;
-        margin-top: 40%;
-    }
-
-    .slide-text h1 {
-        text-align: left;
-        font-size: 4rem;
-    }
 
     .carousel-control-next,
     .carousel-control-prev {
-        background-color: #FF9A00;
-        width: 50px;
-        height: 50px;
-        border-radius: 50px;
-        margin: 55% -0%;
-        opacity: 1;
+        margin-top: 350px;
     }
 
-    /* Section 3*/
-    #section-3 {
-        padding: 50px 0px;
-    }
-
-    .dining {
-        margin-top: 20%;
-        margin-left: 50px;
-    }
-
-    .custom-heading {
-        color: #0ABAB5;
-        font-size: 4rem;
-    }
-
-    .section-3-btn,
-    .section-5-btn {
-        padding: 10px 25px;
-        font-size: 2.8rem;
+    /* section 3 */
+    .custom-dining-img img {
+        height: 400px;
     }
 
     /* Section 4*/
-    #section-4 {
-        padding: 50px 0px;
-    }
-
     .search {
         width: 30vw;
     }
+
+    /* Section 5  */
+.section-5-btn{
+    width: 150px;
+    height: fit-content;
+}
+
+.custom-col .section-5-btn {
+    margin-left: auto;
+}
+.section-5-custom-col img {
+    width: 100%;
+    object-fit: cover;
+    display: block;
+    height: 300px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    margin-bottom: 20px
+}
 
     /* Section-6 */
     #location-form {
@@ -667,49 +620,34 @@ h2 {
 
 /* Large Devices */
 @media (min-width:992px) {
+
     /* Navigation */
     #book-a-table-btn {
-    font-size: 1.8rem;
-    width: fit-content;
-    height: 40px;
+        font-size: 1.4rem;
     }
-
 
     /* Section 1 */
-    .melting-text-container{
-        top: 35%;
+
+    #index-section-1 img {
+        height: 500px;
     }
-    .melting-text{
-        font-size: 5rem;
-    }
+
     /* section 2 */
-    .custom-img img {
-        height: 600px;
+    .slide-custom-img img {
+        margin-top: 0px;
+        height: 500px;
     }
 
-    .slide-text {
-        margin-top: 30%;
-    }
-
-    .slide-text h1 {
-        font-size: 6rem;
-    }
 
     .carousel-control-next,
     .carousel-control-prev {
-        width: 50px;
-        height: 50px;
-        margin: 30% -10%;
+        margin-top: 500px;
     }
+
 
     /* section 3 */
-    .dining {
-        margin-top: 30%;
-        margin-left: 50px;
-    }
-
-    .dining h1 {
-        font-size: 6rem;
+    .custom-dining-img img {
+        height: 500px;
     }
 
     /* Section-6 */
@@ -729,37 +667,21 @@ h2 {
 }
 
 /* X-Large */
-@media (min-width: ≥1200px) {
-    h1 {
-        font-size: 6rem;
+@media (min-width:1200px) {
+
+    /* Section 1 */
+
+    #index-section-1 img {
+        height: 50vh;
     }
 
-    p {
-        font-size: 2rem;
-    }
-    /* Section 1 */
-    .melting-text-container{
-        top: 40%;
-    }
-    .melting-text{
-        font-size: 6rem;
-    }
 }
 
 /* XX-Large */
 @media (min-width: 1400px) {
-    h1 {
-        font-size: 8rem;
-    }
 
-    p {
-        font-size: 2rem;
-    }
     /* Section 1 */
-    .melting-text-container{
-        top: 50%;
-    }
-    .melting-text{
-        font-size: 8rem;
+    .melting-text {
+        font-size: 4rem;
     }
 }

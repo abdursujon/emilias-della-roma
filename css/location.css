@@ -1,3 +1,4 @@
+
 /* Section 1 */
 .our-location {
   position: relative;
@@ -108,9 +109,6 @@
 }
 
 /* Section 3 */
-.loc-custom-h1 {
-  font-size: 4rem;
-}
 
 .loc-custom-img img {
   object-fit: cover;
@@ -142,41 +140,25 @@
   margin-top: 20px;
 }
 
-.loc-cutom-btn {
-  background-color: #ff6900;
-  padding: 10px 20px;
-  width: 150px;
-  border-radius: 25px;
+.loc-section-4-btn {
+  background-color: transparent!important;
   border: 1px solid white;
   color: white;
-  font-size: 1.8rem;
   margin-top: 20px;
 }
-.loc-cutom-btn:hover{
+
+.loc-section-4-btn{
   background-color: transparent;
 }
-
-
 /* Medium Devices */
 @media (min-width: 768px) {
-  p {
-    font-size: 1.8rem;
-  }
-
-  /* Navigation: ################ */
-
-
-  /* Section 1: ############### */
+  
+  /* Section 1: */
   .centered-text {
     font-size: 6rem;
   }
 
-  /* section 2: ##################### */
-
-
-  /* Section 3: ####################### */
-
-  /* Section 4: ######################## */
+  /* Section 4: */
   #location-section-4 {
     padding: 50px 0px;
     background-color: #137571;
@@ -195,15 +177,12 @@
   .loc-custom-col h1 {
     margin-top: 20%;
   }
-
-  /* Footer */
-
 }
 
 /* Large Devices */
 @media (min-width:992px) {
 
-  /* Section 1: ############### */
+  /* Section 1:*/
   .centered-text {
     font-size: 8rem;
   }
@@ -216,16 +195,9 @@
   .loc-custom-col {
   display: flex;
   flex-direction: column;
-  justify-content: left; /* Vertical alignment */
-  align-items: left;     /* Horizontal alignment */
-  text-align: left;      /* Optional: center text */
+  justify-content: left; 
+  align-items: left;   
+  text-align: left; 
 }
 
 }
-
-
-/* X-Large */
-@media (min-width: 1200px) {}
-
-/* XX-Large */
-@media (min-width: 1400px) {}

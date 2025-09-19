@@ -1,0 +1,352 @@
+
+
+
+/* Section 1 */
+
+.custom-container{
+    padding:0;
+}
+
+#index-section-1 img {
+    object-fit: cover;
+    display: block;
+    height: 300px;
+    width: 100%;
+}
+.melting-text-container {
+    position: absolute;
+    top: 20%;
+    left: 55%;
+     transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    font-family: "Cormorant Garamond", serif;
+}
+
+.melting-text {
+    top: 50px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    position: relative;
+    animation: melt 3s infinite ease-in-out;
+    background: linear-gradient(90deg, white, whitesmoke);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.melting-text::before,
+.melting-text::after {
+    content: 'AUTHENTIC ITALIAN DINING EXPERIENCE';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, white, whitesmoke);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    z-index: -1;
+    transform: scaleY(1);
+    opacity: 0.5;
+    animation: drip 3s infinite ease-in-out;
+}
+
+.melting-text::after {
+    filter: blur(10px);
+    opacity: 0.3;
+}
+
+/* Keyframes for melting effect */
+@keyframes melt {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(20px);
+    }
+}
+
+@keyframes drip {
+    0%, 100% {
+        transform: scaleY(1);
+        opacity: 0.5;
+    }
+    50% {
+        transform: scaleY(1.1);
+        opacity: 0.7;
+    }
+}
+
+/* section 2 */
+.slide-custom-img img{
+    width: 100%;
+    margin-top: 20px;
+    object-fit: cover;
+    display: block;
+    height: 300px;
+    width: 100%;
+    margin: 20px 0px;
+    border-radius: 25px;
+}
+
+
+.carousel-control-next,
+.carousel-control-prev {
+    background-color: #FF9A00;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    margin-top: 400px;
+    opacity: 1;
+}
+.carousel-control-next img,
+.carousel-control-prev img {
+    height: 15px;
+    width: 15px;
+}
+
+/* section 3 */
+#section-3 {
+    padding: 20px 0px;
+    background-color: #ECEEDF;
+}
+.custom-heading {
+    color: #0ABAB5;
+}
+.custom-dining-img img {
+    border-top-left-radius: 360px;
+    border-top-right-radius: 360px;
+}
+
+/* section 4 */
+#section-4 {
+    padding: 20px 0px;
+    background-color: #0ABAB5;
+}
+.search {
+    position: relative;
+    width: 80vw;
+}
+
+.search input {
+    width: 100%;
+    padding: 10px 0px 10px 10px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.4rem;
+    border: 2px solid white;
+    border-radius: 10px;
+    height: 60px;
+}
+
+.search button {
+    position: absolute;
+    top: 50%;
+    right: 2px;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 58px;
+    border: none;
+    background-color: #ff6900;
+    cursor: pointer;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.fnd {
+    color: white;
+}
+
+.location-btn {
+    color: white;
+    font-size: 1.8rem;
+}
+
+#suggestions {
+    max-height: 150px;
+    margin-top: 10px;
+    overflow-y: auto;
+    position: absolute;
+    width: 80vw;
+    background-color: white !important;
+    z-index: 9999;
+    display: none;
+}
+
+.section-4-btn {
+    color: white;
+    background-color: #ff6900;
+    border: 1px solid white;
+    margin-right: 20px;
+}
+
+.section-4-btn:hover {
+    color: white;
+    background: transparent;
+    border: 1px solid white;
+}
+
+.restaurant-img img {
+    width: 100%;
+    object-fit: cover;
+    display: block;
+    height: 300px;
+    width: 100%;
+    margin: 20px 0px;
+    border-radius: 25px;
+    border-top-left-radius: 360px;
+    border-top-right-radius: 360px;
+}
+
+.restaurant h1,
+.restaurant p {
+    color: white;
+}
+
+.restaurant hr {
+    color: #ff6900;
+    border-top: 5px solid white;
+    opacity: 1;
+}
+
+
+/* Section 5  */
+#section-5 {
+    padding: 20px 0px;
+    background-color: #F2EDD1;
+}
+
+.section-5-h1 {
+    margin: 20px 0px;
+}
+#section-5 h2
+.section-5-btn {
+    margin: 20px 0px;
+}
+
+.custom-col {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.custom-col .section-5-btn {
+    margin-left: auto;
+}
+.section-5-custom-col{
+    margin-top: 50px;
+}
+.section-5-custom-col img {
+    width: 100%;
+    object-fit: cover;
+    display: block;
+    height: 300px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    margin-bottom: 20px
+}
+
+.custom-hr2 {
+    background: #0ABAB5;
+}
+
+/* Section 6 */
+#section-6 {
+    padding: 50px 0px;
+    background-color: #0ABAB5;
+    margin-bottom: 0px;
+}
+#section-6 h1{
+    color:white;
+}
+
+/* Footer */
+#footer-div{
+    background-color: #02202c;
+    padding-top: 50px;
+}
+#footer-div p {
+    color:white;
+    font-size: .8em;
+}
+
+.footer-brand {
+    margin-left: 0px;
+}
+
+.footer-brand {
+    margin-left: 0px;
+    margin-top: 0px;
+    display: block;
+}
+
+.subtitle2 {
+    color: white !important;
+    font-size: 1rem;
+    margin-top: -15px;
+}
+
+.footer-btn {
+    width: 150px;
+}
+
+.footer-btn:hover {
+    background-color: white;
+    color: black;
+}
+
+.btn-4,
+.btn-5,
+.btn-6 {
+    background-color: transparent;
+    border: 2px solid #ff6900;
+    border-radius: 50px;
+    height: 40px;
+    width: 40px;
+}
+
+.btn-4:hover {
+    background-color: #ff6900;
+}
+
+.btn-5 {
+    border: 2px solid #1877F2;
+}
+
+.btn-5:hover {
+    background-color: #1877F2;
+}
+
+.btn-6 {
+    border: 2px solid #69C9D0;
+}
+
+.btn-6:hover {
+    background-color: #69C9D0;
+}
+
+.contact-icon img {
+    height: 30px;
+    width: 30px;
+}
+
+.quick-link span a {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: .8em;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.quick-link {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.quick-link span a:hover {
+    text-decoration: underline;
+}

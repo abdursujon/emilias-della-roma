@@ -1,10 +1,24 @@
+// navigation
+const menuButton = document.querySelector(".custom-navbar-toggler");
+const menuIcon = document.querySelector(".menu-icon");
 
+// Add a click event listener to the button
+menuButton.addEventListener("click", function () {
+  // Check the current source of the menu icon
+  if (menuIcon.src.includes("menu.svg")) {
+    // If the current source is "list.svg", change it to the closing menu image
+    menuIcon.src = "../assets/icons/close-btn.svg";
+  } else {
+    // If the current source is the closing menu image, change it back to "list.svg"
+    menuIcon.src = "../assets/icons/menu.svg";
+  }
+});
 // Section 4
 const restaurants = {
     "london": `
         <div class="row"> 
              <div class="col-md-6 col-lg-4 col-sm-12 custom-img restaurant-img">
-                <img src="assets/rst1.jpg" alt="Restaurant one">
+                <img src="../assets/restaurant image/rst1.jpg" alt="Restaurant one">
                 <div class="restaurant">
                     <h1>LONDON CITY CENTRE</h1>
                     <hr class="custom-hr">
@@ -15,7 +29,7 @@ const restaurants = {
                 </div>
               </div>
               <div class="col-md-6 col-lg-4 col-sm-12 custom-img restaurant-img">
-                <img src="assets/rst2.jpg" alt="Restaurant two">
+                <img src="../assets/restaurant image/rst2.jpg" alt="Restaurant two">
                 <div class="restaurant">
                     <h1>LONDON SOHO</h1>
                     <hr class="custom-hr">
@@ -26,7 +40,7 @@ const restaurants = {
                 </div>
               </div>    
               <div class="col-md-6  col-lg-4 col-sm-12 custom-img restaurant-img">
-                <img src="assets/rst3.jpg" alt="Restaurant three">
+                <img src="../assets/restaurant image/rst3.jpg" alt="Restaurant three">
                 <div class="restaurant">
                     <h1>LONDON BRIDGE</h1>
                     <hr class="custom-hr">
@@ -40,8 +54,8 @@ const restaurants = {
         `,
     "manchester": `
         <div class="row"> 
-             <div class="col-md-6 col-lg-4 col-sm-12 custom-img restaurant-img">
-                <img src="assets/rst4.jpg" alt="Restaurant four">
+             <div class="col-md-6 col-lg-4 col-sm-12  restaurant-img">
+                <img src="../assets/restaurant image/rst4.jpg" alt="Restaurant four">
                 <div class="restaurant">
                     <h1>MANCHESTER</h1>
                     <hr class="custom-hr">
@@ -52,8 +66,8 @@ const restaurants = {
                     <button class="custom-btn section-4-btn"  onclick="location.href='menu.html'">VIEW MENU</button>
                 </div>
               </div>
-              <div class="col-md-6  col-lg-4 col-sm-12 custom-img restaurant-img">
-                <img src="assets/rst5.jpg" alt="Restaurant five">
+              <div class="col-md-6  col-lg-4 col-sm-12 restaurant-img">
+                <img src="../assets/restaurant image/rst5.jpg" alt="Restaurant five">
                 <div class="restaurant">
                     <h1>MANCHESTER ARNDALE</h1>
                     <hr class="custom-hr">
@@ -67,8 +81,8 @@ const restaurants = {
         `,
     "leeds": `
         <div class="row"> 
-             <div class="col-md-6  col-lg-4 col-sm-12 custom-img restaurant-img">
-                <img src="assets/rst6.jpg" alt="Restaurant six">
+             <div class="col-md-6  col-lg-4 col-sm-12 restaurant-img">
+                <img src="../assets/restaurant image/rst6.jpg" alt="Restaurant six">
                 <div class="restaurant">
                     <h1>LEEDS</h1>
                     <hr class="custom-hr">
@@ -82,8 +96,8 @@ const restaurants = {
         `,
     "birmingham": `
         <div class="row"> 
-             <div class="col-md-6 col-lg-4 col-sm-12 custom-img restaurant-img">
-                <img src="assets/rst7.jpg" alt="Restaurant seven">
+             <div class="col-md-6 col-lg-4 col-sm-12  restaurant-img">
+                <img src="../assets/restaurant image/rst7.jpg" alt="Restaurant seven">
                 <div class="restaurant">
                     <h1>BIRMINGHAM</h1>
                     <hr class="custom-hr">
@@ -94,8 +108,8 @@ const restaurants = {
                     <button class="custom-btn section-4-btn"  onclick="location.href='menu.html'">VIEW MENU</button>
                 </div>
               </div>
-              <div class="col-md-6 col-lg-4 col-sm-12 custom-img restaurant-img">
-                <img src="assets/rst8.jpg" alt="Restaurant eight">
+              <div class="col-md-6 col-lg-4 col-sm-12 restaurant-img">
+                <img src="../assets/restaurant image/rst8.jpg" alt="Restaurant eight">
                 <div class="restaurant">
                     <h1>BIRMINGHAM VICTORIA SQUARE</h1>
                     <hr class="custom-hr">
@@ -109,8 +123,8 @@ const restaurants = {
         `,
     "liverpool": `
         <div class="row"> 
-             <div class="col-md-6 col-lg-4 col-sm-12 custom-img restaurant-img">
-                <img src="assets/rst9.jpg" alt="Restaurant nine">
+             <div class="col-md-6 col-lg-4 col-sm-12 restaurant-img">
+                <img src="../assets/restaurant image/rst9.jpg" alt="Restaurant nine">
                 <div class="restaurant">
                     <h1>LIVERPOOL</h1>
                     <hr class="custom-hr">
@@ -125,8 +139,8 @@ const restaurants = {
         `,
     "bristol": `
         <div class="row"> 
-             <div class="col-md-6 col-lg-4 col-sm-12 custom-img restaurant-img">
-                <img src="assets/rst10.jpg" alt="Restaurant ten">
+             <div class="col-md-6 col-lg-4 col-sm-12 restaurant-img">
+                <img src="../assets/restaurant image/rst10.jpg" alt="Restaurant ten">
                 <div class="restaurant">
                     <h1>BRISTOL</h1>
                     <hr class="custom-hr">
@@ -207,7 +221,6 @@ if (input && form && suggestions && resultDiv) {
             try {
                 const res = await fetch(`https://api.postcodes.io/postcodes?q=${encodeURIComponent(query)}`);
                 const data = await res.json();
-
                 if (data.status === 200 && data.result) {
                     data.result.slice(0,5).forEach(item => {
                         const li = document.createElement('li');
@@ -254,4 +267,32 @@ if (input && form && suggestions && resultDiv) {
         }
     });
 }
+
+// section 6
+document.getElementById("signup-form").addEventListener("submit", async function(e) {
+    e.preventDefault(); // stop page reload
+
+    const form = e.target;
+    const formData = new FormData(form);
+
+    try {
+        const response = await fetch(form.action, {
+            method: "POST",
+            body: formData
+        });
+
+        const result = await response.text();
+
+        // Show the result in #form-response
+        document.getElementById("form-response").innerHTML = result;
+        document.getElementById("form-response").style.display = "block";
+
+        // Optionally clear the form
+        form.reset();
+
+    } catch (error) {
+        document.getElementById("form-response").innerHTML = "Something went wrong. Please try again.";
+        document.getElementById("form-response").style.display = "block";
+    }
+});
 

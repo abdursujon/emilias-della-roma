@@ -9,15 +9,16 @@ require 'PHPMailer/src/SMTP.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Safely collect inputs
-    $firstname = $_POST['firstname'] ?? '';
-    $lastname = $_POST['lastname'] ?? '';
-    $telephone = $_POST['telephone'] ?? '';
-    $email = $_POST['email'] ?? '';
-    $notes = $_POST['notes'] ?? '';
-    $selectedRestaurant = $_POST['restaurant'] ?? '';
-    $selectedDate = $_POST['date'] ?? '';
-    $selectedTime = $_POST['time'] ?? '';
-    $selectedGuestNumber = $_POST['guests'] ?? '';
+
+    $firstname = htmlentities($_POST['firstname'] ?? '');
+    $lastname = htmlentities($_POST['lastname'] ?? '');
+    $telephone = htmlentities($_POST['telephone'] ?? '');
+    $email = htmlentities($_POST['email'] ?? '');
+    $notes = htmlentities($_POST['notes'] ?? '');
+    $selectedRestaurant = htmlentities($_POST['restaurant'] ?? '');
+    $selectedDate = htmlentities($_POST['date'] ?? '');
+    $selectedTime = htmlentities($_POST['time'] ?? '');
+    $selectedGuestNumber = htmlentities($_POST['guests'] ?? '');
 
     $mail = new PHPMailer(true);
 

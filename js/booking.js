@@ -53,7 +53,7 @@ function initializeBookingForm() {
     const selectedTime = bookingTimeButton.textContent;
 
     bookATableDiv.innerHTML = `
-     <h1>BOOK A TABLE UP TO 15 GUESTS</h1>
+     <h2>BOOK A TABLE UP TO 15 GUESTS</h2>
       <ol>
           <li> Select a restaurant</li>
           <li> Select number of guests</li>
@@ -63,16 +63,16 @@ function initializeBookingForm() {
           <li> Enter personal details</li>
           <li> Confirm your booking</li>
       </ol>
-      <h1>YOU HAVE SELECTED</h1>
+      <h2>YOU HAVE SELECTED</h2>
       <p> <span class="booking-info"> RESTAURANT: </span> ${selectedRestaurant}</p>
       <p> <span class="booking-info"> DATE: </span> ${selectedDate}</p>
       <p> <span class="booking-info"> TIME: </span>  ${selectedTime}</p>
       <p> <span class="booking-info"> NUMBER OF GUESTS:  </span> ${selectedGuestNumber}</p>
       <p> <span class="booking-info"> Standard </span></p>
       <div class="row">
-      <button type="button" id="enter-personal-details">ENTER PERSONAL DETAILS</button>
+      <button type="button" id="enter-personal-details" class="btn btn-primary">ENTER PERSONAL DETAILS</button>
       <div id="personal-details"></div>
-      <button type="button" id="back">BACK</button>
+      <button type="button" id="back"  class="btn btn-primary">BACK</button>
       </div>
       
     `;
@@ -107,6 +107,7 @@ function initializeBookingForm() {
           <input type="hidden" name="time" id="time-hidden" value="${selectedTime}">
           <input type="hidden" name="guests" id="guests-hidden" value="${selectedGuestNumber}">
           <input type="submit" class="btn btn-primary" id="confirm-booking" value="CONFIRM YOUR BOOKING">
+          <input type="reset" class="btn btn-danger" value="Reset">
         </form>
       `;
 

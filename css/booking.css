@@ -3,13 +3,9 @@
     margin-top: 50px;
     color: #0ABAB5;
 }
-ol{
-    font-size: 1.4rem;
-}
 .date{
     color: #0ABAB5;
     font-style: bold;
-    font-size: 2.2rem;
     margin-bottom: 10px;
     margin-top: 20px;
 }
@@ -20,11 +16,8 @@ h2{
 .btn-secondary , #calendarBtn{
     background-color: #0ABAB5;
     padding: 20px 0px;
-    font-size: 1.8rem;
 }
-.form-control{
-    font-size: 1.4rem;
-}
+
 #calendarBtn{
     width: 50px;
 }
@@ -34,7 +27,6 @@ h2{
 }
 
 .rst , .select , .time-slot{
-    font-size: 1.4rem;
     text-decoration: none;
     margin-left: 20px;
     color: white;
@@ -47,12 +39,15 @@ h2{
 .rst:hover , .select:hover , .time-slot:hover{
     color: #033331;
 }
-#book-a-table-btn-confirm{
-    padding:10px 30px;
-    width: content;
+.btn-primary {
+    background-color: #033331;
+    border:none;
     margin: 50px 0px;
-    height: 60px;
-    font-size: 1.8rem;
+    padding:10px 25px;
+    border-radius: 25px;
+}
+.btn-primary:hover{
+    background-color: #0ABAB5;
 }
 .dropdown-menu {
   max-height: 200px;
@@ -61,20 +56,14 @@ h2{
 
 /* Confirmation Page */
 .booking-info{
-    font-size: 1.4rem;
     font-weight: bold;
 }
 #enter-personal-details , #back ,#confirm-booking{
-    background-color: #033331;
+
     padding:10px 30px;
     width: 200px;
-    color:white;
     border-radius: 25px;
     border:1px solid black;
-    font-size: 1.4rem;
-    font-family: "Cormorant Garamond", serif;
-    font-weight: bold;
-    height: 60px;
     margin-right: 20px;
     margin-left: 5px;
     margin-top:20px;
@@ -86,13 +75,11 @@ h2{
     margin-bottom: 50px;
 }
 label{
-    font-size: 1.4rem;
     width:100%;
     font-weight: 600;
 }
 #firstname, #lastname, #telephone, #email{
     height: 50px;
-    font-size: 1.4rem;
     width: 100%;
 }
 #confirm-booking{
