@@ -40,7 +40,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         // Content
         $mail->isHTML(true);
         $mail->Subject = 'Your Booking Confirmation from Emilia\'s Della Roma';
-        $mail->AddEmbeddedImage('assets/logo.png', 'logoCID');
+        $mail->AddEmbeddedImage('assets/icons/logo.png', 'logoCID');
         $mail->Body = "
             <h2 style='color:#ff6900;'> Ciao $firstname $lastname, here is your booking confirmation with Emilia's Della Roma!<h2>
             <p><strong>Name:</strong> $firstname $lastname</p>
