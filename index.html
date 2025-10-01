@@ -50,13 +50,20 @@
     <main>
         <!-- Section 1 -->
         <section id="index-section-1">
-            <div class="container-fluid custom-container">
-                <div class="index-section-1-custom-img">
-                    <img src="assets/images/image 9.jpg" alt="image 1" loading="lazy">
-                </div>
+            <div class="container-fluid">
+                <!-- Background video -->
+                <video id="bg-video" autoplay muted loop>
+                    <source src="assets/Video/authentic-roman-dishes.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+
+                <!-- Overlay text -->
                 <div class="melting-text-container">
                     <h1 class="melting-text">AUTHENTIC ITALIAN DINING EXPERIENCE</h1>
                 </div>
+
+                <!-- Sound toggle button -->
+                <button id="sound-toggle">🔇 PLAY: SOUND OF EMILIA'S</button>
             </div>
         </section>
 
@@ -73,11 +80,9 @@
                                         <h1>LUNCH SPECIALS</h1>
                                         <p>2 COURSES 20.00 | 3 COURSES 25.00</p>
                                         <p>Monday - Friday | 12-5pm</p>
-                                        <p><button class="custom-btn"
-                                                onclick="location.href='booking.html'">BOOK
+                                        <p><button class="custom-btn" onclick="location.href='booking.html'">BOOK
                                                 NOW</button></p>
-                                        <p><button class="custom-btn"
-                                                onclick="location.href='menu.html'">VIEW
+                                        <p><button class="custom-btn" onclick="location.href='menu.html'">VIEW
                                                 MENU</button></p>
                                     </div>
                                 </div>
@@ -283,11 +288,12 @@
                         <p>Get in touch. Sign up to receive the latest offers, events and news on all things Emilia's
                             Della Roma has to offer</p>
                         <form id="signup-form" class="search" method="post" action="user.php">
-                            <input type="text" name="emailAddress" maxlength="50" size="30" placeholder="Enter Email Address" />
-                            <button  aria-label="Search" value="Submit" class="location-btn">></button>
+                            <input type="text" name="emailAddress" maxlength="50" size="30"
+                                placeholder="Enter Email Address" />
+                            <button aria-label="Search" value="Submit" class="location-btn">></button>
                         </form>
                         <p id="form-response" style="display:none; font-weight:bold; margin-top:10px;"></p>
-                      
+
                     </div>
                 </div>
             </div>

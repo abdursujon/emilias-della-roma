@@ -2,6 +2,7 @@
   const dropdownButton = document.getElementById("dropdownMenuButton");
   const dropdownItems = document.querySelectorAll(".dropdown-item");
 
+
   // Add click event to each item
   dropdownItems.forEach(item => {
     item.addEventListener("click", function (e) {

@@ -13,6 +13,21 @@ menuButton.addEventListener("click", function () {
     menuIcon.src = "../assets/icons/menu.svg";
   }
 });
+
+  
+// Section 1: Play video sound 
+const video = document.getElementById("bg-video");
+const soundBtn = document.getElementById("sound-toggle");
+soundBtn.addEventListener("click", () => {
+    if (video.muted) {
+        video.muted = false;
+        soundBtn.textContent = "🔊 PLAYING: SOUND OF EMILIA'S";
+    } else {
+        video.muted = true;
+        soundBtn.textContent = "🔇PLAY: SOUND OF EMILIA'S";
+    }
+});
+
 // Section 4
 const restaurants = {
     "london": `
