@@ -38,9 +38,3 @@ The focus of this project was to create an engaging, user-friendly platform that
 - **Libraries/Plugins:** Flatpickr  
 - **Backend:** PHP  
 - **Email Handling:** PHPMailer  
-
----
-
-## 🚀 Installation & Usage  
-
-1. Visit The Website Link: 
