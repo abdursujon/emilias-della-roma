@@ -1,46 +1,32 @@
-# Emilia's Della Roma – Portfolio Website Project  
+<div align="left">
 
-## 📖 Overview  
-**Emilia's Della Roma** is a portfolio project that replicates the core functionality of a real-world Italian restaurant website.  
-The focus of this project was to create an engaging, user-friendly platform that demonstrates modern web development practices while showcasing key restaurant features.  
+# Emilia’s Della Roma
 
----
+**Technologies:** JavaScript, PHP, PHPMailer, HTML5, CSS, Bootstrap, postcode.io  
+**Project Type:** Responsive, Mobile-First Restaurant Website
 
-## ✨ Key Features  
+## Description
 
-- **🔎 Restaurant Locator with Auto-Suggestions**  
-  - Users can search for restaurant locations across multiple cities.  
-  - The search bar provides postcode suggestions as the user types.  
-  - Users can also search by city name to find their nearest Della Roma.  
+Emilia’s Della Roma is a responsive, mobile-first website designed to help users locate nearby restaurant branches, make table reservations.
 
-- **📧 Newsletter Subscription with Validation**  
-  - Users can sign up for the restaurant’s newsletter using their email address.  
-  - Input validation ensures only properly formatted email addresses from valid providers are accepted.  
-  - Relevant error messages are displayed if validation fails.  
+## Features
 
-- **📅 Date Picker for Reservations**  
-  - Integrated **Flatpickr** for a smooth and user-friendly date selection interface.  
-  - Users can easily choose their preferred reservation date.  
+- Search for nearby Emilia’s locations.
+- Table reservations, newsletter subscriptions, and enquiry form submissions.
+- Automated email confirmations for customer bookings using PHPMailer.
+- Optimized mobile-first UX and accessibility for restaurant bookings via mobile devices.
 
-- **🥗 Dynamic Menu Filtering**  
-  - Menu is organized by sections (starters, mains, desserts, etc.).  
-  - JavaScript-based filtering allows users to view **vegan** or **vegetarian** options with one click.  
+## Usage
 
-- **✅ Automated Booking Confirmation**  
-  - After completing a table booking, users receive an email confirmation.  
-  - This feature was implemented using **PHPMailer** and a custom `send_email.php` script.  
+- Visit the [live website](https://emilias-della-roma.netlify.app) to explore features.
+- Users can search for locations, book tables, and subscribe to newsletters directly on the site.
 
----
+## Project Link
 
-## 🛠️ Tech Stack  
+[emilias-della-roma.netlify.app](https://emilias-della-roma.netlify.app)
 
-- **Frontend:** HTML5, CSS3, JavaScript, Bootstrap
-- **Libraries/Plugins:** Flatpickr  
-- **Backend:** PHP  
-- **Email Handling:** PHPMailer  
+## Author and Copyrights
 
----
+Abdur Sujon
 
-## 🚀 Installation & Usage  
-
-1. Visit The Website Link: 
+</div>
