@@ -7,7 +7,7 @@
 
 ## Description
 
-Emilia’s Della Roma is a responsive, mobile-first website designed to help users locate nearby restaurant branches, make table reservations, and interact with the restaurant digitally.
+Emilia’s Della Roma is a responsive, mobile-first website designed to help users locate nearby restaurant branches, make table reservations.
 
 ## Features
 
