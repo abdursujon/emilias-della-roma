@@ -27,7 +27,7 @@ function initializeBookingForm() {
   // Date picker
   const dateInput = flatpickr("#customDateInput", {
     dateFormat: "d-m-Y",
-    defaultDate: new Date(),
+    minDate: "today", // Disables all past dates
     allowInput: false,
     clickOpens: false
   });
@@ -51,6 +51,12 @@ function initializeBookingForm() {
     const selectedGuestNumber = guestNumberButton.textContent;
     const selectedDate = dateInput.selectedDates[0] ? dateInput.selectedDates[0].toDateString() : '';
     const selectedTime = bookingTimeButton.textContent;
+
+    // Check if a date has been selected
+    if (!selectedDate) {
+      alert('Please choose a date');
+      return; // Stop the function from continuing
+    }
 
     bookATableDiv.innerHTML = `
      <h2>BOOK A TABLE UP TO 15 GUESTS</h2>
@@ -112,7 +118,7 @@ function initializeBookingForm() {
       `;
 
       // Attach listener to confirm booking
-      document.getElementById('confirm-booking').addEventListener('click', function(e) {
+      document.getElementById('confirm-booking').addEventListener('click', function (e) {
         // Hidden fields already filled with selected values above
         // Just let the form submit normally
       });

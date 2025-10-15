@@ -23,24 +23,30 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $mail = new PHPMailer(true);
 
     try {
-        $smtpPassword = getenv('SMTP_PASSWORD');
-        // SMTP configuration
+        // Load the configuration file from the protected 'config' directory.
+        $configFile = __DIR__ . '/config/email_config.php';
+        if (!file_exists($configFile)) {
+            throw new Exception('Server configuration error. Please contact support.');
+        }
+        require_once $configFile;
+
+        // SendGrid SMTP configuration
         $mail->isSMTP();
-        $mail->Host = 'smtp.gmail.com';
+        $mail->Host = 'smtp.sendgrid.net';
         $mail->SMTPAuth = true;
-        $mail->Username = 'oceanboy989@gmail.com';
-        $mail->Password = $smtpPassword;
+        $mail->Username = 'apikey'; // This is the literal string 'apikey' for SendGrid
+        $mail->Password = SMTP_PASSWORD; // The API key from your config file
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port = 587;
 
         // Recipients
-        $mail->setFrom('oceanboy989@gmail.com', "Emilia's Della Roma");
+        // This 'From' address MUST be the one you verified as a Single Sender in SendGrid.
+        $mail->setFrom('emilliasdellaroma@gmail.com', "Emilia's Della Roma");
         $mail->addAddress($email, "$firstname $lastname");
 
         // Content
         $mail->isHTML(true);
         $mail->Subject = 'Your Booking Confirmation from Emilia\'s Della Roma';
-        $mail->AddEmbeddedImage('assets/icons/logo.png', 'logoCID');
         $mail->Body = "
             <h2 style='color:#ff6900;'> Ciao $firstname $lastname, here is your booking confirmation with Emilia's Della Roma!<h2>
             <p><strong>Name:</strong> $firstname $lastname</p>
@@ -55,9 +61,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <p>Thank you for booking with us, we look forward to seeing you $firstname.</p> 
             <p>Regards<p>
             <p>Emilia's<p>
-            <p style='text-align:left;'>
-            <img src='cid:logoCID' alt='Emilia&apos;s Della Roma Logo' style='width:150px;'>
-            </p>
             
         ";
 
@@ -73,7 +76,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $mail->send();
         echo 'Booking confirmation email has been sent.';
     } catch (Exception $e) {
-        echo "Mailer Error: {$mail->ErrorInfo}";
+        // In a production environment, log the detailed error for the developer
+        // and show a generic message to the user for security.
+        error_log("Mailer Error: " . $mail->ErrorInfo);
+        echo "We're sorry, there was an error sending your booking confirmation. Please contact the restaurant directly.";
     }
 } else {
     echo "Invalid request.";

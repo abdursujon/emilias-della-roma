@@ -1,92 +1,118 @@
 /* Section 1 */
-#book-a-table-div h1{
+#book-a-table-div h1 {
     margin-top: 50px;
     color: #0ABAB5;
 }
-.date{
+
+.date {
     color: #0ABAB5;
     font-style: bold;
     margin-bottom: 10px;
     margin-top: 20px;
 }
-h2{
+
+h2 {
     margin-bottom: 10px;
     margin-top: 20px;
 }
-.btn-secondary , #calendarBtn{
+
+.btn-secondary,
+#calendarBtn {
     background-color: #0ABAB5;
     padding: 20px 0px;
 }
 
-#calendarBtn{
+#calendarBtn {
     width: 50px;
 }
-.dropdown-menu{
+
+.dropdown-menu {
     width: 100%;
     background-color: #0ABAB5;
 }
 
-.rst , .select , .time-slot{
+.rst,
+.select,
+.time-slot {
     text-decoration: none;
     margin-left: 20px;
     color: white;
 }
 
-.rst:hover , .select:hover , .time-slot:hover{
+.rst:hover,
+.select:hover,
+.time-slot:hover {
     width: 100%;
     background-color: white;
 }
-.rst:hover , .select:hover , .time-slot:hover{
+
+.rst:hover,
+.select:hover,
+.time-slot:hover {
     color: #033331;
 }
+
 .btn-primary {
     background-color: #033331;
-    border:none;
+    border: none;
     margin: 50px 0px;
-    padding:10px 25px;
+    padding: 10px 25px;
     border-radius: 25px;
 }
-.btn-primary:hover{
+
+.btn-primary:hover {
     background-color: #0ABAB5;
 }
+
 .dropdown-menu {
-  max-height: 200px;
-  overflow-y: scroll;
+    max-height: 200px;
+    overflow-y: scroll;
 }
 
 /* Confirmation Page */
-.booking-info{
+.booking-info {
     font-weight: bold;
 }
-#enter-personal-details , #back ,#confirm-booking{
 
-    padding:10px 30px;
+#enter-personal-details,
+#back,
+#confirm-booking {
+
+    padding: 10px 30px;
     width: 200px;
     border-radius: 25px;
-    border:1px solid black;
+    border: 1px solid black;
     margin-right: 20px;
     margin-left: 5px;
-    margin-top:20px;
+    margin-top: 20px;
     margin-bottom: 20px;
 }
-#booking-form{
+
+#booking-form {
     background-color: #0ABAB5;
-    padding:30px;
+    padding: 30px;
     margin-bottom: 50px;
 }
-label{
-    width:100%;
+
+label {
+    width: 100%;
     font-weight: 600;
 }
-#firstname, #lastname, #telephone, #email{
+
+#firstname,
+#lastname,
+#telephone,
+#email {
     height: 50px;
     width: 100%;
 }
-#confirm-booking{
-  width: 100%;
-  background-color: #033331;
+
+#confirm-booking {
+    width: 100%;
+    background-color: #033331;
 }
-.d-md-block img{
+
+.d-md-block img {
     display: flex;
     flex-direction: column;
     align-items: center;

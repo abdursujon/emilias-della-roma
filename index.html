@@ -209,13 +209,14 @@
                 <div class="row">
                     <div class="col">
                         <h1 class="fnd">Find Your Della Roma</h1>
-                        <form class="search" id="location-form" autocomplete="off">
-                            <input type="search" name="q" id="location-input" placeholder="Enter City or Postcode"
-                                required />
-                            <button type="submit" aria-label="Search" class="location-btn">></button>
-                        </form>
-                        <ul id="suggestions">
-                        </ul>
+                        <div class="search-container">
+                            <form class="search" id="location-form" autocomplete="off">
+                                <input type="search" name="q" id="location-input" placeholder="Enter City or Postcode"
+                                    required />
+                                <button type="submit" aria-label="Search" class="location-btn">></button>
+                            </form>
+                            <ul id="suggestions"></ul>
+                        </div>
                     </div>
                 </div>
                 <div class="row">
@@ -351,7 +352,7 @@
                             <span><a href="menu.html">MENU</a></span>
                             <span><a href="gallery.html">GALLERY</a></span>
                             <span><a href="contact.html">CONTACT US</a></span>
-                            <span><a href="book-a-table.html">BOOK A TABLE</a></span>
+                            <span><a href="booking.html">BOOK A TABLE</a></span>
                         </div>
                     </div>
                 </div>
@@ -368,6 +369,7 @@
     <!-- JS custom link-->
     <script src="js/index.js"></script>
     <script src="booking.js"></script>
+    <script src="js/newsletter.js"></script>
 </body>
 
 </html>

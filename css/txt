@@ -1,10 +1,7 @@
-
-
-
 /* Section 1 */
 
-.custom-container{
-    padding:0;
+.custom-container {
+    padding: 0;
 }
 
 #index-section-1 img {
@@ -13,11 +10,12 @@
     height: 300px;
     width: 100%;
 }
+
 .melting-text-container {
     position: absolute;
     top: 20%;
     left: 55%;
-     transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     font-family: "Cormorant Garamond", serif;
 }
@@ -61,19 +59,25 @@
 
 /* Keyframes for melting effect */
 @keyframes melt {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: translateY(0);
     }
+
     50% {
         transform: translateY(20px);
     }
 }
 
 @keyframes drip {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: scaleY(1);
         opacity: 0.5;
     }
+
     50% {
         transform: scaleY(1.1);
         opacity: 0.7;
@@ -81,7 +85,7 @@
 }
 
 /* section 2 */
-.slide-custom-img img{
+.slide-custom-img img {
     width: 100%;
     margin-top: 20px;
     object-fit: cover;
@@ -102,6 +106,7 @@
     margin-top: 400px;
     opacity: 1;
 }
+
 .carousel-control-next img,
 .carousel-control-prev img {
     height: 15px;
@@ -113,9 +118,11 @@
     padding: 20px 0px;
     background-color: #ECEEDF;
 }
+
 .custom-heading {
     color: #0ABAB5;
 }
+
 .custom-dining-img img {
     border-top-left-radius: 360px;
     border-top-right-radius: 360px;
@@ -126,6 +133,7 @@
     padding: 20px 0px;
     background-color: #0ABAB5;
 }
+
 .search {
     position: relative;
     width: 80vw;
@@ -221,8 +229,8 @@
 .section-5-h1 {
     margin: 20px 0px;
 }
-#section-5 h2
-.section-5-btn {
+
+#section-5 h2 .section-5-btn {
     margin: 20px 0px;
 }
 
@@ -235,9 +243,11 @@
 .custom-col .section-5-btn {
     margin-left: auto;
 }
-.section-5-custom-col{
+
+.section-5-custom-col {
     margin-top: 50px;
 }
+
 .section-5-custom-col img {
     width: 100%;
     object-fit: cover;
@@ -258,17 +268,19 @@
     background-color: #0ABAB5;
     margin-bottom: 0px;
 }
-#section-6 h1{
-    color:white;
+
+#section-6 h1 {
+    color: white;
 }
 
 /* Footer */
-#footer-div{
+#footer-div {
     background-color: #02202c;
     padding-top: 50px;
 }
+
 #footer-div p {
-    color:white;
+    color: white;
     font-size: .8em;
 }
 

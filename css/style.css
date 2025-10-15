@@ -23,17 +23,21 @@ h2 {
 #section-6 {
     padding: 50px 0px;
 }
-.custom-img img , .index-section-1-custom-img img{
+
+.custom-img img,
+.index-section-1-custom-img img {
     width: 100%;
     object-fit: cover;
     display: block;
     height: 400px;
     width: 100%;
 }
-.custom-img img{
+
+.custom-img img {
     margin: 20px 0px;
     border-radius: 25px;
 }
+
 /* Navigation */
 .custom-nav {
     height: 80px;
@@ -143,6 +147,7 @@ h2 {
     -ms-transform: translate(-50%, -50%);
     font-family: "Cormorant Garamond", serif;
 }
+
 /* Ensure the section takes full width/height */
 #index-section-1 {
     position: relative;
@@ -276,24 +281,14 @@ h2 {
     border-radius: 25px;
 }
 
-
-.carousel-control-next,
-.carousel-control-prev {
-    background-color: #FF9A00;
-    width: 30px;
-    height: 30px;
-    border-radius: 50px;
-    margin-top: 400px;
-    opacity: 1;
-}
-
 .carousel-control-next img,
 .carousel-control-prev img {
     height: 15px;
     width: 15px;
 }
 
-.slide-text , .section-3-center-text {
+.slide-text,
+.section-3-center-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -322,7 +317,9 @@ h2 {
     border-bottom-right-radius: 0px;
     height: 350px;
 }
-.slide-text , .section-3-center-text {
+
+.slide-text,
+.section-3-center-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -339,6 +336,12 @@ h2 {
 /* section 4 */
 #section-4 {
     background-color: #0ABAB5;
+}
+
+.search-container {
+    position: relative;
+    display: inline-block;
+    /* Or 'block' depending on desired layout */
 }
 
 .search {
@@ -384,7 +387,9 @@ h2 {
     margin-top: 10px;
     overflow-y: auto;
     position: absolute;
-    width: 80vw;
+    /* Positioned relative to .search-container */
+    width: 100%;
+    /* Match the width of the container */
     background-color: white !important;
     z-index: 9999;
     display: none;
@@ -426,6 +431,12 @@ h2 {
     opacity: 1;
 }
 
+.restaurant .button-row {
+    display: flex;
+    flex-wrap: wrap; /* Allow buttons to wrap on very small screens if needed */
+    gap: 10px; /* Space between buttons */
+    margin-top: 15px;
+}
 
 /* Section 5  */
 #section-5 {
@@ -509,7 +520,11 @@ h2 {
     width: fit-content;
     font-size: 1em !important;
 }
-svg{margin-right: 5px;}
+
+svg {
+    margin-right: 5px;
+}
+
 .footer-btn:hover {
     background-color: white;
     color: black;
@@ -569,8 +584,8 @@ svg{margin-right: 5px;}
     text-decoration: underline;
 }
 
-#footer-div h2{
-    color:#0ABAB5;
+#footer-div h2 {
+    color: #0ABAB5;
 }
 
 /* Small Devices */
@@ -626,12 +641,6 @@ svg{margin-right: 5px;}
         height: 400px;
     }
 
-
-    .carousel-control-next,
-    .carousel-control-prev {
-        margin-top: 350px;
-    }
-
     /* section 3 */
     .custom-dining-img img {
         height: 400px;
@@ -643,23 +652,24 @@ svg{margin-right: 5px;}
     }
 
     /* Section 5  */
-.section-5-btn{
-    width: 150px;
-    height: fit-content;
-}
+    .section-5-btn {
+        width: 150px;
+        height: fit-content;
+    }
 
-.custom-col .section-5-btn {
-    margin-left: auto;
-}
-.section-5-custom-col img {
-    width: 100%;
-    object-fit: cover;
-    display: block;
-    height: 300px;
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
-    margin-bottom: 20px
-}
+    .custom-col .section-5-btn {
+        margin-left: auto;
+    }
+
+    .section-5-custom-col img {
+        width: 100%;
+        object-fit: cover;
+        display: block;
+        height: 300px;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+        margin-bottom: 20px
+    }
 
     /* Section-6 */
     #location-form {
@@ -692,12 +702,34 @@ svg{margin-right: 5px;}
         height: 500px;
     }
 
-
-    .carousel-control-next,
-    .carousel-control-prev {
-        margin-top: 500px;
+    /* Carousel Control Button Styling */
+    #section-2 .carousel-control-prev,
+    #section-2 .carousel-control-next {
+        /* Set the default state to a lighter orange */
+        background-color: #FF9A00;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        top: 50%;
+        transform: translateY(-50%);
+        transition: background-color 0.3s ease;
+        /* Add a smooth transition */
     }
 
+    #section-2 .carousel-control-prev:hover,
+    #section-2 .carousel-control-next:hover {
+        background-color: #FF9A00;
+        /* Darker orange on hover */
+    }
+
+    /* On large screens (desktops), move the controls outside the carousel content */
+    #section-2 .carousel-control-prev {
+        left: -70px;
+    }
+
+    #section-2 .carousel-control-next {
+        right: -70px;
+    }
 
     /* section 3 */
     .custom-dining-img img {

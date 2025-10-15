@@ -4,17 +4,17 @@ const menuIcon = document.querySelector(".menu-icon");
 
 // Add a click event listener to the button
 menuButton.addEventListener("click", function () {
-  // Check the current source of the menu icon
-  if (menuIcon.src.includes("menu.svg")) {
-    // If the current source is "list.svg", change it to the closing menu image
-    menuIcon.src = "../assets/icons/close-btn.svg";
-  } else {
-    // If the current source is the closing menu image, change it back to "list.svg"
-    menuIcon.src = "../assets/icons/menu.svg";
-  }
+    // Check the current source of the menu icon
+    if (menuIcon.src.includes("menu.svg")) {
+        // If the current source is "list.svg", change it to the closing menu image
+        menuIcon.src = "../assets/icons/close-btn.svg";
+    } else {
+        // If the current source is the closing menu image, change it back to "list.svg"
+        menuIcon.src = "../assets/icons/menu.svg";
+    }
 });
 
-  
+
 // Section 1: Play video sound 
 const video = document.getElementById("bg-video");
 const soundBtn = document.getElementById("sound-toggle");
@@ -39,8 +39,10 @@ const restaurants = {
                     <hr class="custom-hr">
                     <p>Oxford St, London W1B 3AG</p>
                     <p>T: 0343 222 1234</p>
-                    <button class="custom-btn section-4-btn"  onclick="location.href='booking.html'">BOOK NOW</button>
-                    <button class="custom-btn section-4-btn"  onclick="location.href='menu.html'">VIEW MENU</button>
+                    <div class="button-row">
+                        <button class="custom-btn section-4-btn"  onclick="location.href='booking.html'">BOOK NOW</button>
+                        <button class="custom-btn section-4-btn"  onclick="location.href='menu.html'">VIEW MENU</button>
+                    </div>
                 </div>
               </div>
               <div class="col-md-6 col-lg-4 col-sm-12 custom-img restaurant-img">
@@ -50,8 +52,10 @@ const restaurants = {
                     <hr class="custom-hr">
                     <p>88 Wardour St, London W1F 0TH</p>
                     <p>T: 0203 909 0427</p>
-                    <button class="custom-btn section-4-btn"  onclick="location.href='booking.html'">BOOK NOW</button>
-                    <button class="custom-btn section-4-btn"  onclick="location.href='menu.html'">VIEW MENU</button>
+                    <div class="button-row">
+                        <button class="custom-btn section-4-btn"  onclick="location.href='booking.html'">BOOK NOW</button>
+                        <button class="custom-btn section-4-btn"  onclick="location.href='menu.html'">VIEW MENU</button>
+                    </div>
                 </div>
               </div>    
               <div class="col-md-6  col-lg-4 col-sm-12 custom-img restaurant-img">
@@ -61,8 +65,10 @@ const restaurants = {
                     <hr class="custom-hr">
                     <p>90 Tooley St, London SE1 2TH</p>
                     <p>T: 0207 870 9224</p>
-                    <button class="custom-btn section-4-btn"  onclick="location.href='booking.html'">BOOK NOW</button>
-                    <button class="custom-btn section-4-btn"  onclick="location.href='menu.html'">VIEW MENU</button>
+                    <div class="button-row">
+                        <button class="custom-btn section-4-btn"  onclick="location.href='booking.html'">BOOK NOW</button>
+                        <button class="custom-btn section-4-btn"  onclick="location.href='menu.html'">VIEW MENU</button>
+                    </div>
                 </div>
               </div>  
         </div>
@@ -77,8 +83,10 @@ const restaurants = {
                     <p>Emilia's Manchester Stretford</p>
                     <p>30 Davyhulme Rd E, Stretford, Manchester M32 0DW</p>
                     <p>T: 0161 283 3375</p>
-                    <button class="custom-btn section-4-btn"  onclick="location.href='booking.html'">BOOK NOW</button>
-                    <button class="custom-btn section-4-btn"  onclick="location.href='menu.html'">VIEW MENU</button>
+                    <div class="button-row">
+                        <button class="custom-btn section-4-btn"  onclick="location.href='booking.html'">BOOK NOW</button>
+                        <button class="custom-btn section-4-btn"  onclick="location.href='menu.html'">VIEW MENU</button>
+                    </div>
                 </div>
               </div>
               <div class="col-md-6  col-lg-4 col-sm-12 restaurant-img">
@@ -88,8 +96,10 @@ const restaurants = {
                     <hr class="custom-hr">
                     <p>Unit 19a, Manchester Arndale, Manchester M4 3AQ</p>
                     <p>T: 0161 669 1869</p>
-                    <button class="custom-btn section-4-btn"  onclick="location.href='booking.html'">BOOK NOW</button>
-                    <button class="custom-btn section-4-btn"  onclick="location.href='menu.html'">VIEW MENU</button>
+                    <div class="button-row">
+                        <button class="custom-btn section-4-btn"  onclick="location.href='booking.html'">BOOK NOW</button>
+                        <button class="custom-btn section-4-btn"  onclick="location.href='menu.html'">VIEW MENU</button>
+                    </div>
                 </div>
               </div>
         </div>
@@ -103,8 +113,10 @@ const restaurants = {
                     <hr class="custom-hr">
                     <p>27 Albion St, Leeds LS1 5ER</p>
                     <p>T: 0113 518 3749</p>
-                    <button class="custom-btn section-4-btn"  onclick="location.href='booking.html'">BOOK NOW</button>
-                    <button class="custom-btn section-4-btn"   onclick="location.href='menu.html'">VIEW MENU</button>
+                    <div class="button-row">
+                        <button class="custom-btn section-4-btn"  onclick="location.href='booking.html'">BOOK NOW</button>
+                        <button class="custom-btn section-4-btn"   onclick="location.href='menu.html'">VIEW MENU</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -119,8 +131,10 @@ const restaurants = {
                     <p>Stephenson Pl, Birmingham B2 4BQ</p>
                     <p>Floor 1, Grand Central Shopping Centre</p>
                     <p>T: 0121 803 6869</p>
-                    <button class="custom-btn section-4-btn"  onclick="location.href='booking.html'">BOOK NOW</button>
-                    <button class="custom-btn section-4-btn"  onclick="location.href='menu.html'">VIEW MENU</button>
+                    <div class="button-row">
+                        <button class="custom-btn section-4-btn"  onclick="location.href='booking.html'">BOOK NOW</button>
+                        <button class="custom-btn section-4-btn"  onclick="location.href='menu.html'">VIEW MENU</button>
+                    </div>
                 </div>
               </div>
               <div class="col-md-6 col-lg-4 col-sm-12 restaurant-img">
@@ -130,8 +144,10 @@ const restaurants = {
                     <hr class="custom-hr">
                     <p>82 New St, Birmingham B2 4BA</p>
                     <p>T: 0121 387 4148</p>
-                    <button class="custom-btn section-4-btn"  onclick="location.href='booking.html'">BOOK NOW</button>
-                    <button class="custom-btn section-4-btn"  onclick="location.href='menu.html'">VIEW MENU</button>
+                    <div class="button-row">
+                        <button class="custom-btn section-4-btn"  onclick="location.href='booking.html'">BOOK NOW</button>
+                        <button class="custom-btn section-4-btn"  onclick="location.href='menu.html'">VIEW MENU</button>
+                    </div>
                 </div>
               </div>
         </div>
@@ -146,8 +162,10 @@ const restaurants = {
                     <p>70 Lord St, Liverpool L2 1TL</p>
                     <p>Floor 0, Liverpool ONE</p>
                     <p>T: 0151 305 5014</p>
-                    <button class="custom-btn section-4-btn"  onclick="location.href='booking.html'">BOOK NOW</button>
-                    <button class="custom-btn section-4-btn"  onclick="location.href='menu.html'">VIEW MENU</button>
+                    <div class="button-row">
+                        <button class="custom-btn section-4-btn"  onclick="location.href='booking.html'">BOOK NOW</button>
+                        <button class="custom-btn section-4-btn"  onclick="location.href='menu.html'">VIEW MENU</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -162,8 +180,10 @@ const restaurants = {
                     <p>Bristol (Cabot Circus)</p>
                     <p>Shopping Centre, SU32B, Concorde St, Bristol BS1 3BF</p>
                     <p>T: 0117 374 3049</p>
-                    <button class="custom-btn section-4-btn"  onclick="location.href='booking.html'">BOOK NOW</button>
-                    <button class="custom-btn section-4-btn"  onclick="location.href='menu.html'">VIEW MENU</button>
+                    <div class="button-row">
+                        <button class="custom-btn section-4-btn"  onclick="location.href='booking.html'">BOOK NOW</button>
+                        <button class="custom-btn section-4-btn"  onclick="location.href='menu.html'">VIEW MENU</button>
+                    </div>
                 </div>
               </div>
         </div>
@@ -237,7 +257,7 @@ if (input && form && suggestions && resultDiv) {
                 const res = await fetch(`https://api.postcodes.io/postcodes?q=${encodeURIComponent(query)}`);
                 const data = await res.json();
                 if (data.status === 200 && data.result) {
-                    data.result.slice(0,5).forEach(item => {
+                    data.result.slice(0, 5).forEach(item => {
                         const li = document.createElement('li');
                         li.textContent = `${item.postcode} (${item.admin_district})`;
                         li.style.cursor = 'pointer';
@@ -282,32 +302,3 @@ if (input && form && suggestions && resultDiv) {
         }
     });
 }
-
-// section 6
-document.getElementById("signup-form").addEventListener("submit", async function(e) {
-    e.preventDefault(); // stop page reload
-
-    const form = e.target;
-    const formData = new FormData(form);
-
-    try {
-        const response = await fetch(form.action, {
-            method: "POST",
-            body: formData
-        });
-
-        const result = await response.text();
-
-        // Show the result in #form-response
-        document.getElementById("form-response").innerHTML = result;
-        document.getElementById("form-response").style.display = "block";
-
-        // Optionally clear the form
-        form.reset();
-
-    } catch (error) {
-        document.getElementById("form-response").innerHTML = "Something went wrong. Please try again.";
-        document.getElementById("form-response").style.display = "block";
-    }
-});
-
