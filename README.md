@@ -1,6 +1,5 @@
-<div align="left">
-
 # Emilia’s Della Roma
+A demo front end website for an Italian restaurant. 
 
 **Technologies:** JavaScript, PHP, PHPMailer, HTML5, CSS, Bootstrap, postcode.io  
 **Project Type:** Responsive, Mobile-First Restaurant Website
@@ -25,8 +24,4 @@ Emilia’s Della Roma is a responsive, mobile-first website designed to help use
 
 [emilias-della-roma.netlify.app](https://emilias-della-roma.netlify.app)
 
-## Author and Copyrights
 
-Abdur Sujon
-
-</div>
