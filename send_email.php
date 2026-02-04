@@ -8,7 +8,6 @@ require 'PHPMailer/src/PHPMailer.php';
 require 'PHPMailer/src/SMTP.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    // Safely collect inputs
 
     $firstname = htmlentities($_POST['firstname'] ?? '');
     $lastname = htmlentities($_POST['lastname'] ?? '');
